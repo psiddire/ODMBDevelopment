@@ -231,7 +231,7 @@ architecture Behavioral of gtwiz_kcu_test_top is
   );
   end component;
 
-  component clkwiz is
+  component clk_mgr is
   port (
     clk_in1    : in  std_logic := '0';
     -- clk_out160 : out std_logic := '0';
@@ -550,7 +550,7 @@ begin
   );
 
   -- clock management
-  clk_mgr_i : clkwiz
+  clk_mgr_i : clk_mgr
   port map(
     clk_in1    => inclk_buf,
     -- clk_out160 => sysclk160,

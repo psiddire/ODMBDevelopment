@@ -179,13 +179,6 @@ architecture odmb_inst of odmb7_ibert_gth is
       );
   end component;
 
-  component ila_1 is
-    port (
-      clk : in std_logic;
-      probe0 : in std_logic_vector(255 downto 0)
-      );
-  end component;
-
   component clock_counting is
     port (
       clk_i : in std_logic;
@@ -258,8 +251,6 @@ architecture odmb_inst of odmb7_ibert_gth is
   signal cntr_refclk5 : unsigned(40 downto 0) := (others => '0');
   signal cntr_clk125  : unsigned(40 downto 0) := (others => '0');
   signal cntr_clk80   : unsigned(40 downto 0) := (others => '0');
-
-  signal ila_data_1 : std_logic_vector(255 downto 0);
 
 begin
 
@@ -614,20 +605,5 @@ begin
       gtsouthrefclk11_i => gth_qsouthrefclk11_i
       );
 
-  -- Add ILA to mimick block ram usage in ODMB
-  ila_data_1(0) <= EMCCLK;
-  ila_data_1(1) <= LF_CLK;
-  ila_data_1(10) <= RX12_INT_B;
-  ila_data_1(11) <= RX12_PRESENT_B;
-  ila_data_1(100) <= TX12_INT_B;
-  ila_data_1(101) <= TX12_PRESENT_B;
-  ila_data_1(200) <= B04_INT_B;
-  ila_data_1(201) <= B04_PRESENT_B;
-
-  ila_inst_1 : ila_1
-    port map (
-      clk => clk_mgtclk1,
-      probe0 => ila_data_1
-      );
 
 end odmb_inst;

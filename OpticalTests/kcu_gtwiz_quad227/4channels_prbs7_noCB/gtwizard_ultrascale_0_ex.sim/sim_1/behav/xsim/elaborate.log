@@ -1,0 +1,11 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 88da97a11f694c159c1b8e234a8f9af9 --incr --debug typical --relax --mt 8 -L gtwizard_ultrascale_v1_7_7 -L xil_defaultlib -L in_system_ibert_v1_0_10 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot gtwizard_ultrascale_0_example_top_sim_behav xil_defaultlib.gtwizard_ultrascale_0_example_top_sim xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'sel_si570_clk_i' is not connected on this instance [/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_top_sim.v:199]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_top.v:577]
+WARNING: [VRFC 10-5021] port 'gt80_drprdy_i' is not connected on this instance [/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/gtwizard_ultrascale_0_in_system_ibert_0/sim/gtwizard_ultrascale_0_in_system_ibert_0.v:166]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

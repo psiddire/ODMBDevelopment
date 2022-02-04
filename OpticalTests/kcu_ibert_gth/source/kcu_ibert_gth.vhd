@@ -94,15 +94,6 @@ architecture kcu_inst of kcu_ibert_gth is
       );
   end component;
 
-  component vio_0
-    port (
-      clk : in std_logic;
-      probe_out0 : out std_logic;
-      probe_out1 : out std_logic;
-      probe_out2 : out std_logic_vector(2 downto 0)
-      );
-  end component;
-
   --------------------------------------
   -- Component and signals for the IBERT test
   --------------------------------------
@@ -285,14 +276,6 @@ begin
   gth_sysclk_i <= clk80;
   DAQ_SPY_SEL <= gth_clk_sel;   -- Priority to test the SPY TX
 
-  u_vio_top : vio_0
-    port map (
-      clk => clk80,                   -- same as IBERT
-      probe_out0 => gth_clk_sel,      -- default '0'
-      probe_out1 => toggle_button,    -- default '0'
-      probe_out2 => sysmon_mux_addr   -- default '???'
-      );
-
   -- SYSMON signals
   SYSMON_MUX_ADDR_LS <= sysmon_mux_addr;
   vauxp <= (0 => SYSMON_AD0_R_P, 2 => SYSMON_AD2_R_P, 8 => SYSMON_AD8_R_P, others => '0'); -- 16 bits
@@ -388,10 +371,10 @@ begin
     gth_rxn_i(4*NQUAD-5) <= DAQ_SPY_RX_N;
 
     -- Quad 227: refclk0
-    gth_qrefclk0_i(NQUAD-2) <= mgtrefclk0_227_i;
+    gth_qrefclk0_i(NQUAD-2) <= mgtrefclk1_227_i;
     gth_qnorthrefclk0_i(NQUAD-2) <= '0';
     gth_qsouthrefclk0_i(NQUAD-2) <= '0';
-    gth_qrefclk00_i(NQUAD-2) <= mgtrefclk0_227_i;
+    gth_qrefclk00_i(NQUAD-2) <= mgtrefclk1_227_i;
     gth_qrefclk01_i(NQUAD-2) <= '0';
     gth_qnorthrefclk00_i(NQUAD-2) <= '0';
     gth_qnorthrefclk01_i(NQUAD-2) <= '0';

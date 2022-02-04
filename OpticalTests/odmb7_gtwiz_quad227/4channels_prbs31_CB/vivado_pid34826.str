@@ -1,0 +1,544 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:39:14 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 34826
+License: Customer
+
+Current time: 	Thu Dec 02 18:15:04 PST 2021
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Scientific Linux release 7.9 (Nitrogen)
+OS Version: 3.10.0-1127.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 20
+
+Display: gaugino:7
+Screen size: 1920x1080
+Screen resolution (DPI): 98
+Available screens: 1
+Available disk space: 123 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/opt/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4
+Java executable location: 	/opt/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	psiddire
+User home directory: /net/top/homes/psiddire
+User working directory: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2019.2
+RDI_DATADIR: /opt/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: /homes/psiddire/.Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: /homes/psiddire/.Xilinx/Vivado/2019.2/
+Vivado layouts directory: /net/top/homes/psiddire/.Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	/opt/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/vivado.log
+Vivado journal file location: 	/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-34826-higgs.physics.ucsb.edu
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /opt/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@license.ece.ucsb.edu
+XILINX_DSP: /opt/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: /opt/Xilinx/Vivado/2019.2
+XILINX_VITIS: 
+XILINX_VIVADO: /opt/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	212 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 5,208 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: START_PROGRESS_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: START_PROGRESS_DIALOG
+// bB (cr):  Sourcing Tcl script '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/odmb7_gtwiz_quad227.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0_ex.tcl' : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: source /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/odmb7_gtwiz_quad227.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0_ex.tcl -notrace 
+// Tcl Message: INFO: [open_example_project] Creating new example project... 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 116 MB (+118861kb) [00:00:08]
+// [Engine Memory]: 5,280 MB (+5384677kb) [00:00:08]
+// WARNING: HEventQueue.dispatchEvent() is taking  1979 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,308 MB. GUI used memory: 55 MB. Current time: 12/2/21, 6:15:07 PM PST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PART_MODIFIED
+// Tcl Message: create_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 6783.836 ; gain = 183.203 ; free physical = 112890 ; free virtual = 152352 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: INFO: [open_example_project] Importing original IP ... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_ip: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 6786.805 ; gain = 0.000 ; free physical = 112856 ; free virtual = 152324 
+// Tcl Message: INFO: [open_example_project] Generating the example project IP ... INFO: [open_example_project] Adding example synthesis HDL files ... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [open_example_project] Adding example XDC files ... INFO: [open_example_project] Adding simulation HDL files ... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: CREATE_IP_CORE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [open_example_project] Sourcing example extension scripts ... 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,321 MB. GUI used memory: 53 MB. Current time: 12/2/21, 6:15:31 PM PST
+// Tcl Message: INFO: [Device 21-403] Loading part xcku035-ffva1156-1-c 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 5,751 MB (+217659kb) [00:00:48]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// HMemoryUtils.trashcanNow. Engine heap size: 5,751 MB. GUI used memory: 53 MB. Current time: 12/2/21, 6:15:46 PM PST
+// Tcl Message: create_ip: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 7225.098 ; gain = 430.293 ; free physical = 112396 ; free virtual = 151865 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'gtwizard_ultrascale_0_in_system_ibert_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'gtwizard_ultrascale_0_in_system_ibert_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'gtwizard_ultrascale_0_in_system_ibert_0'... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'gtwizard_ultrascale_0_in_system_ibert_0'... 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 7225.098 ; gain = 0.000 ; free physical = 112382 ; free virtual = 151860 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'gtwizard_ultrascale_0_vio_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'gtwizard_ultrascale_0_vio_0'... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'gtwizard_ultrascale_0_vio_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'gtwizard_ultrascale_0_vio_0'... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: INFO: [open_example_project] Rebuilding all the top level IPs ... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)... 
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0/xsim/gtwizard_ultrascale_0.sh' 
+// Tcl Message: INFO: [exportsim-Tcl-35] Exporting simulation files for "MODELSIM" (Mentor Graphics ModelSim Simulator)... 
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0/modelsim/gtwizard_ultrascale_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "QUESTA" (Mentor Graphics Questa Advanced Simulator)... 
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0/questa/gtwizard_ultrascale_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "IES" (Cadence Incisive Enterprise Simulator)... INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0/ies/gtwizard_ultrascale_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "VCS" (Synopsys Verilog Compiler Simulator)... 
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0/vcs/gtwizard_ultrascale_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "RIVIERA" (Aldec Riviera-PRO Simulator)... INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0/riviera/gtwizard_ultrascale_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "ACTIVEHDL" (Aldec Active-HDL Simulator)... 
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0/activehdl/gtwizard_ultrascale_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "XCELIUM" (Cadence Xcelium Parallel Simulator)... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0/xcelium/gtwizard_ultrascale_0.sh' 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)... INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0_in_system_ibert_0/xsim/gtwizard_ultrascale_0_in_system_ibert_0.sh' 
+// Tcl Message: INFO: [exportsim-Tcl-35] Exporting simulation files for "MODELSIM" (Mentor Graphics ModelSim Simulator)... 
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0_in_system_ibert_0/modelsim/gtwizard_ultrascale_0_in_system_ibert_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "QUESTA" (Mentor Graphics Questa Advanced Simulator)... 
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0_in_system_ibert_0/vcs/gtwizard_ultrascale_0_in_system_ibert_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "RIVIERA" (Aldec Riviera-PRO Simulator)... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0_in_system_ibert_0/xcelium/gtwizard_ultrascale_0_in_system_ibert_0.sh' 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)... INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0_vio_0/xsim/gtwizard_ultrascale_0_vio_0.sh' 
+// Tcl Message: INFO: [exportsim-Tcl-35] Exporting simulation files for "MODELSIM" (Mentor Graphics ModelSim Simulator)... 
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0_vio_0/ies/gtwizard_ultrascale_0_vio_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "VCS" (Synopsys Verilog Compiler Simulator)... INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0_vio_0/vcs/gtwizard_ultrascale_0_vio_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "RIVIERA" (Aldec Riviera-PRO Simulator)... 
+// TclEventType: STOP_PROGRESS_DIALOG
+// Tcl Message: export_ip_user_files: Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 7269.492 ; gain = 9.551 ; free physical = 112361 ; free virtual = 151842 
+// Tcl Message: INFO: [open_example_project] Open Example Project completed 
+dismissDialog("Sourcing Tcl script '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/odmb7_gtwiz_quad227.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0_ex.tcl'"); // bB (cr)
+// TclEventType: STOP_PROGRESS_DIALOG
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,809 MB. GUI used memory: 54 MB. Current time: 12/2/21, 6:16:26 PM PST
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v), example_stimulus_inst1 : gtwizard_ultrascale_0_example_stimulus_8b10b (gtwizard_ultrascale_0_example_stimulus_8b10b.v)]", 4, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 5,858 MB. GUI used memory: 56 MB. Current time: 12/2/21, 6:16:41 PM PST
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+// Elapsed time: 47 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 36, 271); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,884 MB. GUI used memory: 57 MB. Current time: 12/2/21, 6:17:46 PM PST
+// Elapsed time: 45 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 285, 495); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,908 MB. GUI used memory: 57 MB. Current time: 12/2/21, 6:18:31 PM PST
+// Elapsed time: 67 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 315, 173); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 28 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 58, 417); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,932 MB. GUI used memory: 57 MB. Current time: 12/2/21, 6:20:16 PM PST
+// Elapsed time: 96 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 39, 274); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 87 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "ILA"); // OverlayTextField (ay, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "System ILA ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:system_ila:1.1", 4, "System ILA", 0, false); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "ILA (Integrated Logic Analyzer) ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:ila:6.2", 3, "ILA (Integrated Logic Analyzer)", 0, true); // L (O, cr) - Node
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "ILA (Integrated Logic Analyzer) ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:ila:6.2", 3, "ILA (Integrated Logic Analyzer)", 0, true, false, false, false, false, true); // L (O, cr) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// l (cr):  Customize IP : addNotify
+// r (cr): Customize IP: addNotify
+dismissDialog("Customize IP"); // l (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,989 MB. GUI used memory: 68 MB. Current time: 12/2/21, 6:23:31 PM PST
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Probe_Ports(0..0)", 1); // bh (E, r)
+setText("Probe0 Width", "866"); // D (bi, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Customize IP"); // r (cr)
+// TclEventType: CREATE_IP_CORE
+// bB (cr):  Customize IP : addNotify
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.C_PROBE0_WIDTH {866}] [get_ips ila_0] 
+// Tcl Message: generate_target {instantiation_template} [get_files /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/ila_0/ila_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'... 
+// TclEventType: FILE_SET_CHANGE
+// aI (cr): Generate Output Products: addNotify
+dismissDialog("Customize IP"); // bB (cr)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bB (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/ila_0/ila_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'... 
+// [GUI Memory]: 122 MB (+209kb) [00:08:51]
+// HMemoryUtils.trashcanNow. Engine heap size: 6,015 MB. GUI used memory: 66 MB. Current time: 12/2/21, 6:23:51 PM PST
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all ila_0] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/ila_0/ila_0.xci] 
+// TclEventType: RUN_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs -jobs 20 ila_0_synth_1 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Dec  2 18:23:54 2021] Launched ila_0_synth_1... Run output will be captured here: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/ila_0_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 66 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,039 MB. GUI used memory: 66 MB. Current time: 12/2/21, 6:24:56 PM PST
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "clocki"); // OverlayTextField (ay, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 3, "Clocking Wizard", 0, true); // L (O, cr) - Node
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 3); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 3, "Clocking Wizard", 0, true, false, false, false, false, true); // L (O, cr) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// l (cr):  Customize IP : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 6,117 MB. GUI used memory: 66 MB. Current time: 12/2/21, 6:25:11 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 6,141 MB. GUI used memory: 66 MB. Current time: 12/2/21, 6:25:31 PM PST
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// [Engine Memory]: 6,156 MB (+122639kb) [00:10:35]
+// r (cr): Customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1004 ms.
+// Elapsed time: 34 seconds
+dismissDialog("Customize IP"); // l (cr)
+// Elapsed time: 41 seconds
+selectCheckBox((HResource) null, "Phase Alignment", true); // g (bM, r): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,185 MB. GUI used memory: 81 MB. Current time: 12/2/21, 6:26:16 PM PST
+// Elapsed time: 11 seconds
+setText("Component Name", "clockManager"); // D (ci, r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("PRIM IN FREQ", "40.000"); // D (cV)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cU (E, r)
+setText("CLKOUT1 REQUESTED OUT FREQ", "40.000"); // D (cV)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "clk_out2", true); // g (bM, r): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("CLKOUT2 REQUESTED OUT FREQ", "80.000"); // D (cV)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// [GUI Memory]: 131 MB (+2851kb) [00:11:49]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Customize IP"); // r (cr)
+// TclEventType: CREATE_IP_CORE
+// bB (cr):  Customize IP : addNotify
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clockManager 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/clockManager/clockManager.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clockManager'... 
+// aI (cr): Generate Output Products: addNotify
+dismissDialog("Customize IP"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1058 ms. Increasing delay to 3174 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 6,215 MB. GUI used memory: 80 MB. Current time: 12/2/21, 6:26:56 PM PST
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bB (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/clockManager/clockManager.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clockManager'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clockManager'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clockManager'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clockManager'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all clockManager] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/clockManager/clockManager.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// [GUI Memory]: 139 MB (+1479kb) [00:12:12]
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/clockManager/clockManager.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs -jobs 20 clockManager_synth_1 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Dec  2 18:27:11 2021] Launched clockManager_synth_1... Run output will be captured here: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/clockManager_synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 20 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // W
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v), example_stimulus_inst0 : gtwizard_ultrascale_0_example_stimulus_8b10b (gtwizard_ultrascale_0_example_stimulus_8b10b.v)]", 4, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v), example_stimulus_inst0 : gtwizard_ultrascale_0_example_stimulus_8b10b (gtwizard_ultrascale_0_example_stimulus_8b10b.v)]", 4, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 22 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_stimulus_8b10b.v", 136, 300); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,250 MB. GUI used memory: 79 MB. Current time: 12/2/21, 6:28:11 PM PST
+// Elapsed time: 12 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v), example_stimulus_inst0 : gtwizard_ultrascale_0_example_stimulus_8b10b (gtwizard_ultrascale_0_example_stimulus_8b10b.v)]", 4); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v), example_checking_inst0 : gtwizard_ultrascale_0_example_checking_8b10b (gtwizard_ultrascale_0_example_checking_8b10b.v)]", 8, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v), example_checking_inst0 : gtwizard_ultrascale_0_example_checking_8b10b (gtwizard_ultrascale_0_example_checking_8b10b.v)]", 8, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("gtwizard_ultrascale_0_example_checking_8b10b.v", 132, 176); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v), example_checking_inst0 : gtwizard_ultrascale_0_example_checking_8b10b (gtwizard_ultrascale_0_example_checking_8b10b.v)]", 8); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v)]", 2); // B (F, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 15 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3); // B (F, cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 151 MB (+5594kb) [00:15:14]
+// Elapsed time: 81 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (E, c)
+String[] filenames31467 = {"/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/imports/odmb7_clocks.xdc", "/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/imports/odmb7_config.xdc", "/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/imports/odmb7_pinout.xdc"};
+setFileChooser(filenames31467);
+selectTable(PAResourceAtoD.ConstraintsChooserPanel_FILE_TABLE, "gtwizard_ultrascale_0_example_top.xdc ; /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/imports", 0, "gtwizard_ultrascale_0_example_top.xdc", 0); // t (O, c)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E (f, c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 19 seconds
+dismissDialog("Add Sources"); // c (cr)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 -norecurse {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/imports/odmb7_clocks.xdc /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/imports/odmb7_config.xdc /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/imports/odmb7_pinout.xdc} 
+// c (cr): Add Sources: addNotify
+// bB (c):  Add Constraint  : addNotify
+// Tcl Message: import_files -fileset constrs_1 {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/imports/odmb7_clocks.xdc /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/imports/odmb7_config.xdc /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/imports/odmb7_pinout.xdc} 
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 161 MB (+2338kb) [00:15:40]
+dismissDialog("Add Constraint"); // bB (c)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, gtwizard_ultrascale_0_example_top.xdc]", 5, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_top.xdc] -no_script -reset -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset constrs_1 /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_top.xdc 
+// aE (cr): Remove Sources: addNotify
+// bB (aE):  Remove Sources : addNotify
+dismissDialog("Remove Sources"); // bB (aE)

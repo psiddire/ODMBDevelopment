@@ -1,0 +1,288 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:39:14 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 33212
+License: Customer
+
+Current time: 	Sat Sep 18 17:38:45 PDT 2021
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Scientific Linux release 7.9 (Nitrogen)
+OS Version: 3.10.0-1127.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 20
+
+Display: gaugino:7
+Screen size: 1920x1080
+Screen resolution (DPI): 98
+Available screens: 1
+Available disk space: 123 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/opt/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4
+Java executable location: 	/opt/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	psiddire
+User home directory: /net/top/homes/psiddire
+User working directory: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_fmc12g
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2019.2
+RDI_DATADIR: /opt/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: /homes/psiddire/.Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: /homes/psiddire/.Xilinx/Vivado/2019.2/
+Vivado layouts directory: /net/top/homes/psiddire/.Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	/opt/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	
+Vivado journal file location: 	
+Engine tmp dir: 	./.Xil/Vivado-33212-higgs.physics.ucsb.edu
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /opt/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@license.ece.ucsb.edu
+XILINX_DSP: /opt/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: /opt/Xilinx/Vivado/2019.2
+XILINX_VITIS: 
+XILINX_VIVADO: /opt/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	220 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 5,146 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,151 MB. GUI used memory: 51 MB. Current time: 9/18/21, 5:38:47 PM PDT
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // y (x, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_fmc12g/kcu_project/kcu_gtwiz_test.xpr");
+// [GUI Memory]: 114 MB (+116665kb) [00:01:45]
+// [Engine Memory]: 5,155 MB (+5253696kb) [00:01:45]
+// Opening Vivado Project: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_fmc12g/kcu_project/kcu_gtwiz_test.xpr. Version: Vivado v2019.2 
+// bB (cr):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_fmc12g/kcu_project/kcu_gtwiz_test.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: LOAD_FEATURE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,258 MB. GUI used memory: 50 MB. Current time: 9/18/21, 5:40:27 PM PDT
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,704 MB. GUI used memory: 49 MB. Current time: 9/18/21, 5:40:42 PM PDT
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,753 MB. GUI used memory: 49 MB. Current time: 9/18/21, 5:42:02 PM PDT
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,878 MB. GUI used memory: 49 MB. Current time: 9/18/21, 5:42:17 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,924 MB. GUI used memory: 49 MB. Current time: 9/18/21, 5:42:37 PM PDT
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 5,947 MB (+559998kb) [00:04:02]
+// WARNING: HEventQueue.dispatchEvent() is taking  1828 ms.
+// Tcl Message: open_project /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_fmc12g/kcu_project/kcu_gtwiz_test.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'SingleTestFWs/kcu_gtwiz_fmc12g/kcu_project' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'. INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e 
+// Tcl Message: ERROR: [IP_Flow 19-993] Could not find IP file for IP 'fifo_errctr_16b'. 
+// Tcl Message: open_project: Time (s): cpu = 00:01:47 ; elapsed = 00:02:18 . Memory (MB): peak = 7497.297 ; gain = 870.715 ; free physical = 122660 ; free virtual = 158103 
+// Tcl Message: ERROR: [Common 17-39] 'open_project' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'open_project' failed due to earlier errors.  
+// 'i' command handler elapsed time: 145 seconds
+// Elapsed time: 139 seconds
+dismissDialog("Open Project"); // bB (cr)
+// a (cr): Critical Messages: addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cr)
+// Elapsed time: 37 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwiz_kcu_fmc_sgb_example_top (gtwiz_kcu_fmc_sgb_example_top.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwiz_kcu_fmc_sgb_example_top (gtwiz_kcu_fmc_sgb_example_top.v), example_stimulus_inst2 : gtwiz_kcu_fmc_sgb_example_stimulus_64b66b (gtwiz_kcu_fmc_sgb_example_stimulus_64b66b.v)]", 4, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 16 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "fifo", true); // l (aP, cr)
+// Elapsed time: 13 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err", true); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "err"); // l (aP, cr)
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fifo_errctr_16b (fifo_errctr_16b.xci)]", 30, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_fmc12g/ip/xcku040-ffva1156-2-e/fifo_errctr_16b/fifo_errctr_16b.xci] -no_script -reset -force -quiet 
+// aE (cr): Remove Sources: addNotify
+// bB (aE):  Remove Sources : addNotify
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// Tcl Message: remove_files  -fileset fifo_errctr_16b /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_fmc12g/ip/xcku040-ffva1156-2-e/fifo_errctr_16b/fifo_errctr_16b.xci 
+// Tcl Message: INFO: [Project 1-386] Moving file '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_fmc12g/ip/xcku040-ffva1156-2-e/fifo_errctr_16b/fifo_errctr_16b.xci' from fileset 'fifo_errctr_16b' to fileset 'sources_1'. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+dismissDialog("Remove Sources"); // bB (aE)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,102 MB. GUI used memory: 60 MB. Current time: 9/18/21, 5:45:02 PM PDT
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwiz_kcu_fmc_sgb_example_top (gtwiz_kcu_fmc_sgb_example_top.v), example_stimulus_inst2 : gtwiz_kcu_fmc_sgb_example_stimulus_64b66b (gtwiz_kcu_fmc_sgb_example_stimulus_64b66b.v)]", 4, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwiz_kcu_fmc_sgb_example_top (gtwiz_kcu_fmc_sgb_example_top.v), example_stimulus_inst2 : gtwiz_kcu_fmc_sgb_example_stimulus_64b66b (gtwiz_kcu_fmc_sgb_example_stimulus_64b66b.v)]", 4, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwiz_kcu_fmc_sgb_example_top (gtwiz_kcu_fmc_sgb_example_top.v), example_stimulus_inst2 : gtwiz_kcu_fmc_sgb_example_stimulus_64b66b (gtwiz_kcu_fmc_sgb_example_stimulus_64b66b.v)]", 4); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwiz_kcu_fmc_sgb_example_top (gtwiz_kcu_fmc_sgb_example_top.v), example_stimulus_inst3 : gtwiz_kcu_fmc_sgb_example_stimulus_64b66b (gtwiz_kcu_fmc_sgb_example_stimulus_64b66b.v)]", 5); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwiz_kcu_fmc_sgb_example_top (gtwiz_kcu_fmc_sgb_example_top.v), example_stimulus_inst3 : gtwiz_kcu_fmc_sgb_example_stimulus_64b66b (gtwiz_kcu_fmc_sgb_example_stimulus_64b66b.v)]", 5); // B (F, cr)
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwiz_kcu_fmc_sgb_example_top (gtwiz_kcu_fmc_sgb_example_top.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwiz_kcu_fmc_sgb_example_top (gtwiz_kcu_fmc_sgb_example_top.v)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// f (cr): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (cr)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cr)
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'gtwiz_kcu_fmc_sgb'... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_mgr'... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_mgr'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'gtwiz_kcu_fmc_sgb_vio_0'... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'vio_errctr'... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Sep 18 17:46:00 2021] Launched gtwiz_kcu_fmc_sgb_vio_0_synth_1, vio_errctr_synth_1, synth_1... Run output will be captured here: gtwiz_kcu_fmc_sgb_vio_0_synth_1: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_fmc12g/kcu_project/kcu_gtwiz_test.runs/gtwiz_kcu_fmc_sgb_vio_0_synth_1/runme.log vio_errctr_synth_1: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_fmc12g/kcu_project/kcu_gtwiz_test.runs/vio_errctr_synth_1/runme.log synth_1: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_fmc12g/kcu_project/kcu_gtwiz_test.runs/synth_1/runme.log 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Sep 18 17:46:00 2021] Launched impl_1... Run output will be captured here: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_fmc12g/kcu_project/kcu_gtwiz_test.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 7647.070 ; gain = 0.000 ; free physical = 122598 ; free virtual = 158050 
+// Elapsed time: 18 seconds
+dismissDialog("Generate Bitstream"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,138 MB. GUI used memory: 62 MB. Current time: 9/18/21, 5:46:02 PM PDT
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1287 ms. Increasing delay to 3861 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 477ms to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1959 ms. Increasing delay to 3000 ms.
+// [GUI Memory]: 127 MB (+8203kb) [00:11:36]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 783 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+// [GUI Memory]: 134 MB (+255kb) [00:24:34]

@@ -1,0 +1,2537 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:39:14 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 19534
+License: Customer
+
+Current time: 	Fri Dec 03 12:38:27 PST 2021
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Scientific Linux release 7.9 (Nitrogen)
+OS Version: 3.10.0-1127.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 20
+
+Display: gaugino:7
+Screen size: 1920x1080
+Screen resolution (DPI): 98
+Available screens: 1
+Available disk space: 123 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/opt/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4
+Java executable location: 	/opt/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	psiddire
+User home directory: /net/top/homes/psiddire
+User working directory: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2019.2
+RDI_DATADIR: /opt/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: /homes/psiddire/.Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: /homes/psiddire/.Xilinx/Vivado/2019.2/
+Vivado layouts directory: /net/top/homes/psiddire/.Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	/opt/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/vivado.log
+Vivado journal file location: 	/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-19534-higgs.physics.ucsb.edu
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /opt/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@license.ece.ucsb.edu
+XILINX_DSP: /opt/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: /opt/Xilinx/Vivado/2019.2
+XILINX_VITIS: 
+XILINX_VIVADO: /opt/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	220 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 5,229 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: START_PROGRESS_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: START_PROGRESS_DIALOG
+// bB (cr):  Sourcing Tcl script '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/kcu_gtwiz_quad226.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0_ex.tcl' : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: source /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/kcu_gtwiz_quad226.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0_ex.tcl -notrace 
+// Tcl Message: INFO: [open_example_project] Creating new example project... 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 116 MB (+119238kb) [00:00:08]
+// [Engine Memory]: 5,270 MB (+5374831kb) [00:00:08]
+// WARNING: HEventQueue.dispatchEvent() is taking  2066 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,356 MB. GUI used memory: 54 MB. Current time: 12/3/21, 12:38:31 PM PST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: create_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 6831.664 ; gain = 203.223 ; free physical = 111432 ; free virtual = 151902 
+// TclEventType: RUN_MODIFY
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PART_MODIFIED
+// TclEventType: PROJECT_CHANGE
+// TclEventType: BOARD_MODIFIED
+// Tcl Message: INFO: [open_example_project] Importing original IP ... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_ip: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 6833.875 ; gain = 0.004 ; free physical = 111413 ; free virtual = 151888 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [open_example_project] Generating the example project IP ... INFO: [open_example_project] Adding example synthesis HDL files ... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [open_example_project] Adding example XDC files ... INFO: [open_example_project] Adding simulation HDL files ... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: CREATE_IP_CORE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [open_example_project] Sourcing example extension scripts ... 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,366 MB. GUI used memory: 56 MB. Current time: 12/3/21, 12:38:59 PM PST
+// Tcl Message: INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip: Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 7222.465 ; gain = 380.586 ; free physical = 110925 ; free virtual = 151401 
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'gtwizard_ultrascale_0_in_system_ibert_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'gtwizard_ultrascale_0_in_system_ibert_0'... 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,753 MB. GUI used memory: 55 MB. Current time: 12/3/21, 12:39:14 PM PST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'gtwizard_ultrascale_0_in_system_ibert_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'gtwizard_ultrascale_0_in_system_ibert_0'... 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 7232.371 ; gain = 2.969 ; free physical = 110927 ; free virtual = 151411 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// [Engine Memory]: 5,756 MB (+233311kb) [00:00:58]
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'gtwizard_ultrascale_0_vio_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'gtwizard_ultrascale_0_vio_0'... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'gtwizard_ultrascale_0_vio_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'gtwizard_ultrascale_0_vio_0'... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: INFO: [open_example_project] Rebuilding all the top level IPs ... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)... 
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0/xsim/gtwizard_ultrascale_0.sh' 
+// Tcl Message: INFO: [exportsim-Tcl-35] Exporting simulation files for "MODELSIM" (Mentor Graphics ModelSim Simulator)... 
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0/modelsim/gtwizard_ultrascale_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "QUESTA" (Mentor Graphics Questa Advanced Simulator)... 
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0/riviera/gtwizard_ultrascale_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "ACTIVEHDL" (Aldec Active-HDL Simulator)... 
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0/activehdl/gtwizard_ultrascale_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "XCELIUM" (Cadence Xcelium Parallel Simulator)... INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0/xcelium/gtwizard_ultrascale_0.sh' 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)... 
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0_in_system_ibert_0/xsim/gtwizard_ultrascale_0_in_system_ibert_0.sh' 
+// Tcl Message: INFO: [exportsim-Tcl-35] Exporting simulation files for "MODELSIM" (Mentor Graphics ModelSim Simulator)... 
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0_in_system_ibert_0/modelsim/gtwizard_ultrascale_0_in_system_ibert_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "QUESTA" (Mentor Graphics Questa Advanced Simulator)... 
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0_in_system_ibert_0/riviera/gtwizard_ultrascale_0_in_system_ibert_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "ACTIVEHDL" (Aldec Active-HDL Simulator)... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0_in_system_ibert_0/activehdl/gtwizard_ultrascale_0_in_system_ibert_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "XCELIUM" (Cadence Xcelium Parallel Simulator)... INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0_in_system_ibert_0/xcelium/gtwizard_ultrascale_0_in_system_ibert_0.sh' 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)... INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0_vio_0/xsim/gtwizard_ultrascale_0_vio_0.sh' 
+// Tcl Message: INFO: [exportsim-Tcl-35] Exporting simulation files for "MODELSIM" (Mentor Graphics ModelSim Simulator)... 
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0_vio_0/modelsim/gtwizard_ultrascale_0_vio_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "QUESTA" (Mentor Graphics Questa Advanced Simulator)... 
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0_vio_0/questa/gtwizard_ultrascale_0_vio_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "IES" (Cadence Incisive Enterprise Simulator)... 
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0_vio_0/ies/gtwizard_ultrascale_0_vio_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "VCS" (Synopsys Verilog Compiler Simulator)... INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0_vio_0/vcs/gtwizard_ultrascale_0_vio_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "RIVIERA" (Aldec Riviera-PRO Simulator)... 
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0_vio_0/riviera/gtwizard_ultrascale_0_vio_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "ACTIVEHDL" (Aldec Active-HDL Simulator)... INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0_vio_0/activehdl/gtwizard_ultrascale_0_vio_0.sh' INFO: [exportsim-Tcl-35] Exporting simulation files for "XCELIUM" (Cadence Xcelium Parallel Simulator)... 
+// TclEventType: STOP_PROGRESS_DIALOG
+// Tcl Message: INFO: [exportsim-Tcl-29] Script generated: '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.ip_user_files/sim_scripts/gtwizard_ultrascale_0_vio_0/xcelium/gtwizard_ultrascale_0_vio_0.sh' 
+// Tcl Message: export_ip_user_files: Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 7281.176 ; gain = 32.801 ; free physical = 110903 ; free virtual = 151391 
+// Tcl Message: INFO: [open_example_project] Open Example Project completed 
+dismissDialog("Sourcing Tcl script '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/kcu_gtwiz_quad226.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0_ex.tcl'"); // bB (cr)
+// TclEventType: STOP_PROGRESS_DIALOG
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,818 MB. GUI used memory: 56 MB. Current time: 12/3/21, 12:39:54 PM PST
+// Elapsed time: 92 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v), example_stimulus_inst1 : gtwizard_ultrascale_0_example_stimulus_8b10b (gtwizard_ultrascale_0_example_stimulus_8b10b.v)]", 4, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,838 MB. GUI used memory: 58 MB. Current time: 12/3/21, 12:41:29 PM PST
+// Elapsed time: 21 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 125, 260); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,870 MB. GUI used memory: 59 MB. Current time: 12/3/21, 12:41:54 PM PST
+// Elapsed time: 32 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 294, 372); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'v'); // ch (w, cr)
+// Elapsed time: 66 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 109, 455); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'v'); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 34, 453); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 288, 198); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 62 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 108, 305); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,902 MB. GUI used memory: 59 MB. Current time: 12/3/21, 12:44:54 PM PST
+// Elapsed time: 62 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 121, 329); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'v'); // ch (w, cr)
+// Elapsed time: 59 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 256, 185); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 256, 185, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'c'); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 143, 189); // ch (w, cr)
+// Elapsed time: 23 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 258, 217); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 258, 217, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'c'); // ch (w, cr)
+// Elapsed time: 12 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "prbs_match_int"); // l (aP, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 168, 492); // ch (w, cr)
+// Elapsed time: 37 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 218, 484); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 218, 484, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'c'); // ch (w, cr)
+// Elapsed time: 27 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "drpaddr_int"); // l (aP, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 170, 493); // ch (w, cr)
+// Elapsed time: 158 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 235, 656); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 235, 656, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'c'); // ch (w, cr)
+// Elapsed time: 13 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "rxrate_int"); // l (aP, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 171, 499); // ch (w, cr)
+// Elapsed time: 51 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 276, 535); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 276, 535, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 163, 544); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 315 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 310, 94); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'v'); // ch (w, cr)
+// Elapsed time: 46 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 277, 355); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'v'); // ch (w, cr)
+// Elapsed time: 65 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 141, 370); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 281, 351); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 152, 487); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'v'); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 146, 369); // ch (w, cr)
+// Elapsed time: 23 seconds
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'v'); // ch (w, cr)
+// Elapsed time: 63 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 112, 215); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 83, 315); // ch (w, cr)
+// Elapsed time: 20 seconds
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,936 MB. GUI used memory: 59 MB. Current time: 12/3/21, 1:02:40 PM PST
+// Elapsed time: 24 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 119, 399); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 295, 483); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'v'); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 29, 342); // ch (w, cr)
+// Elapsed time: 104 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 140, 316); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 64, 217); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 67, 165); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// HMemoryUtils.trashcanNow. Engine heap size: 5,961 MB. GUI used memory: 65 MB. Current time: 12/3/21, 1:05:50 PM PST
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "ILA"); // OverlayTextField (ay, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "ILA (Integrated Logic Analyzer) ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:ila:6.2", 3, "ILA (Integrated Logic Analyzer)", 0, true); // L (O, cr) - Node
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "ILA (Integrated Logic Analyzer) ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:ila:6.2", 3, "ILA (Integrated Logic Analyzer)", 0, true, false, false, false, false, true); // L (O, cr) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// l (cr):  Customize IP : addNotify
+// r (cr): Customize IP: addNotify
+dismissDialog("Customize IP"); // l (cr)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Probe_Ports(0..0)", 1); // bh (E, r)
+setText("Probe0 Width", "437"); // D (bi, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: CREATE_IP_CORE
+dismissDialog("Customize IP"); // r (cr)
+// bB (cr):  Customize IP : addNotify
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property -dict [list CONFIG.C_PROBE0_WIDTH {437}] [get_ips ila_0] 
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: generate_target {instantiation_template} [get_files /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/ila_0/ila_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'... 
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 130 MB (+8288kb) [00:27:46]
+// aI (cr): Generate Output Products: addNotify
+dismissDialog("Customize IP"); // bB (cr)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bB (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/ila_0/ila_0.xci] 
+// HMemoryUtils.trashcanNow. Engine heap size: 6,044 MB. GUI used memory: 68 MB. Current time: 12/3/21, 1:06:10 PM PST
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all ila_0] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/ila_0/ila_0.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs -jobs 20 ila_0_synth_1 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Dec  3 13:06:16 2021] Launched ila_0_synth_1... Run output will be captured here: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/ila_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// [Engine Memory]: 6,052 MB (+8222kb) [00:28:07]
+// Elapsed time: 22 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,070 MB. GUI used memory: 68 MB. Current time: 12/3/21, 1:06:35 PM PST
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "clocking"); // OverlayTextField (ay, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 3, "Clocking Wizard", 0, true); // L (O, cr) - Node
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 3); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 3, "Clocking Wizard", 0, true, false, false, false, false, true); // L (O, cr) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// l (cr):  Customize IP : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 6,144 MB. GUI used memory: 68 MB. Current time: 12/3/21, 1:07:05 PM PST
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// r (cr): Customize IP: addNotify
+// Elapsed time: 33 seconds
+dismissDialog("Customize IP"); // l (cr)
+setText("Component Name", "clockManager"); // D (ci, r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 1); // cU (E, r)
+selectCheckBox((HResource) null, "Phase Alignment", true); // g (bM, r): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("PRIM IN FREQ", "300.000"); // D (cV)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 2); // cU (E, r)
+selectCheckBox((HResource) null, "clk_out2", true); // g (bM, r): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("CLKOUT1 REQUESTED OUT FREQ", "40.000"); // D (cV)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("CLKOUT2 REQUESTED OUT FREQ", "80.000"); // D (cV)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 3); // cU (E, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Customize IP"); // r (cr)
+// TclEventType: CREATE_IP_CORE
+// bB (cr):  Customize IP : addNotify
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clockManager 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: generate_target {instantiation_template} [get_files /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/clockManager/clockManager.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clockManager'... 
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 141 MB (+5314kb) [00:29:27]
+// aI (cr): Generate Output Products: addNotify
+dismissDialog("Customize IP"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,218 MB. GUI used memory: 81 MB. Current time: 12/3/21, 1:07:50 PM PST
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bB (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/clockManager/clockManager.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clockManager'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clockManager'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clockManager'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clockManager'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all clockManager] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/clockManager/clockManager.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/clockManager/clockManager.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs -jobs 20 clockManager_synth_1 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Dec  3 13:07:59 2021] Launched clockManager_synth_1... Run output will be captured here: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/clockManager_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 22 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // W
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v)]", 2); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, gtwizard_ultrascale_0_example_top.xdc]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, gtwizard_ultrascale_0_example_top.xdc]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 20 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.xdc", 885, 148); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.xdc", 'v'); // ch (w, cr)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 20 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0.xci' is already up-to-date 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 7776.055 ; gain = 0.000 ; free physical = 110318 ; free virtual = 150870 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1309 ms. Increasing delay to 3927 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 6,247 MB. GUI used memory: 83 MB. Current time: 12/3/21, 1:09:45 PM PST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 6,274 MB. GUI used memory: 92 MB. Current time: 12/3/21, 1:10:35 PM PST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 150 MB (+1205kb) [00:33:32]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 159 MB (+1711kb) [00:34:58]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 1111 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bB (cr):  Open Hardware Manager : addNotify
+// Tcl Message: open_hw_manager 
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,304 MB. GUI used memory: 99 MB. Current time: 12/3/21, 1:28:15 PM PST
+// Elapsed time: 244 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M (aI, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 371, 115); // ch (w, cr)
+// Elapsed time: 17 seconds
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'c'); // ch (w, cr)
+// Elapsed time: 143 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 339, 378); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 234, 452); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 234, 452, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'c'); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 143, 229); // ch (w, cr)
+// Elapsed time: 106 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 377, 258); // ch (w, cr)
+// Elapsed time: 55 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 138, 259); // ch (w, cr)
+// Elapsed time: 80 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 77, 144); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M (aI, cr)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aH, cr)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// bB (cr):  Close Hardware Manager : addNotify
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bB (cr)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ila_0]", 5, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ila_0, Change Log]", 9, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cr): Re-customize IP: addNotify
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Probe_Ports(0..0)", 1); // bh (E, r)
+setText("Probe0 Width", "440"); // D (bi, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property -dict [list CONFIG.C_PROBE0_WIDTH {440}] [get_ips ila_0] 
+// r (cr): Re-customize IP: addNotify
+// bB (r):  Re-customize IP : addNotify
+// TclEventType: FILESET_UPDATE_IP
+// [GUI Memory]: 170 MB (+3321kb) [01:01:44]
+// aI (cr): Generate Output Products: addNotify
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Re-customize IP"); // bB (r)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bB (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/ila_0/ila_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'... 
+// HMemoryUtils.trashcanNow. Engine heap size: 6,324 MB. GUI used memory: 106 MB. Current time: 12/3/21, 1:40:10 PM PST
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 8007.715 ; gain = 0.000 ; free physical = 112902 ; free virtual = 153517 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all ila_0] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run ila_0_synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs -jobs 20 ila_0_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Dec  3 13:40:19 2021] Launched ila_0_synth_1... Run output will be captured here: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/ila_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 32 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,350 MB. GUI used memory: 104 MB. Current time: 12/3/21, 1:40:45 PM PST
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Resetting Runs"); // bB (cr)
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 20 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0.xci' is already up-to-date 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Dec  3 13:41:15 2021] Launched ila_0_synth_1, synth_1... Run output will be captured here: ila_0_synth_1: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/ila_0_synth_1/runme.log synth_1: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/synth_1/runme.log [Fri Dec  3 13:41:15 2021] Launched impl_1... Run output will be captured here: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gtwizard_ultrascale_0_example_top.v", 1); // i (h, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 381, 68); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'c'); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 299, 134); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 291, 439); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'c'); // ch (w, cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 159 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 309, 315); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 300, 317); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'c'); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 127, 264); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 292, 316); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'c'); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 42, 253); // ch (w, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 86 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 219, 404); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 219, 404, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'c'); // ch (w, cr)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 402 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 327, 261); // ch (w, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 432 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bB (cr):  Open Hardware Manager : addNotify
+// Tcl Message: open_hw_manager 
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bB (cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 279, 388); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 299, 383); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 299, 383); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 299, 383, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 166, 42); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 341, 394); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bB (cr):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.2   **** Build date : Nov  6 2019 at 22:13:42     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output: [?1034h  ****** Xilinx cs_server v2019.2.0   **** Build date : Nov 06 2019-21:41:48     ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  1935 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308AB0E6E 
+// TclEventType: HW_DEVICE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 7,405 MB. GUI used memory: 109 MB. Current time: 12/3/21, 2:01:20 PM PST
+// Tcl Message: set_property PROGRAM.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.bit} [get_hw_devices xcku040_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.ltx} [get_hw_devices xcku040_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.ltx} [get_hw_devices xcku040_0] 
+// Tcl Message: current_hw_device [get_hw_devices xcku040_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 7,428 MB (+1125038kb) [01:23:00]
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xcku040_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 IBERT core(s). 
+dismissDialog("Auto Connect"); // bB (cr)
+// TclEventType: HW_SIO_GT_COMMON_CHANGE
+// TclEventType: HW_SIO_GT_CHANGE
+// TclEventType: HW_SIO_GT_COMMON_CHANGE
+// TclEventType: HW_SIO_GT_CHANGE
+// TclEventType: HW_SIO_GT_COMMON_CHANGE
+// TclEventType: HW_SIO_GT_CHANGE
+// TclEventType: HW_SIO_GT_COMMON_CHANGE
+// TclEventType: HW_SIO_GT_CHANGE
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xcku040_0 (2) ; Programmed", 2, "xcku040_0 (2)", 0, true, false, false, false, true, false); // t (O, cr) - Popup Trigger - Node
+// TclEventType: HW_SIO_GT_COMMON_CHANGE
+// TclEventType: HW_SIO_GT_CHANGE
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+// TclEventType: HW_SIO_GT_COMMON_CHANGE
+// TclEventType: HW_SIO_GT_CHANGE
+// TclEventType: HW_SIO_GT_COMMON_CHANGE
+// TclEventType: HW_SIO_GT_CHANGE
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_SIO_GT_COMMON_CHANGE
+// TclEventType: HW_SIO_GT_CHANGE
+// Tcl Message: set_property PROBES.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.ltx} [get_hw_devices xcku040_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.ltx} [get_hw_devices xcku040_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.bit} [get_hw_devices xcku040_0] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: program_hw_devices [get_hw_devices xcku040_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 9095.656 ; gain = 0.000 ; free physical = 113474 ; free virtual = 154121 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  2463 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xcku040_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 IBERT core(s). INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 ILA core(s). INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s). 
+// HMemoryUtils.trashcanNow. Engine heap size: 7,490 MB. GUI used memory: 124 MB. Current time: 12/3/21, 2:01:42 PM PST
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: INFO: [Labtools 27-1889] Uploading output probe values for VIO core [hw_vio_1] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// 'I' command handler elapsed time: 17 seconds
+// Elapsed time: 15 seconds
+dismissDialog("Program Device"); // bB (cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M (aI, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 7,523 MB. GUI used memory: 126 MB. Current time: 12/3/21, 2:01:46 PM PST
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M (aI, cr)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "pwd", true); // aF (ac, cr)
+// Tcl Command: 'pwd'
+// Tcl Command: 'pwd'
+// Tcl Message: pwd 
+// Tcl Message: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex 
+// [GUI Memory]: 185 MB (+7134kb) [01:23:35]
+// Tcl Command: 'rdi::info_commands {so*}'
+// Tcl Command: 'rdi::info_commands {sour*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "source group_ports.tcl", true); // aF (ac, cr)
+// Tcl Command: 'source group_ports.tcl'
+// Tcl Command: 'source group_ports.tcl'
+// bB (cr):  Tcl Command Line : addNotify
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: source group_ports.tcl 
+// Tcl Message: # create_hw_probe -map {probe0[31:0]}   receiver_0[31:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: # create_hw_probe -map {probe0[63:32]}  receiver_1[31:0] [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[95:64]}   transmitter_0[31:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: # create_hw_probe -map {probe0[127:96]}  transmitter_1[31:0] [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[129:128]}  prbs_match_int[1:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: # create_hw_probe -map {probe0[130]}  hb0_gtwiz_userclk_rx_usrclk2_int [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[131]}  hb0_gtwiz_userclk_rx_active_int [get_hw_ilas hw_ila_1] 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: # create_hw_probe -map {probe0[132]}  hb_gtwiz_reset_all_int [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[133]}  hb0_gtwiz_reset_rx_done_int [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: # create_hw_probe -map {probe0[134]}  hb0_gtwiz_userclk_tx_usrclk2_int [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[135]}  hb0_gtwiz_userclk_tx_active_int [get_hw_ilas hw_ila_1]   
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: # create_hw_probe -map {probe0[136]} gtwiz_userclk_tx_reset_int [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[137]} gtwiz_userclk_tx_usrclk_int [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: # create_hw_probe -map {probe0[138]} gtwiz_userclk_tx_usrclk2_int [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: # create_hw_probe -map {probe0[139]} gtwiz_userclk_tx_active_int [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[140]} gtwiz_userclk_rx_reset_int [get_hw_ilas hw_ila_1] 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: # create_hw_probe -map {probe0[141]} gtwiz_userclk_rx_usrclk_int [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[142]} gtwiz_userclk_rx_usrclk2_int [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: # create_hw_probe -map {probe0[143]} gtwiz_userclk_rx_active_int [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[161:144]} drpaddr_int[17:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: # create_hw_probe -map {probe0[163:162]} drpclk_int[1:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: # create_hw_probe -map {probe0[165:164]} drpdi_int[1:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: # create_hw_probe -map {probe0[167:166]} drpen_int[1:0] [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[169:168]} drpwe_int[1:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: # create_hw_probe -map {probe0[171:170]} eyescanreset_int[1:0] [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[173:172]} rx8b10ben_int[1:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: # create_hw_probe -map {probe0[175:174]} rxcommadeten_int[1:0] [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[177:176]} rxlpmen_int[1:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: # create_hw_probe -map {probe0[179:178]} rxmcommaalignen_int[1:0] [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[181:180]} rxpcommaalignen_int[1:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: # create_hw_probe -map {probe0[187:182]} rxrate_int[11:0] [get_hw_ilas hw_ila_1] 
+// Tcl Message: ERROR: [Labtoolstcl 44-554] Bit width implied by 'name' option is '12' which is different from bit width '6' implied by '-map' option. Both bit width values must be the same. 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Elapsed time: 14 seconds
+dismissDialog("Tcl Command Line"); // bB (cr)
+// Elapsed time: 34 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "source group_ports.tcl", true); // aF (ac, cr)
+// Tcl Command: 'source group_ports.tcl'
+// Tcl Command: 'source group_ports.tcl'
+// bB (cr):  Tcl Command Line : addNotify
+// Tcl Message: source group_ports.tcl 
+// Tcl Message: # create_hw_probe -map {probe0[31:0]}   receiver_0[31:0] [get_hw_ilas hw_ila_1] 
+// Tcl Message: ERROR: [Labtoolstcl 44-535] Probe name 'receiver_0' already exists for device 'xcku040_0'. 
+dismissDialog("Tcl Command Line"); // bB (cr)
+// Elapsed time: 11 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "source group_ports.tcl", true); // aF (ac, cr)
+// Tcl Command: 'source group_ports.tcl'
+// Tcl Command: 'source group_ports.tcl'
+// bB (cr):  Tcl Command Line : addNotify
+// Tcl Message: source group_ports.tcl 
+// Tcl Message: # create_hw_probe -map {probe0[31:0]}   receiver_0[31:0] [get_hw_ilas hw_ila_1] 
+// Tcl Message: ERROR: [Labtoolstcl 44-535] Probe name 'receiver_0' already exists for device 'xcku040_0'. 
+dismissDialog("Tcl Command Line"); // bB (cr)
+// Tcl Command: 'rdi::info_commands {pwd*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "pwd", true); // aF (ac, cr)
+// Tcl Command: 'pwd'
+// Tcl Command: 'pwd'
+// Tcl Message: pwd 
+// Tcl Message: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex 
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// bB (cr):  Close Hardware Manager : addNotify
+// Tcl Message: save_wave_config {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg} 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: HW_OBJECT_DELETE
+// Tcl Message: close_hw_manager 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_vios"); // i
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_SESSION_CLOSE
+dismissDialog("Close Hardware Manager"); // bB (cr)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "pwd", true); // aF (ac, cr)
+// Tcl Command: 'pwd'
+// Tcl Command: 'pwd'
+// Tcl Message: pwd 
+// Tcl Message: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "source group_ports.tcl", true); // aF (ac, cr)
+// Tcl Command: 'source group_ports.tcl'
+// Tcl Command: 'source group_ports.tcl'
+// bB (cr):  Tcl Command Line : addNotify
+// Tcl Message: source group_ports.tcl 
+// Tcl Message: # create_hw_probe -map {probe0[187:182]} rxrate_int[6:0] [get_hw_ilas hw_ila_1] 
+// Tcl Message: ERROR: [Labtoolstcl 44-691] No valid hw_ila option for command create_hw_probe. 
+dismissDialog("Tcl Command Line"); // bB (cr)
+// Elapsed time: 30 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aF (ac, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // aa (q, cr)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "delete_hw_probe [get_hw_probe rxrate_int]", true); // aF (ac, cr)
+// Tcl Command: 'delete_hw_probe [get_hw_probe rxrate_int]'
+// Tcl Command: 'delete_hw_probe [get_hw_probe rxrate_int]'
+// Tcl Message: delete_hw_probe [get_hw_probe rxrate_int] 
+// Tcl Message: ERROR: [Labtoolstcl 44-536] Required <hw_probes> argument is empty. 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "source group_ports.tcl", true); // aF (ac, cr)
+// Tcl Command: 'source group_ports.tcl'
+// Tcl Command: 'source group_ports.tcl'
+// bB (cr):  Tcl Command Line : addNotify
+// Tcl Message: source group_ports.tcl 
+// Tcl Message: # create_hw_probe -map {probe0[187:182]} rxrate_int[6:0] [get_hw_ilas hw_ila_1] 
+// Tcl Message: ERROR: [Labtoolstcl 44-691] No valid hw_ila option for command create_hw_probe. 
+dismissDialog("Tcl Command Line"); // bB (cr)
+// Elapsed time: 16 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "source group_ports.tcl", true); // aF (ac, cr)
+// Tcl Command: 'source group_ports.tcl'
+// Tcl Command: 'source group_ports.tcl'
+// bB (cr):  Tcl Command Line : addNotify
+// Tcl Message: source group_ports.tcl 
+// Tcl Message: # create_hw_probe -map {probe0[187:182]} rxrate_int[6:0] [get_hw_ilas hw_ila_1] 
+// Tcl Message: ERROR: [Labtoolstcl 44-691] No valid hw_ila option for command create_hw_probe. 
+dismissDialog("Tcl Command Line"); // bB (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_PROJECT, "Close Project"); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (cr): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+dismissDialog("Close Project"); // A (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 7,245 MB. GUI used memory: 89 MB. Current time: 12/3/21, 2:04:45 PM PST
+// Tcl Message: close_project 
+// Tcl Message: ****** Webtalk v2019.2 (64-bit)   **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019   **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.  source /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.hw/webtalk/labtool_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Fri Dec  3 14:04:47 2021... 
+// 'b' command handler elapsed time: 4 seconds
+dismissDialog("Close Project"); // bB (cr)
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // y (x, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.xpr");
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.xpr. Version: Vivado v2019.2 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1232 ms.
+// Tcl Message: open_project /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'. 
+// Project name: gtwizard_ultrascale_0_ex; location: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex; part: xcku040-ffva1156-2-e
+// 'i' command handler elapsed time: 8 seconds
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bB (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw_manager 
+dismissDialog("Open Hardware Manager"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (ds, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bB (cr):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.2   **** Build date : Nov  6 2019 at 22:13:42     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output: [?1034h  ****** Xilinx cs_server v2019.2.0   **** Build date : Nov 06 2019-21:41:48     ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308AB0E6E 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.bit} [get_hw_devices xcku040_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.ltx} [get_hw_devices xcku040_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.ltx} [get_hw_devices xcku040_0] 
+// Tcl Message: current_hw_device [get_hw_devices xcku040_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  1836 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xcku040_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 IBERT core(s). INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 ILA core(s). INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+dismissDialog("Auto Connect"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 7,312 MB. GUI used memory: 115 MB. Current time: 12/3/21, 2:05:13 PM PST
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xcku040_0 (4) ; Programmed", 2, "xcku040_0 (4)", 0, true, false, false, false, true, false); // t (O, cr) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.ltx} [get_hw_devices xcku040_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.ltx} [get_hw_devices xcku040_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.bit} [get_hw_devices xcku040_0] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: program_hw_devices [get_hw_devices xcku040_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 9301.457 ; gain = 0.000 ; free physical = 113407 ; free virtual = 154054 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xcku040_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 IBERT core(s). INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 ILA core(s). INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s). 
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// 'I' command handler elapsed time: 12 seconds
+// Elapsed time: 11 seconds
+dismissDialog("Program Device"); // bB (cr)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL (aI, cr)
+// Tcl Command: 'rdi::info_commands {pwd*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "pwd", true); // aF (ac, cr)
+// Tcl Command: 'pwd'
+// Tcl Command: 'pwd'
+// Tcl Message: pwd 
+// Tcl Message: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex 
+// Tcl Command: 'rdi::info_commands {so*}'
+// Tcl Command: 'rdi::info_commands {sour*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "source group_ports.tcl", true); // aF (ac, cr)
+// Tcl Command: 'source group_ports.tcl'
+// Tcl Command: 'source group_ports.tcl'
+// bB (cr):  Tcl Command Line : addNotify
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: source group_ports.tcl 
+// Tcl Message: # create_hw_probe -map {probe0[189:188]} tx8b10ben_int[1:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: # create_hw_probe -map {probe0[197:190]} txdiffctrl_int[7:0] [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[207:198]} txpostcursor_int[9:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: # create_hw_probe -map {probe0[217:208]} txprecursor_int[9:0] [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[249:218]} drpdo_int[31:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: # create_hw_probe -map {probe0[251:250]} drprdy_int[1:0] [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[253:252]} gtpowergood_int[1:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: # create_hw_probe -map {probe0[255:254]} rxbyteisaligned_int[1:0] [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[257:256]} rxbyterealign_int[1:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: # create_hw_probe -map {probe0[259:258]} rxcommadet_int[1:0] [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[261:260]} rxpmaresetdone_int[1:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: # create_hw_probe -map {probe0[263:262]} txpmaresetdone_int[1:0] [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[279:264]}  ch0_rxctrl0_int[15:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: # create_hw_probe -map {probe0[295:280]}  ch1_rxctrl0_int[15:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: # create_hw_probe -map {probe0[311:296]}  ch0_rxctrl1_int[15:0] [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[327:312]}  ch1_rxctrl1_int[15:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: # create_hw_probe -map {probe0[335:328]}  ch0_rxctrl2_int[7:0] [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[343:336]}  ch1_rxctrl2_int[7:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: # create_hw_probe -map {probe0[351:344]}  ch0_rxctrl3_int[7:0] [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[359:352]}  ch1_rxctrl3_int[7:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: # create_hw_probe -map {probe0[375:360]}  ch0_txctrl0_int[15:0] [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[391:376]}  ch1_txctrl0_int[15:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: # create_hw_probe -map {probe0[407:392]}  ch0_txctrl1_int[15:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: # create_hw_probe -map {probe0[423:408]}  ch1_txctrl1_int[15:0] [get_hw_ilas hw_ila_1] # create_hw_probe -map {probe0[431:424]}  ch0_txctrl2_int[7:0] [get_hw_ilas hw_ila_1] 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: # create_hw_probe -map {probe0[439:432]}  ch1_txctrl2_int[7:0] [get_hw_ilas hw_ila_1] 
+// Tcl Message: ch1_txctrl2_int 
+// Elapsed time: 12 seconds
+dismissDialog("Tcl Command Line"); // bB (cr)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+maximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // aa (ar, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,307 MB. GUI used memory: 115 MB. Current time: 12/3/21, 2:05:58 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M (aI, cr)
+selectButton(RDIResource.WaveformView_ADD, "Waveform Viewer_new"); // E (f, cr)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, gtwiz_userclk_rx_active_int]", 23, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_gtwiz_reset_rx_done_int]", 31, false); // N (O, ResizableWindow)
+selectButton(PAResourceAtoD.AddIlaProbesPopup_OK, "OK"); // a (E, ResizableWindow)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// Tcl Message: add_wave -into {hw_ila_data_1.wcfg} -radix hex { {hb0_gtwiz_reset_rx_done_int} {hb0_gtwiz_userclk_rx_active_int} {hb0_gtwiz_userclk_rx_usrclk2_int} {hb0_gtwiz_userclk_tx_active_int} {hb0_gtwiz_userclk_tx_usrclk2_int} {hb_gtwiz_reset_all_int} {ila_data} {prbs_match_int} {receiver_0} {receiver_1} {rx8b10ben_int} {rxbyteisaligned_int} {rxbyterealign_int} {rxcommadet_int} {rxcommadeten_int} {rxlpmen_int} {rxmcommaalignen_int} {rxpcommaalignen_int} {rxpmaresetdone_int} {transmitter_0} {transmitter_1} {tx8b10ben_int} {txdiffctrl_int} {txpmaresetdone_int} {txpostcursor_int} {txprecursor_int} } 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, transmitter_0[31:0]]", 20, true); // a (r, cr) - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, transmitter_0[31:0]]", 20, true); // a (r, cr) - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2021-Dec-03 14:06:28 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2021-Dec-03 14:06:28 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 7,307 MB. GUI used memory: 126 MB. Current time: 12/3/21, 2:06:29 PM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 7,301 MB. GUI used memory: 117 MB. Current time: 12/3/21, 2:06:32 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 7,301 MB. GUI used memory: 116 MB. Current time: 12/3/21, 2:06:33 PM PST
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 331, 276); // n (o, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, ila_data[439:0]]", 7, true, false, false, false, true, false); // a (r, cr) - Popup Trigger - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenuItem((HResource) null, "Delete"); // ai (ao, cr)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 7,301 MB. GUI used memory: 116 MB. Current time: 12/3/21, 2:06:44 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, ila_data[439:0]]", 0, true, false, false, false, true, false); // a (r, cr) - Popup Trigger - Node
+selectMenuItem((HResource) null, "Delete"); // ai (ao, cr)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 537 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 331, 276); // n (o, cr)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 331, 276); // n (o, cr)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 331, 276); // n (o, cr)Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// bB (cr):  Close Hardware Manager : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1093 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 7,301 MB. GUI used memory: 118 MB. Current time: 12/3/21, 2:15:45 PM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: save_wave_config {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg} 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// Tcl Message: close_hw_manager 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_vios"); // i
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_SESSION_CLOSE
+dismissDialog("Close Hardware Manager"); // bB (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_PROJECT, "Close Project"); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (cr): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+dismissDialog("Close Project"); // A (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 7,268 MB. GUI used memory: 93 MB. Current time: 12/3/21, 2:15:56 PM PST
+// Tcl Message: close_project 
+// 'b' command handler elapsed time: 4 seconds
+dismissDialog("Close Project"); // bB (cr)
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // y (x, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// Elapsed time: 74 seconds
+setFileChooser("/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/odmb7_gtwiz_quad227.xpr");
+// Opening Vivado Project: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/odmb7_gtwiz_quad227.xpr. Version: Vivado v2019.2 
+// bB (cr):  Open Project : addNotify
+// Tcl Message: open_project /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/odmb7_gtwiz_quad227.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/odmb7_gtwiz_quad227.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'. 
+// Project name: odmb7_gtwiz_quad227; location: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227; part: xcku035-ffva1156-1-c
+// 'i' command handler elapsed time: 77 seconds
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0 (gtwizard_ultrascale_0.xci)]", 1, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0 (gtwizard_ultrascale_0.xci)]", 1, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (cr):  Re-customize IP : addNotify
+// Tcl Message: INFO: [Device 21-403] Loading part xcku035-ffva1156-1-c 
+// HMemoryUtils.trashcanNow. Engine heap size: 7,589 MB. GUI used memory: 93 MB. Current time: 12/3/21, 2:17:35 PM PST
+// r (cr): Re-customize IP: addNotify
+// Elapsed time: 15 seconds
+dismissDialog("Re-customize IP"); // O (cr)
+// Elapsed time: 169 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Physical Resources", 1); // bh (E, r)
+expandTreeTable(PAResourceEtoH.GTWizardUltrascaleConfigChannels_GEN_SETTING_TREE_TABLE, "Quad X0Y3 in SLR 0 (4/4 channels used) ; Quad X0Y3 in SLR 0 (4/4 channels used) ; Quad X0Y3 in SLR 0 (4/4 channels used) ; Quad X0Y3 in SLR 0 (4/4 channels used) ; Quad X0Y3 in SLR 0 (4/4 channels used) ; Quad X0Y3 in SLR 0 (4/4 channels used)", 1); // J (O, r)
+// Elapsed time: 36 seconds
+selectTreeTable(PAResourceEtoH.GTWizardUltrascaleConfigChannels_GEN_SETTING_TREE_TABLE, "GTHE3_CHANNEL_X0Y15 ; ui.utils.p.c.g[,-74,-21,0x0,invalid,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.synth.SynthBorder@6530b577,flags=288,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=0,left=0,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=] ; ui.utils.p.e.e[,275,44,209x21,layout=ui.utils.lnf.HSyntheticaComboBoxUI$HSyntheticaComboBoxLayoutManager,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.synth.SynthBorder@5946a013,flags=16777536,maximumSize=,minimumSize=,preferredSize=,isEditable=false,lightWeightPopupEnabled=true,maximumRowCount=10,selectedItemReminder=MGTREFCLK0 of Quad X0Y2 (-1)] ; ui.utils.p.e.e[,-209,-21,0x0,invalid,layout=ui.utils.lnf.HSyntheticaComboBoxUI$HSyntheticaComboBoxLayoutManager,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.synth.SynthBorder@6f0405dd,flags=16777536,maximumSize=,minimumSize=,preferredSize=,isEditable=false,lightWeightPopupEnabled=true,maximumRowCount=10,selectedItemReminder=MGTREFCLK0 of Quad X0Y2 (-1)] ; ui.utils.p.e.e[,-149,-21,0x0,invalid,layout=ui.utils.lnf.HSyntheticaComboBoxUI$HSyntheticaComboBoxLayoutManager,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.synth.SynthBorder@31af3f68,flags=16777536,maximumSize=,minimumSize=,preferredSize=,isEditable=false,lightWeightPopupEnabled=true,maximumRowCount=10,selectedItemReminder=No] ; Bank: 227; Data pins :F1, F2, G3, G4", 2, "ui.utils.p.e.e[,275,44,209x21,layout=ui.utils.lnf.HSyntheticaComboBoxUI$HSyntheticaComboBoxLayoutManager,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.synth.SynthBorder@5946a013,flags=16777536,maximumSize=,minimumSize=,preferredSize=,isEditable=false,lightWeightPopupEnabled=true,maximumRowCount=10,selectedItemReminder=MGTREFCLK0 of Quad X0Y2 (-1)]", 2, false); // J (O, r)
+// Elapsed time: 106 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Optional Features", 2); // bh (E, r)
+setText("Value", "10111100"); // D (bi, r)
+// Elapsed time: 14 seconds
+setText("Value", "01100000"); // D (bi, r)
+// Elapsed time: 43 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Structural Options", 3); // bh (E, r)
+// Elapsed time: 447 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_PROJECT, "Close Project"); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (cr): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+dismissDialog("Close Project"); // A (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 7,573 MB. GUI used memory: 98 MB. Current time: 12/3/21, 2:31:31 PM PST
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bB (cr)
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // y (x, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+dismissFileChooser();
+// 'i' command handler elapsed time: 3 seconds
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // y (x, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// Elapsed time: 80 seconds
+setFileChooser("/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/4channels_cntr1_CB_clk160/gtwizard_ultrascale_0_ex.xpr");
+// Opening Vivado Project: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/4channels_cntr1_CB_clk160/gtwizard_ultrascale_0_ex.xpr. Version: Vivado v2019.2 
+// bB (cr):  Open Project : addNotify
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/4channels_cntr1_CB_clk160/gtwizard_ultrascale_0_ex.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// Tcl Message: open_project /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/4channels_cntr1_CB_clk160/gtwizard_ultrascale_0_ex.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'. 
+// Project name: gtwizard_ultrascale_0_ex; location: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_gtwiz_quad227/4channels_cntr1_CB_clk160; part: xcku035-ffva1156-1-c
+// 'i' command handler elapsed time: 84 seconds
+dismissDialog("Open Project"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v), example_stimulus_inst0 : gtwizard_ultrascale_0_example_stimulus_8b10b (gtwizard_ultrascale_0_example_stimulus_8b10b.v)]", 4, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 150, 299); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'c'); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 289, 483); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 292, 320); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'c'); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 193, 465); // ch (w, cr)
+// Elapsed time: 41 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 559, 106); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'c'); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 397, 195); // ch (w, cr)
+// Elapsed time: 115 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 148, 195); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'c'); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 123, 224); // ch (w, cr)
+// Elapsed time: 39 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // af (cr)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_FILE, "Open File..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_FILE
+// Elapsed time: 21 seconds
+setFileChooser("/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/2channels_cntr1_CB/imports/gtwizard_ultrascale_0_example_wrapper.v");
+// 'f' command handler elapsed time: 21 seconds
+// Elapsed time: 14 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // af (cr)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_FILE, "Open File..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_FILE
+setFileChooser("/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad226/2channels_cntr1_CB/imports/gtwizard_ultrascale_0_example_top.v");
+// 'f' command handler elapsed time: 3 seconds
+// Elapsed time: 16 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v (2)", 132, 134); // ch (w, cr)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v (2)", 'c'); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v (2)", 304, 252); // ch (w, cr)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 202 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, gtwizard_ultrascale_0]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, gtwizard_ultrascale_0, Instantiation Template]", 3, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 7,615 MB. GUI used memory: 130 MB. Current time: 12/3/21, 2:42:20 PM PST
+dismissDialog("Re-customize IP"); // O (cr)
+// Elapsed time: 27 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, gtwizard_ultrascale_0]", 2); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clockManager]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clockManager]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (cr):  Re-customize IP : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 7,671 MB. GUI used memory: 124 MB. Current time: 12/3/21, 2:43:00 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 7,706 MB. GUI used memory: 124 MB. Current time: 12/3/21, 2:43:25 PM PST
+// r (cr): Re-customize IP: addNotify
+// Elapsed time: 34 seconds
+dismissDialog("Re-customize IP"); // O (cr)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cr)
+// Elapsed time: 1015 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)

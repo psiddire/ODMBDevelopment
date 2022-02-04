@@ -1,0 +1,2104 @@
+# Copyright (C) 1994-2019, Concept Engineering GmbH.
+# All Rights Reserved.  Cmd=logfile.
+# Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 TLS
+# License cookie [G|T|S|B|*] for HR="Xilinx Inc."
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+property attrfontsize 8
+property fillcolor1
+#R #441133
+property fillcolor5
+#R #651b4d
+property -colorscheme lightblue
+property shadowstyle 1
+property gatecellname 2
+property showpinname 2
+property boxminwidth 50
+property boxminheight 40
+#CMD bind stroke-1 -action {}
+#CMD bind stroke-nw-1 -action callback -echo_type line -echo_text {Zoom fit}
+#CMD bind stroke-nw-1 -action zoom_fit -echo_type line -echo_text {Zoom fit}
+#CMD bind stroke-ne-1 -action zoom_out -echo_type line -echo_text {Zoom -%z}
+#CMD bind stroke-se-1 -action zoom_in -echo_type rectangle -autoscroll -echo_text {Zoom area}
+#CMD bind stroke-sw-1 -action zoom_in2 -echo_type line -echo_text {Zoom +%z}
+module new gtmodule
+#  * Current module is gtmodule 
+load symbol QUAD_X0 v HIERBOX port a0 in port a1 in port a2 in port a3 in port QPLL0 in port QPLL1 in port RECCLK_clk0 out port RECCLK_clk1 out
+load symbol QUAD_X1 v HIERBOX port a0 out port a1 out port a2 out port a3 out port QPLL0 out port QPLL1 out port RECCLK_clk0 in port RECCLK_clk1 in
+load symbol CPLL_X0 syn BOX port A in port B out text CPLL -cc 25 0 12
+load symbol CPLL_X1 syn BOX port A out port B in text CPLL -cc 25 0 12
+load symbol QPLL0_X0 syn BOX port A in port B out text QPLL0 -cc 25 0 12
+load symbol QPLL0_X1 syn BOX port A out port B in text QPLL0 -cc 25 0 12
+load symbol QPLL1_X0 syn BOX port A in port B out text QPLL1 -cc 25 0 12
+load symbol QPLL1_X1 syn BOX port A out port B in text QPLL1 -cc 25 0 12
+load inst QuadX0Y4 QUAD_X0 v -pg 1 -y 1 -x 2000 -autohide -attr @cell QuadX0Y4 -attr @name {} -attr @fillcolor #d9d9d9
+attribute {pin QuadX0Y4 QPLL0 } -attr @name {}
+attribute {hierPin QuadX0Y4 QPLL0 } -attr @name {}
+attribute {pin QuadX0Y4 QPLL1 } -attr @name {}
+attribute {hierPin QuadX0Y4 QPLL1 } -attr @name {}
+attribute {pin QuadX0Y4 a0 } -attr @name {}
+attribute {hierPin QuadX0Y4 a0 } -attr @name {}
+attribute {pin QuadX0Y4 a1 } -attr @name {}
+attribute {hierPin QuadX0Y4 a1 } -attr @name {}
+attribute {pin QuadX0Y4 a2 } -attr @name {}
+attribute {hierPin QuadX0Y4 a2 } -attr @name {}
+attribute {pin QuadX0Y4 a3 } -attr @name {}
+attribute {hierPin QuadX0Y4 a3 } -attr @name {}
+attribute {pin QuadX0Y4 RECCLK_clk0 } -attr @name {}
+attribute {hierPin QuadX0Y4 RECCLK_clk0 } -attr @name {}
+attribute {pin QuadX0Y4 RECCLK_clk1 } -attr @name {}
+attribute {hierPin QuadX0Y4 RECCLK_clk1 } -attr @name {}
+load inst cpll.X0Y19 CPLL_X0 syn -hier QuadX0Y4 -pg 1 -y 2 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y19 A} -attr @name {}
+attribute {pin cpll.X0Y19 B} -attr @name {}
+attribute {inst cpll.X0Y19} -attr @fillcolor #00868b
+load symbol X0Y19 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y19 X0Y19 syn -hier QuadX0Y4 -pg 1 -y 2 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y19} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y18 CPLL_X0 syn -hier QuadX0Y4 -pg 1 -y 87 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y18 A} -attr @name {}
+attribute {pin cpll.X0Y18 B} -attr @name {}
+attribute {inst cpll.X0Y18} -attr @fillcolor #00868b
+load symbol X0Y18 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y18 X0Y18 syn -hier QuadX0Y4 -pg 1 -y 87 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y18} -attr @fillcolor #7a7a7a
+load inst QPLL0.QuadX0Y4 QPLL0_X0 syn -hier QuadX0Y4 -pg 1 -y 172 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL0.QuadX0Y4 A} -attr @name {}
+attribute {pin QPLL0.QuadX0Y4 B} -attr @name {}
+attribute {inst QPLL0.QuadX0Y4} -attr @fillcolor #00868b
+load inst QPLL1.QuadX0Y4 QPLL1_X0 syn -hier QuadX0Y4 -pg 1 -y 257 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL1.QuadX0Y4 A} -attr @name {}
+attribute {pin QPLL1.QuadX0Y4 B} -attr @name {}
+attribute {inst QPLL1.QuadX0Y4} -attr @fillcolor #00868b
+load inst cpll.X0Y17 CPLL_X0 syn -hier QuadX0Y4 -pg 1 -y 342 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y17 A} -attr @name {}
+attribute {pin cpll.X0Y17 B} -attr @name {}
+attribute {inst cpll.X0Y17} -attr @fillcolor #00868b
+load symbol X0Y17 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y17 X0Y17 syn -hier QuadX0Y4 -pg 1 -y 342 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y17} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y16 CPLL_X0 syn -hier QuadX0Y4 -pg 1 -y 427 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y16 A} -attr @name {}
+attribute {pin cpll.X0Y16 B} -attr @name {}
+attribute {inst cpll.X0Y16} -attr @fillcolor #00868b
+load symbol X0Y16 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y16 X0Y16 syn -hier QuadX0Y4 -pg 1 -y 427 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y16} -attr @fillcolor #7a7a7a
+load port QuadX0Y4_clk0 in -pg 1 -y 141 -x 1 -attr @fillcolor #3a5fcd
+load port QuadX0Y4_clk1 in -pg 1 -y 311 -x 1 -attr @fillcolor #3a5fcd
+load inst QuadX0Y3 QUAD_X0 v -pg 1 -y 563 -x 2000 -autohide -attr @cell QuadX0Y3 -attr @name {} -attr @fillcolor #d9d9d9
+attribute {pin QuadX0Y3 QPLL0 } -attr @name {}
+attribute {hierPin QuadX0Y3 QPLL0 } -attr @name {}
+attribute {pin QuadX0Y3 QPLL1 } -attr @name {}
+attribute {hierPin QuadX0Y3 QPLL1 } -attr @name {}
+attribute {pin QuadX0Y3 a0 } -attr @name {}
+attribute {hierPin QuadX0Y3 a0 } -attr @name {}
+attribute {pin QuadX0Y3 a1 } -attr @name {}
+attribute {hierPin QuadX0Y3 a1 } -attr @name {}
+attribute {pin QuadX0Y3 a2 } -attr @name {}
+attribute {hierPin QuadX0Y3 a2 } -attr @name {}
+attribute {pin QuadX0Y3 a3 } -attr @name {}
+attribute {hierPin QuadX0Y3 a3 } -attr @name {}
+attribute {pin QuadX0Y3 RECCLK_clk0 } -attr @name {}
+attribute {hierPin QuadX0Y3 RECCLK_clk0 } -attr @name {}
+attribute {pin QuadX0Y3 RECCLK_clk1 } -attr @name {}
+attribute {hierPin QuadX0Y3 RECCLK_clk1 } -attr @name {}
+load inst cpll.X0Y15 CPLL_X0 syn -hier QuadX0Y3 -pg 1 -y 564 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y15 A} -attr @name {}
+attribute {pin cpll.X0Y15 B} -attr @name {}
+attribute {inst cpll.X0Y15} -attr @fillcolor #00868b
+load symbol X0Y15 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y15 X0Y15 syn -hier QuadX0Y3 -pg 1 -y 564 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y15} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y14 CPLL_X0 syn -hier QuadX0Y3 -pg 1 -y 649 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y14 A} -attr @name {}
+attribute {pin cpll.X0Y14 B} -attr @name {}
+attribute {inst cpll.X0Y14} -attr @fillcolor #00868b
+load symbol X0Y14 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y14 X0Y14 syn -hier QuadX0Y3 -pg 1 -y 649 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y14} -attr @fillcolor #7a7a7a
+load inst QPLL0.QuadX0Y3 QPLL0_X0 syn -hier QuadX0Y3 -pg 1 -y 734 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL0.QuadX0Y3 A} -attr @name {}
+attribute {pin QPLL0.QuadX0Y3 B} -attr @name {}
+attribute {inst QPLL0.QuadX0Y3} -attr @fillcolor #00868b
+load inst QPLL1.QuadX0Y3 QPLL1_X0 syn -hier QuadX0Y3 -pg 1 -y 819 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL1.QuadX0Y3 A} -attr @name {}
+attribute {pin QPLL1.QuadX0Y3 B} -attr @name {}
+attribute {inst QPLL1.QuadX0Y3} -attr @fillcolor #00868b
+load inst cpll.X0Y13 CPLL_X0 syn -hier QuadX0Y3 -pg 1 -y 904 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y13 A} -attr @name {}
+attribute {pin cpll.X0Y13 B} -attr @name {}
+attribute {inst cpll.X0Y13} -attr @fillcolor #00868b
+load symbol X0Y13 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y13 X0Y13 syn -hier QuadX0Y3 -pg 1 -y 904 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y13} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y12 CPLL_X0 syn -hier QuadX0Y3 -pg 1 -y 989 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y12 A} -attr @name {}
+attribute {pin cpll.X0Y12 B} -attr @name {}
+attribute {inst cpll.X0Y12} -attr @fillcolor #00868b
+load symbol X0Y12 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y12 X0Y12 syn -hier QuadX0Y3 -pg 1 -y 989 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y12} -attr @fillcolor #7a7a7a
+load port QuadX0Y3_clk0 in -pg 1 -y 703 -x 1 -attr @fillcolor #3a5fcd
+load port QuadX0Y3_clk1 in -pg 1 -y 873 -x 1 -attr @fillcolor #3a5fcd
+load inst QuadX0Y2 QUAD_X0 v -pg 1 -y 1125 -x 2000 -autohide -attr @cell QuadX0Y2 -attr @name {} -attr @fillcolor #d9d9d9
+attribute {pin QuadX0Y2 QPLL0 } -attr @name {}
+attribute {hierPin QuadX0Y2 QPLL0 } -attr @name {}
+attribute {pin QuadX0Y2 QPLL1 } -attr @name {}
+attribute {hierPin QuadX0Y2 QPLL1 } -attr @name {}
+attribute {pin QuadX0Y2 a0 } -attr @name {}
+attribute {hierPin QuadX0Y2 a0 } -attr @name {}
+attribute {pin QuadX0Y2 a1 } -attr @name {}
+attribute {hierPin QuadX0Y2 a1 } -attr @name {}
+attribute {pin QuadX0Y2 a2 } -attr @name {}
+attribute {hierPin QuadX0Y2 a2 } -attr @name {}
+attribute {pin QuadX0Y2 a3 } -attr @name {}
+attribute {hierPin QuadX0Y2 a3 } -attr @name {}
+attribute {pin QuadX0Y2 RECCLK_clk0 } -attr @name {}
+attribute {hierPin QuadX0Y2 RECCLK_clk0 } -attr @name {}
+attribute {pin QuadX0Y2 RECCLK_clk1 } -attr @name {}
+attribute {hierPin QuadX0Y2 RECCLK_clk1 } -attr @name {}
+load inst cpll.X0Y11 CPLL_X0 syn -hier QuadX0Y2 -pg 1 -y 1126 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y11 A} -attr @name {}
+attribute {pin cpll.X0Y11 B} -attr @name {}
+attribute {inst cpll.X0Y11} -attr @fillcolor #00868b
+load symbol X0Y11 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y11 X0Y11 syn -hier QuadX0Y2 -pg 1 -y 1126 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y11} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y10 CPLL_X0 syn -hier QuadX0Y2 -pg 1 -y 1211 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y10 A} -attr @name {}
+attribute {pin cpll.X0Y10 B} -attr @name {}
+attribute {inst cpll.X0Y10} -attr @fillcolor #00868b
+load symbol X0Y10 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y10 X0Y10 syn -hier QuadX0Y2 -pg 1 -y 1211 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y10} -attr @fillcolor #7a7a7a
+load inst QPLL0.QuadX0Y2 QPLL0_X0 syn -hier QuadX0Y2 -pg 1 -y 1296 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL0.QuadX0Y2 A} -attr @name {}
+attribute {pin QPLL0.QuadX0Y2 B} -attr @name {}
+attribute {inst QPLL0.QuadX0Y2} -attr @fillcolor #00868b
+load inst QPLL1.QuadX0Y2 QPLL1_X0 syn -hier QuadX0Y2 -pg 1 -y 1381 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL1.QuadX0Y2 A} -attr @name {}
+attribute {pin QPLL1.QuadX0Y2 B} -attr @name {}
+attribute {inst QPLL1.QuadX0Y2} -attr @fillcolor #00868b
+load inst cpll.X0Y9 CPLL_X0 syn -hier QuadX0Y2 -pg 1 -y 1466 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y9 A} -attr @name {}
+attribute {pin cpll.X0Y9 B} -attr @name {}
+attribute {inst cpll.X0Y9} -attr @fillcolor #00868b
+load symbol X0Y9 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y9 X0Y9 syn -hier QuadX0Y2 -pg 1 -y 1466 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y9} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y8 CPLL_X0 syn -hier QuadX0Y2 -pg 1 -y 1551 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y8 A} -attr @name {}
+attribute {pin cpll.X0Y8 B} -attr @name {}
+attribute {inst cpll.X0Y8} -attr @fillcolor #00868b
+load symbol X0Y8 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y8 X0Y8 syn -hier QuadX0Y2 -pg 1 -y 1551 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y8} -attr @fillcolor #7a7a7a
+load port QuadX0Y2_clk0 in -pg 1 -y 1265 -x 1 -attr @fillcolor #3a5fcd
+load port QuadX0Y2_clk1 in -pg 1 -y 1435 -x 1 -attr @fillcolor #3a5fcd
+load inst QuadX0Y1 QUAD_X0 v -pg 1 -y 1687 -x 2000 -autohide -attr @cell QuadX0Y1 -attr @name {} -attr @fillcolor #d9d9d9
+attribute {pin QuadX0Y1 QPLL0 } -attr @name {}
+attribute {hierPin QuadX0Y1 QPLL0 } -attr @name {}
+attribute {pin QuadX0Y1 QPLL1 } -attr @name {}
+attribute {hierPin QuadX0Y1 QPLL1 } -attr @name {}
+attribute {pin QuadX0Y1 a0 } -attr @name {}
+attribute {hierPin QuadX0Y1 a0 } -attr @name {}
+attribute {pin QuadX0Y1 a1 } -attr @name {}
+attribute {hierPin QuadX0Y1 a1 } -attr @name {}
+attribute {pin QuadX0Y1 a2 } -attr @name {}
+attribute {hierPin QuadX0Y1 a2 } -attr @name {}
+attribute {pin QuadX0Y1 a3 } -attr @name {}
+attribute {hierPin QuadX0Y1 a3 } -attr @name {}
+attribute {pin QuadX0Y1 RECCLK_clk0 } -attr @name {}
+attribute {hierPin QuadX0Y1 RECCLK_clk0 } -attr @name {}
+attribute {pin QuadX0Y1 RECCLK_clk1 } -attr @name {}
+attribute {hierPin QuadX0Y1 RECCLK_clk1 } -attr @name {}
+load inst cpll.X0Y7 CPLL_X0 syn -hier QuadX0Y1 -pg 1 -y 1688 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y7 A} -attr @name {}
+attribute {pin cpll.X0Y7 B} -attr @name {}
+attribute {inst cpll.X0Y7} -attr @fillcolor #00868b
+load symbol X0Y7 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y7 X0Y7 syn -hier QuadX0Y1 -pg 1 -y 1688 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y7} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y6 CPLL_X0 syn -hier QuadX0Y1 -pg 1 -y 1773 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y6 A} -attr @name {}
+attribute {pin cpll.X0Y6 B} -attr @name {}
+attribute {inst cpll.X0Y6} -attr @fillcolor #00868b
+load symbol X0Y6 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y6 X0Y6 syn -hier QuadX0Y1 -pg 1 -y 1773 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y6} -attr @fillcolor #7a7a7a
+load inst QPLL0.QuadX0Y1 QPLL0_X0 syn -hier QuadX0Y1 -pg 1 -y 1858 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL0.QuadX0Y1 A} -attr @name {}
+attribute {pin QPLL0.QuadX0Y1 B} -attr @name {}
+attribute {inst QPLL0.QuadX0Y1} -attr @fillcolor #00868b
+load inst QPLL1.QuadX0Y1 QPLL1_X0 syn -hier QuadX0Y1 -pg 1 -y 1943 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL1.QuadX0Y1 A} -attr @name {}
+attribute {pin QPLL1.QuadX0Y1 B} -attr @name {}
+attribute {inst QPLL1.QuadX0Y1} -attr @fillcolor #00868b
+load inst cpll.X0Y5 CPLL_X0 syn -hier QuadX0Y1 -pg 1 -y 2028 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y5 A} -attr @name {}
+attribute {pin cpll.X0Y5 B} -attr @name {}
+attribute {inst cpll.X0Y5} -attr @fillcolor #00868b
+load symbol X0Y5 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y5 X0Y5 syn -hier QuadX0Y1 -pg 1 -y 2028 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y5} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y4 CPLL_X0 syn -hier QuadX0Y1 -pg 1 -y 2113 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y4 A} -attr @name {}
+attribute {pin cpll.X0Y4 B} -attr @name {}
+attribute {inst cpll.X0Y4} -attr @fillcolor #00868b
+load symbol X0Y4 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y4 X0Y4 syn -hier QuadX0Y1 -pg 1 -y 2113 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y4} -attr @fillcolor #7a7a7a
+load port QuadX0Y1_clk0 in -pg 1 -y 1827 -x 1 -attr @fillcolor #3a5fcd
+load port QuadX0Y1_clk1 in -pg 1 -y 1997 -x 1 -attr @fillcolor #3a5fcd
+load inst QuadX0Y0 QUAD_X0 v -pg 1 -y 2249 -x 2000 -autohide -attr @cell QuadX0Y0 -attr @name {} -attr @fillcolor #d9d9d9
+attribute {pin QuadX0Y0 QPLL0 } -attr @name {}
+attribute {hierPin QuadX0Y0 QPLL0 } -attr @name {}
+attribute {pin QuadX0Y0 QPLL1 } -attr @name {}
+attribute {hierPin QuadX0Y0 QPLL1 } -attr @name {}
+attribute {pin QuadX0Y0 a0 } -attr @name {}
+attribute {hierPin QuadX0Y0 a0 } -attr @name {}
+attribute {pin QuadX0Y0 a1 } -attr @name {}
+attribute {hierPin QuadX0Y0 a1 } -attr @name {}
+attribute {pin QuadX0Y0 a2 } -attr @name {}
+attribute {hierPin QuadX0Y0 a2 } -attr @name {}
+attribute {pin QuadX0Y0 a3 } -attr @name {}
+attribute {hierPin QuadX0Y0 a3 } -attr @name {}
+attribute {pin QuadX0Y0 RECCLK_clk0 } -attr @name {}
+attribute {hierPin QuadX0Y0 RECCLK_clk0 } -attr @name {}
+attribute {pin QuadX0Y0 RECCLK_clk1 } -attr @name {}
+attribute {hierPin QuadX0Y0 RECCLK_clk1 } -attr @name {}
+load inst cpll.X0Y3 CPLL_X0 syn -hier QuadX0Y0 -pg 1 -y 2250 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y3 A} -attr @name {}
+attribute {pin cpll.X0Y3 B} -attr @name {}
+attribute {inst cpll.X0Y3} -attr @fillcolor #00868b
+load symbol X0Y3 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y3 X0Y3 syn -hier QuadX0Y0 -pg 1 -y 2250 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y3} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y2 CPLL_X0 syn -hier QuadX0Y0 -pg 1 -y 2335 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y2 A} -attr @name {}
+attribute {pin cpll.X0Y2 B} -attr @name {}
+attribute {inst cpll.X0Y2} -attr @fillcolor #00868b
+load symbol X0Y2 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y2 X0Y2 syn -hier QuadX0Y0 -pg 1 -y 2335 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y2} -attr @fillcolor #7a7a7a
+load inst QPLL0.QuadX0Y0 QPLL0_X0 syn -hier QuadX0Y0 -pg 1 -y 2420 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL0.QuadX0Y0 A} -attr @name {}
+attribute {pin QPLL0.QuadX0Y0 B} -attr @name {}
+attribute {inst QPLL0.QuadX0Y0} -attr @fillcolor #00868b
+load inst QPLL1.QuadX0Y0 QPLL1_X0 syn -hier QuadX0Y0 -pg 1 -y 2505 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL1.QuadX0Y0 A} -attr @name {}
+attribute {pin QPLL1.QuadX0Y0 B} -attr @name {}
+attribute {inst QPLL1.QuadX0Y0} -attr @fillcolor #00868b
+load inst cpll.X0Y1 CPLL_X0 syn -hier QuadX0Y0 -pg 1 -y 2590 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y1 A} -attr @name {}
+attribute {pin cpll.X0Y1 B} -attr @name {}
+attribute {inst cpll.X0Y1} -attr @fillcolor #00868b
+load symbol X0Y1 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y1 X0Y1 syn -hier QuadX0Y0 -pg 1 -y 2590 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y1} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y0 CPLL_X0 syn -hier QuadX0Y0 -pg 1 -y 2675 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y0 A} -attr @name {}
+attribute {pin cpll.X0Y0 B} -attr @name {}
+attribute {inst cpll.X0Y0} -attr @fillcolor #00868b
+load symbol X0Y0 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y0 X0Y0 syn -hier QuadX0Y0 -pg 1 -y 2675 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y0} -attr @fillcolor #7a7a7a
+load port QuadX0Y0_clk0 in -pg 1 -y 2389 -x 1 -attr @fillcolor #3a5fcd
+load port QuadX0Y0_clk1 in -pg 1 -y 2559 -x 1 -attr @fillcolor #3a5fcd
+attribute {inst GT.X0Y19} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y19} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y4} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y4} -attr @fillcolor #00868b
+attribute {inst GT.X0Y18} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y18} -attr @fillcolor #00868b
+attribute {inst GT.X0Y17} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y17} -attr @fillcolor #00868b
+attribute {inst GT.X0Y16} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y16} -attr @fillcolor #00868b
+attribute {inst GT.X0Y15} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y15} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y3} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y3} -attr @fillcolor #00868b
+attribute {inst GT.X0Y14} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y14} -attr @fillcolor #00868b
+attribute {inst GT.X0Y13} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y13} -attr @fillcolor #00868b
+attribute {inst GT.X0Y12} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y12} -attr @fillcolor #00868b
+attribute {inst GT.X0Y11} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y11} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y2} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y2} -attr @fillcolor #00868b
+attribute {inst GT.X0Y10} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y10} -attr @fillcolor #00868b
+attribute {inst GT.X0Y9} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y9} -attr @fillcolor #00868b
+attribute {inst GT.X0Y8} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y8} -attr @fillcolor #00868b
+attribute {inst GT.X0Y7} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y7} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y1} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y1} -attr @fillcolor #00868b
+attribute {inst GT.X0Y6} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y6} -attr @fillcolor #00868b
+attribute {inst GT.X0Y5} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y5} -attr @fillcolor #00868b
+attribute {inst GT.X0Y4} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y4} -attr @fillcolor #00868b
+attribute {inst GT.X0Y3} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y3} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y0} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y0} -attr @fillcolor #00868b
+attribute {inst GT.X0Y2} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y2} -attr @fillcolor #00868b
+attribute {inst GT.X0Y1} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y1} -attr @fillcolor #00868b
+attribute {inst GT.X0Y0} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y0} -attr @fillcolor #00868b
+increment -const
+load net net.clk.QuadX0Y0_clk0 -port QuadX0Y0_clk0 -pin QuadX0Y0 QPLL0
+load net net.quad.QPLL0.QuadX0Y0 -hierPin QuadX0Y0 QPLL0 -pin QPLL0.QuadX0Y0 A
+load net net.chan.QPLL0.QuadX0Y0 -pin QPLL0.QuadX0Y0 B -pin GT.X0Y0 TX
+attribute {inst QPLL0.QuadX0Y0} -attr @fillcolor #cccc00
+attribute {inst GT.X0Y0} -attr @fillcolor #cccc00
+load net net.chan.QPLL0.QuadX0Y0 -pin QPLL0.QuadX0Y0 B -pin GT.X0Y0 RX
+attribute {inst QPLL0.QuadX0Y0} -attr @fillcolor #cccc00
+attribute {inst GT.X0Y0} -attr @fillcolor #cccc00
+show
+# Starting Split Pages                                                  494.81
+# Split Pages 65 Comps, 3 Nets 0 NetBundles                             494.81
+# KwayPart started for 65 comps, 3 nets                                 494.81
+# Init done: 1 nodes (1 locked nodes), 0 edges                          494.81
+# Startpart done: 1 parts                                               494.81
+# KwayPart done                                                         494.81
+# End of Split Pages: 1 pages                                           494.81
+# End of Split Pages                                                    494.81
+# Generating Regions for Page 1:   65 Comps,    3 Nets                  494.81
+# Analyze                                                               494.81
+# Levelize                                                              494.81
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            494.81
+# Nets                                                                  494.81
+# Place                                                                 494.81
+# PlaceNets                                                             494.81
+# SpaceY                                                                494.81
+# Track                                                                 494.81
+# SpaceX                                                                494.81
+# Wire                                                                  494.81
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 494.81
+# End of doGenerate                                                     494.81
+# Analyze                                                               494.81
+# Levelize                                                              494.81
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            494.81
+# Nets                                                                  494.81
+# Place                                                                 494.81
+# PlaceNets                                                             494.81
+# SpaceY                                                                494.81
+# Track                                                                 494.81
+# SpaceX                                                                494.81
+# Wire                                                                  494.81
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 494.81
+# End of doGenerate                                                     494.81
+# Analyze                                                               494.81
+# Levelize                                                              494.81
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            494.81
+# Nets                                                                  494.81
+# Place                                                                 494.81
+# PlaceNets                                                             494.81
+# SpaceY                                                                494.81
+# Track                                                                 494.81
+# SpaceX                                                                494.81
+# Wire                                                                  494.81
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 494.81
+# End of doGenerate                                                     494.81
+# Analyze                                                               494.81
+# Levelize                                                              494.81
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            494.81
+# Nets                                                                  494.81
+# Place                                                                 494.81
+# PlaceNets                                                             494.81
+# SpaceY                                                                494.81
+# Track                                                                 494.81
+# SpaceX                                                                494.81
+# Wire                                                                  494.81
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 494.81
+# End of doGenerate                                                     494.81
+# Analyze                                                               494.81
+# Levelize                                                              494.81
+# End of LevelAssign mode=I, 3 Levels, 11 Comps, limit=30000            494.81
+# Nets                                                                  494.81
+# Place                                                                 494.81
+# PlaceNets                                                             494.81
+# SpaceY                                                                494.81
+# Track                                                                 494.81
+# SpaceX                                                                494.81
+# Wire                                                                  494.81
+# End of Wire: 2 nets, 2 ch, wire: 10-->10 (0 with wbits)               494.81
+# End of doGenerate                                                     494.81
+# Analyze                                                               494.81
+# Levelize                                                              494.81
+# End of LevelAssign mode=I, 2 Levels, 15 Comps, limit=30000            494.81
+# Nets                                                                  494.81
+# Place                                                                 494.81
+# PlaceNets                                                             494.81
+# SpaceY                                                                494.81
+# Track                                                                 494.81
+# SpaceX                                                                494.81
+# Wire                                                                  494.81
+# End of Wire: 1 nets, 1 ch, wire: 4-->4 (0 with wbits)                 494.81
+# End of doGenerate                                                     494.81
+# End of Generating Regions for Page 1                                  494.81
+scrollpos 56 1120
+zoom -x 0 -y 0 0.6
+scrollpos 42 840
+#R 0.6
+#CMD scrollpos 0 0
+scrollpos 0 0
+selection -itemized {inst GT.X0Y0}
+center_objects -itemized {inst GT.X0Y0}
+scrollpos 132 1605
+module new gtmodule
+#  * Current module is gtmodule 
+load symbol QUAD_X0 v HIERBOX port a0 in port a1 in port a2 in port a3 in port QPLL0 in port QPLL1 in port RECCLK_clk0 out port RECCLK_clk1 out
+load symbol QUAD_X1 v HIERBOX port a0 out port a1 out port a2 out port a3 out port QPLL0 out port QPLL1 out port RECCLK_clk0 in port RECCLK_clk1 in
+load symbol CPLL_X0 syn BOX port A in port B out text CPLL -cc 25 0 12
+load symbol CPLL_X1 syn BOX port A out port B in text CPLL -cc 25 0 12
+load symbol QPLL0_X0 syn BOX port A in port B out text QPLL0 -cc 25 0 12
+load symbol QPLL0_X1 syn BOX port A out port B in text QPLL0 -cc 25 0 12
+load symbol QPLL1_X0 syn BOX port A in port B out text QPLL1 -cc 25 0 12
+load symbol QPLL1_X1 syn BOX port A out port B in text QPLL1 -cc 25 0 12
+load inst QuadX0Y4 QUAD_X0 v -pg 1 -y 1 -x 2000 -autohide -attr @cell QuadX0Y4 -attr @name {} -attr @fillcolor #d9d9d9
+attribute {pin QuadX0Y4 QPLL0 } -attr @name {}
+attribute {hierPin QuadX0Y4 QPLL0 } -attr @name {}
+attribute {pin QuadX0Y4 QPLL1 } -attr @name {}
+attribute {hierPin QuadX0Y4 QPLL1 } -attr @name {}
+attribute {pin QuadX0Y4 a0 } -attr @name {}
+attribute {hierPin QuadX0Y4 a0 } -attr @name {}
+attribute {pin QuadX0Y4 a1 } -attr @name {}
+attribute {hierPin QuadX0Y4 a1 } -attr @name {}
+attribute {pin QuadX0Y4 a2 } -attr @name {}
+attribute {hierPin QuadX0Y4 a2 } -attr @name {}
+attribute {pin QuadX0Y4 a3 } -attr @name {}
+attribute {hierPin QuadX0Y4 a3 } -attr @name {}
+attribute {pin QuadX0Y4 RECCLK_clk0 } -attr @name {}
+attribute {hierPin QuadX0Y4 RECCLK_clk0 } -attr @name {}
+attribute {pin QuadX0Y4 RECCLK_clk1 } -attr @name {}
+attribute {hierPin QuadX0Y4 RECCLK_clk1 } -attr @name {}
+load inst cpll.X0Y19 CPLL_X0 syn -hier QuadX0Y4 -pg 1 -y 2 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y19 A} -attr @name {}
+attribute {pin cpll.X0Y19 B} -attr @name {}
+attribute {inst cpll.X0Y19} -attr @fillcolor #00868b
+load symbol X0Y19 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y19 X0Y19 syn -hier QuadX0Y4 -pg 1 -y 2 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y19} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y18 CPLL_X0 syn -hier QuadX0Y4 -pg 1 -y 87 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y18 A} -attr @name {}
+attribute {pin cpll.X0Y18 B} -attr @name {}
+attribute {inst cpll.X0Y18} -attr @fillcolor #00868b
+load symbol X0Y18 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y18 X0Y18 syn -hier QuadX0Y4 -pg 1 -y 87 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y18} -attr @fillcolor #7a7a7a
+load inst QPLL0.QuadX0Y4 QPLL0_X0 syn -hier QuadX0Y4 -pg 1 -y 172 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL0.QuadX0Y4 A} -attr @name {}
+attribute {pin QPLL0.QuadX0Y4 B} -attr @name {}
+attribute {inst QPLL0.QuadX0Y4} -attr @fillcolor #00868b
+load inst QPLL1.QuadX0Y4 QPLL1_X0 syn -hier QuadX0Y4 -pg 1 -y 257 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL1.QuadX0Y4 A} -attr @name {}
+attribute {pin QPLL1.QuadX0Y4 B} -attr @name {}
+attribute {inst QPLL1.QuadX0Y4} -attr @fillcolor #00868b
+load inst cpll.X0Y17 CPLL_X0 syn -hier QuadX0Y4 -pg 1 -y 342 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y17 A} -attr @name {}
+attribute {pin cpll.X0Y17 B} -attr @name {}
+attribute {inst cpll.X0Y17} -attr @fillcolor #00868b
+load symbol X0Y17 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y17 X0Y17 syn -hier QuadX0Y4 -pg 1 -y 342 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y17} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y16 CPLL_X0 syn -hier QuadX0Y4 -pg 1 -y 427 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y16 A} -attr @name {}
+attribute {pin cpll.X0Y16 B} -attr @name {}
+attribute {inst cpll.X0Y16} -attr @fillcolor #00868b
+load symbol X0Y16 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y16 X0Y16 syn -hier QuadX0Y4 -pg 1 -y 427 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y16} -attr @fillcolor #7a7a7a
+load port QuadX0Y4_clk0 in -pg 1 -y 141 -x 1 -attr @fillcolor #3a5fcd
+load port QuadX0Y4_clk1 in -pg 1 -y 311 -x 1 -attr @fillcolor #3a5fcd
+load inst QuadX0Y3 QUAD_X0 v -pg 1 -y 563 -x 2000 -autohide -attr @cell QuadX0Y3 -attr @name {} -attr @fillcolor #d9d9d9
+attribute {pin QuadX0Y3 QPLL0 } -attr @name {}
+attribute {hierPin QuadX0Y3 QPLL0 } -attr @name {}
+attribute {pin QuadX0Y3 QPLL1 } -attr @name {}
+attribute {hierPin QuadX0Y3 QPLL1 } -attr @name {}
+attribute {pin QuadX0Y3 a0 } -attr @name {}
+attribute {hierPin QuadX0Y3 a0 } -attr @name {}
+attribute {pin QuadX0Y3 a1 } -attr @name {}
+attribute {hierPin QuadX0Y3 a1 } -attr @name {}
+attribute {pin QuadX0Y3 a2 } -attr @name {}
+attribute {hierPin QuadX0Y3 a2 } -attr @name {}
+attribute {pin QuadX0Y3 a3 } -attr @name {}
+attribute {hierPin QuadX0Y3 a3 } -attr @name {}
+attribute {pin QuadX0Y3 RECCLK_clk0 } -attr @name {}
+attribute {hierPin QuadX0Y3 RECCLK_clk0 } -attr @name {}
+attribute {pin QuadX0Y3 RECCLK_clk1 } -attr @name {}
+attribute {hierPin QuadX0Y3 RECCLK_clk1 } -attr @name {}
+load inst cpll.X0Y15 CPLL_X0 syn -hier QuadX0Y3 -pg 1 -y 564 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y15 A} -attr @name {}
+attribute {pin cpll.X0Y15 B} -attr @name {}
+attribute {inst cpll.X0Y15} -attr @fillcolor #00868b
+load symbol X0Y15 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y15 X0Y15 syn -hier QuadX0Y3 -pg 1 -y 564 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y15} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y14 CPLL_X0 syn -hier QuadX0Y3 -pg 1 -y 649 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y14 A} -attr @name {}
+attribute {pin cpll.X0Y14 B} -attr @name {}
+attribute {inst cpll.X0Y14} -attr @fillcolor #00868b
+load symbol X0Y14 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y14 X0Y14 syn -hier QuadX0Y3 -pg 1 -y 649 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y14} -attr @fillcolor #7a7a7a
+load inst QPLL0.QuadX0Y3 QPLL0_X0 syn -hier QuadX0Y3 -pg 1 -y 734 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL0.QuadX0Y3 A} -attr @name {}
+attribute {pin QPLL0.QuadX0Y3 B} -attr @name {}
+attribute {inst QPLL0.QuadX0Y3} -attr @fillcolor #00868b
+load inst QPLL1.QuadX0Y3 QPLL1_X0 syn -hier QuadX0Y3 -pg 1 -y 819 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL1.QuadX0Y3 A} -attr @name {}
+attribute {pin QPLL1.QuadX0Y3 B} -attr @name {}
+attribute {inst QPLL1.QuadX0Y3} -attr @fillcolor #00868b
+load inst cpll.X0Y13 CPLL_X0 syn -hier QuadX0Y3 -pg 1 -y 904 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y13 A} -attr @name {}
+attribute {pin cpll.X0Y13 B} -attr @name {}
+attribute {inst cpll.X0Y13} -attr @fillcolor #00868b
+load symbol X0Y13 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y13 X0Y13 syn -hier QuadX0Y3 -pg 1 -y 904 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y13} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y12 CPLL_X0 syn -hier QuadX0Y3 -pg 1 -y 989 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y12 A} -attr @name {}
+attribute {pin cpll.X0Y12 B} -attr @name {}
+attribute {inst cpll.X0Y12} -attr @fillcolor #00868b
+load symbol X0Y12 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y12 X0Y12 syn -hier QuadX0Y3 -pg 1 -y 989 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y12} -attr @fillcolor #7a7a7a
+load port QuadX0Y3_clk0 in -pg 1 -y 703 -x 1 -attr @fillcolor #3a5fcd
+load port QuadX0Y3_clk1 in -pg 1 -y 873 -x 1 -attr @fillcolor #3a5fcd
+load inst QuadX0Y2 QUAD_X0 v -pg 1 -y 1125 -x 2000 -autohide -attr @cell QuadX0Y2 -attr @name {} -attr @fillcolor #d9d9d9
+attribute {pin QuadX0Y2 QPLL0 } -attr @name {}
+attribute {hierPin QuadX0Y2 QPLL0 } -attr @name {}
+attribute {pin QuadX0Y2 QPLL1 } -attr @name {}
+attribute {hierPin QuadX0Y2 QPLL1 } -attr @name {}
+attribute {pin QuadX0Y2 a0 } -attr @name {}
+attribute {hierPin QuadX0Y2 a0 } -attr @name {}
+attribute {pin QuadX0Y2 a1 } -attr @name {}
+attribute {hierPin QuadX0Y2 a1 } -attr @name {}
+attribute {pin QuadX0Y2 a2 } -attr @name {}
+attribute {hierPin QuadX0Y2 a2 } -attr @name {}
+attribute {pin QuadX0Y2 a3 } -attr @name {}
+attribute {hierPin QuadX0Y2 a3 } -attr @name {}
+attribute {pin QuadX0Y2 RECCLK_clk0 } -attr @name {}
+attribute {hierPin QuadX0Y2 RECCLK_clk0 } -attr @name {}
+attribute {pin QuadX0Y2 RECCLK_clk1 } -attr @name {}
+attribute {hierPin QuadX0Y2 RECCLK_clk1 } -attr @name {}
+load inst cpll.X0Y11 CPLL_X0 syn -hier QuadX0Y2 -pg 1 -y 1126 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y11 A} -attr @name {}
+attribute {pin cpll.X0Y11 B} -attr @name {}
+attribute {inst cpll.X0Y11} -attr @fillcolor #00868b
+load symbol X0Y11 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y11 X0Y11 syn -hier QuadX0Y2 -pg 1 -y 1126 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y11} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y10 CPLL_X0 syn -hier QuadX0Y2 -pg 1 -y 1211 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y10 A} -attr @name {}
+attribute {pin cpll.X0Y10 B} -attr @name {}
+attribute {inst cpll.X0Y10} -attr @fillcolor #00868b
+load symbol X0Y10 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y10 X0Y10 syn -hier QuadX0Y2 -pg 1 -y 1211 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y10} -attr @fillcolor #7a7a7a
+load inst QPLL0.QuadX0Y2 QPLL0_X0 syn -hier QuadX0Y2 -pg 1 -y 1296 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL0.QuadX0Y2 A} -attr @name {}
+attribute {pin QPLL0.QuadX0Y2 B} -attr @name {}
+attribute {inst QPLL0.QuadX0Y2} -attr @fillcolor #00868b
+load inst QPLL1.QuadX0Y2 QPLL1_X0 syn -hier QuadX0Y2 -pg 1 -y 1381 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL1.QuadX0Y2 A} -attr @name {}
+attribute {pin QPLL1.QuadX0Y2 B} -attr @name {}
+attribute {inst QPLL1.QuadX0Y2} -attr @fillcolor #00868b
+load inst cpll.X0Y9 CPLL_X0 syn -hier QuadX0Y2 -pg 1 -y 1466 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y9 A} -attr @name {}
+attribute {pin cpll.X0Y9 B} -attr @name {}
+attribute {inst cpll.X0Y9} -attr @fillcolor #00868b
+load symbol X0Y9 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y9 X0Y9 syn -hier QuadX0Y2 -pg 1 -y 1466 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y9} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y8 CPLL_X0 syn -hier QuadX0Y2 -pg 1 -y 1551 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y8 A} -attr @name {}
+attribute {pin cpll.X0Y8 B} -attr @name {}
+attribute {inst cpll.X0Y8} -attr @fillcolor #00868b
+load symbol X0Y8 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y8 X0Y8 syn -hier QuadX0Y2 -pg 1 -y 1551 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y8} -attr @fillcolor #7a7a7a
+load port QuadX0Y2_clk0 in -pg 1 -y 1265 -x 1 -attr @fillcolor #3a5fcd
+load port QuadX0Y2_clk1 in -pg 1 -y 1435 -x 1 -attr @fillcolor #3a5fcd
+load inst QuadX0Y1 QUAD_X0 v -pg 1 -y 1687 -x 2000 -autohide -attr @cell QuadX0Y1 -attr @name {} -attr @fillcolor #d9d9d9
+attribute {pin QuadX0Y1 QPLL0 } -attr @name {}
+attribute {hierPin QuadX0Y1 QPLL0 } -attr @name {}
+attribute {pin QuadX0Y1 QPLL1 } -attr @name {}
+attribute {hierPin QuadX0Y1 QPLL1 } -attr @name {}
+attribute {pin QuadX0Y1 a0 } -attr @name {}
+attribute {hierPin QuadX0Y1 a0 } -attr @name {}
+attribute {pin QuadX0Y1 a1 } -attr @name {}
+attribute {hierPin QuadX0Y1 a1 } -attr @name {}
+attribute {pin QuadX0Y1 a2 } -attr @name {}
+attribute {hierPin QuadX0Y1 a2 } -attr @name {}
+attribute {pin QuadX0Y1 a3 } -attr @name {}
+attribute {hierPin QuadX0Y1 a3 } -attr @name {}
+attribute {pin QuadX0Y1 RECCLK_clk0 } -attr @name {}
+attribute {hierPin QuadX0Y1 RECCLK_clk0 } -attr @name {}
+attribute {pin QuadX0Y1 RECCLK_clk1 } -attr @name {}
+attribute {hierPin QuadX0Y1 RECCLK_clk1 } -attr @name {}
+load inst cpll.X0Y7 CPLL_X0 syn -hier QuadX0Y1 -pg 1 -y 1688 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y7 A} -attr @name {}
+attribute {pin cpll.X0Y7 B} -attr @name {}
+attribute {inst cpll.X0Y7} -attr @fillcolor #00868b
+load symbol X0Y7 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y7 X0Y7 syn -hier QuadX0Y1 -pg 1 -y 1688 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y7} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y6 CPLL_X0 syn -hier QuadX0Y1 -pg 1 -y 1773 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y6 A} -attr @name {}
+attribute {pin cpll.X0Y6 B} -attr @name {}
+attribute {inst cpll.X0Y6} -attr @fillcolor #00868b
+load symbol X0Y6 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y6 X0Y6 syn -hier QuadX0Y1 -pg 1 -y 1773 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y6} -attr @fillcolor #7a7a7a
+load inst QPLL0.QuadX0Y1 QPLL0_X0 syn -hier QuadX0Y1 -pg 1 -y 1858 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL0.QuadX0Y1 A} -attr @name {}
+attribute {pin QPLL0.QuadX0Y1 B} -attr @name {}
+attribute {inst QPLL0.QuadX0Y1} -attr @fillcolor #00868b
+load inst QPLL1.QuadX0Y1 QPLL1_X0 syn -hier QuadX0Y1 -pg 1 -y 1943 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL1.QuadX0Y1 A} -attr @name {}
+attribute {pin QPLL1.QuadX0Y1 B} -attr @name {}
+attribute {inst QPLL1.QuadX0Y1} -attr @fillcolor #00868b
+load inst cpll.X0Y5 CPLL_X0 syn -hier QuadX0Y1 -pg 1 -y 2028 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y5 A} -attr @name {}
+attribute {pin cpll.X0Y5 B} -attr @name {}
+attribute {inst cpll.X0Y5} -attr @fillcolor #00868b
+load symbol X0Y5 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y5 X0Y5 syn -hier QuadX0Y1 -pg 1 -y 2028 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y5} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y4 CPLL_X0 syn -hier QuadX0Y1 -pg 1 -y 2113 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y4 A} -attr @name {}
+attribute {pin cpll.X0Y4 B} -attr @name {}
+attribute {inst cpll.X0Y4} -attr @fillcolor #00868b
+load symbol X0Y4 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y4 X0Y4 syn -hier QuadX0Y1 -pg 1 -y 2113 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y4} -attr @fillcolor #7a7a7a
+load port QuadX0Y1_clk0 in -pg 1 -y 1827 -x 1 -attr @fillcolor #3a5fcd
+load port QuadX0Y1_clk1 in -pg 1 -y 1997 -x 1 -attr @fillcolor #3a5fcd
+load inst QuadX0Y0 QUAD_X0 v -pg 1 -y 2249 -x 2000 -autohide -attr @cell QuadX0Y0 -attr @name {} -attr @fillcolor #d9d9d9
+attribute {pin QuadX0Y0 QPLL0 } -attr @name {}
+attribute {hierPin QuadX0Y0 QPLL0 } -attr @name {}
+attribute {pin QuadX0Y0 QPLL1 } -attr @name {}
+attribute {hierPin QuadX0Y0 QPLL1 } -attr @name {}
+attribute {pin QuadX0Y0 a0 } -attr @name {}
+attribute {hierPin QuadX0Y0 a0 } -attr @name {}
+attribute {pin QuadX0Y0 a1 } -attr @name {}
+attribute {hierPin QuadX0Y0 a1 } -attr @name {}
+attribute {pin QuadX0Y0 a2 } -attr @name {}
+attribute {hierPin QuadX0Y0 a2 } -attr @name {}
+attribute {pin QuadX0Y0 a3 } -attr @name {}
+attribute {hierPin QuadX0Y0 a3 } -attr @name {}
+attribute {pin QuadX0Y0 RECCLK_clk0 } -attr @name {}
+attribute {hierPin QuadX0Y0 RECCLK_clk0 } -attr @name {}
+attribute {pin QuadX0Y0 RECCLK_clk1 } -attr @name {}
+attribute {hierPin QuadX0Y0 RECCLK_clk1 } -attr @name {}
+load inst cpll.X0Y3 CPLL_X0 syn -hier QuadX0Y0 -pg 1 -y 2250 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y3 A} -attr @name {}
+attribute {pin cpll.X0Y3 B} -attr @name {}
+attribute {inst cpll.X0Y3} -attr @fillcolor #00868b
+load symbol X0Y3 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y3 X0Y3 syn -hier QuadX0Y0 -pg 1 -y 2250 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y3} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y2 CPLL_X0 syn -hier QuadX0Y0 -pg 1 -y 2335 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y2 A} -attr @name {}
+attribute {pin cpll.X0Y2 B} -attr @name {}
+attribute {inst cpll.X0Y2} -attr @fillcolor #00868b
+load symbol X0Y2 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y2 X0Y2 syn -hier QuadX0Y0 -pg 1 -y 2335 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y2} -attr @fillcolor #7a7a7a
+load inst QPLL0.QuadX0Y0 QPLL0_X0 syn -hier QuadX0Y0 -pg 1 -y 2420 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL0.QuadX0Y0 A} -attr @name {}
+attribute {pin QPLL0.QuadX0Y0 B} -attr @name {}
+attribute {inst QPLL0.QuadX0Y0} -attr @fillcolor #00868b
+load inst QPLL1.QuadX0Y0 QPLL1_X0 syn -hier QuadX0Y0 -pg 1 -y 2505 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL1.QuadX0Y0 A} -attr @name {}
+attribute {pin QPLL1.QuadX0Y0 B} -attr @name {}
+attribute {inst QPLL1.QuadX0Y0} -attr @fillcolor #00868b
+load inst cpll.X0Y1 CPLL_X0 syn -hier QuadX0Y0 -pg 1 -y 2590 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y1 A} -attr @name {}
+attribute {pin cpll.X0Y1 B} -attr @name {}
+attribute {inst cpll.X0Y1} -attr @fillcolor #00868b
+load symbol X0Y1 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y1 X0Y1 syn -hier QuadX0Y0 -pg 1 -y 2590 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y1} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y0 CPLL_X0 syn -hier QuadX0Y0 -pg 1 -y 2675 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y0 A} -attr @name {}
+attribute {pin cpll.X0Y0 B} -attr @name {}
+attribute {inst cpll.X0Y0} -attr @fillcolor #00868b
+load symbol X0Y0 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y0 X0Y0 syn -hier QuadX0Y0 -pg 1 -y 2675 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y0} -attr @fillcolor #7a7a7a
+load port QuadX0Y0_clk0 in -pg 1 -y 2389 -x 1 -attr @fillcolor #3a5fcd
+load port QuadX0Y0_clk1 in -pg 1 -y 2559 -x 1 -attr @fillcolor #3a5fcd
+attribute {inst GT.X0Y19} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y19} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y4} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y4} -attr @fillcolor #00868b
+attribute {inst GT.X0Y18} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y18} -attr @fillcolor #00868b
+attribute {inst GT.X0Y17} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y17} -attr @fillcolor #00868b
+attribute {inst GT.X0Y16} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y16} -attr @fillcolor #00868b
+attribute {inst GT.X0Y15} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y15} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y3} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y3} -attr @fillcolor #00868b
+attribute {inst GT.X0Y14} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y14} -attr @fillcolor #00868b
+attribute {inst GT.X0Y13} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y13} -attr @fillcolor #00868b
+attribute {inst GT.X0Y12} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y12} -attr @fillcolor #00868b
+attribute {inst GT.X0Y11} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y11} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y2} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y2} -attr @fillcolor #00868b
+attribute {inst GT.X0Y10} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y10} -attr @fillcolor #00868b
+attribute {inst GT.X0Y9} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y9} -attr @fillcolor #00868b
+attribute {inst GT.X0Y8} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y8} -attr @fillcolor #00868b
+attribute {inst GT.X0Y7} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y7} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y1} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y1} -attr @fillcolor #00868b
+attribute {inst GT.X0Y6} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y6} -attr @fillcolor #00868b
+attribute {inst GT.X0Y5} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y5} -attr @fillcolor #00868b
+attribute {inst GT.X0Y4} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y4} -attr @fillcolor #00868b
+attribute {inst GT.X0Y3} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y3} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y0} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y0} -attr @fillcolor #00868b
+attribute {inst GT.X0Y2} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y2} -attr @fillcolor #00868b
+attribute {inst GT.X0Y1} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y1} -attr @fillcolor #00868b
+attribute {inst GT.X0Y0} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y0} -attr @fillcolor #00868b
+increment -const
+load net net.clk.QuadX0Y0_clk0 -port QuadX0Y0_clk0 -pin QuadX0Y0 QPLL0
+load net net.quad.QPLL0.QuadX0Y0 -hierPin QuadX0Y0 QPLL0 -pin QPLL0.QuadX0Y0 A
+load net net.chan.QPLL0.QuadX0Y0 -pin QPLL0.QuadX0Y0 B -pin GT.X0Y0 TX
+attribute {inst QPLL0.QuadX0Y0} -attr @fillcolor #cccc00
+attribute {inst GT.X0Y0} -attr @fillcolor #cccc00
+load net net.chan.QPLL0.QuadX0Y0 -pin QPLL0.QuadX0Y0 B -pin GT.X0Y0 RX
+attribute {inst QPLL0.QuadX0Y0} -attr @fillcolor #cccc00
+attribute {inst GT.X0Y0} -attr @fillcolor #cccc00
+show
+# Starting Split Pages                                                  500.50
+# Split Pages 65 Comps, 3 Nets 0 NetBundles                             500.50
+# KwayPart started for 65 comps, 3 nets                                 500.50
+# Init done: 1 nodes (1 locked nodes), 0 edges                          500.50
+# Startpart done: 1 parts                                               500.50
+# KwayPart done                                                         500.50
+# End of Split Pages: 1 pages                                           500.50
+# End of Split Pages                                                    500.50
+# Generating Regions for Page 1:   65 Comps,    3 Nets                  500.50
+# Analyze                                                               500.50
+# Levelize                                                              500.50
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            500.50
+# Nets                                                                  500.50
+# Place                                                                 500.50
+# PlaceNets                                                             500.50
+# SpaceY                                                                500.50
+# Track                                                                 500.50
+# SpaceX                                                                500.50
+# Wire                                                                  500.50
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 500.50
+# End of doGenerate                                                     500.50
+# Analyze                                                               500.50
+# Levelize                                                              500.50
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            500.50
+# Nets                                                                  500.50
+# Place                                                                 500.50
+# PlaceNets                                                             500.50
+# SpaceY                                                                500.50
+# Track                                                                 500.50
+# SpaceX                                                                500.50
+# Wire                                                                  500.50
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 500.50
+# End of doGenerate                                                     500.50
+# Analyze                                                               500.50
+# Levelize                                                              500.50
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            500.50
+# Nets                                                                  500.50
+# Place                                                                 500.50
+# PlaceNets                                                             500.50
+# SpaceY                                                                500.50
+# Track                                                                 500.50
+# SpaceX                                                                500.50
+# Wire                                                                  500.50
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 500.50
+# End of doGenerate                                                     500.50
+# Analyze                                                               500.50
+# Levelize                                                              500.50
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            500.50
+# Nets                                                                  500.50
+# Place                                                                 500.50
+# PlaceNets                                                             500.50
+# SpaceY                                                                500.50
+# Track                                                                 500.50
+# SpaceX                                                                500.50
+# Wire                                                                  500.50
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 500.50
+# End of doGenerate                                                     500.50
+# Analyze                                                               500.50
+# Levelize                                                              500.50
+# End of LevelAssign mode=I, 3 Levels, 11 Comps, limit=30000            500.50
+# Nets                                                                  500.50
+# Place                                                                 500.50
+# PlaceNets                                                             500.50
+# SpaceY                                                                500.50
+# Track                                                                 500.50
+# SpaceX                                                                500.50
+# Wire                                                                  500.50
+# End of Wire: 2 nets, 2 ch, wire: 10-->10 (0 with wbits)               500.50
+# End of doGenerate                                                     500.50
+# Analyze                                                               500.50
+# Levelize                                                              500.50
+# End of LevelAssign mode=I, 2 Levels, 15 Comps, limit=30000            500.50
+# Nets                                                                  500.50
+# Place                                                                 500.50
+# PlaceNets                                                             500.50
+# SpaceY                                                                500.50
+# Track                                                                 500.50
+# SpaceX                                                                500.50
+# Wire                                                                  500.50
+# End of Wire: 1 nets, 1 ch, wire: 4-->4 (0 with wbits)                 500.50
+# End of doGenerate                                                     500.50
+# End of Generating Regions for Page 1                                  500.50
+scrollpos -152 785
+zoom -x 0 -y 0 0.6
+scrollpos -114 589
+#R 0.6
+#CMD scrollpos 0 0
+scrollpos 0 0
+selection -itemized {inst GT.X0Y0}
+center_objects -itemized {inst GT.X0Y0}
+scrollpos -68 1270
+scrollpos -68 1270
+module new gtmodule
+#  * Current module is gtmodule 
+load symbol QUAD_X0 v HIERBOX port a0 in port a1 in port a2 in port a3 in port QPLL0 in port QPLL1 in port RECCLK_clk0 out port RECCLK_clk1 out
+load symbol QUAD_X1 v HIERBOX port a0 out port a1 out port a2 out port a3 out port QPLL0 out port QPLL1 out port RECCLK_clk0 in port RECCLK_clk1 in
+load symbol CPLL_X0 syn BOX port A in port B out text CPLL -cc 25 0 12
+load symbol CPLL_X1 syn BOX port A out port B in text CPLL -cc 25 0 12
+load symbol QPLL0_X0 syn BOX port A in port B out text QPLL0 -cc 25 0 12
+load symbol QPLL0_X1 syn BOX port A out port B in text QPLL0 -cc 25 0 12
+load symbol QPLL1_X0 syn BOX port A in port B out text QPLL1 -cc 25 0 12
+load symbol QPLL1_X1 syn BOX port A out port B in text QPLL1 -cc 25 0 12
+load inst QuadX0Y4 QUAD_X0 v -pg 1 -y 1 -x 2000 -autohide -attr @cell QuadX0Y4 -attr @name {} -attr @fillcolor #d9d9d9
+attribute {pin QuadX0Y4 QPLL0 } -attr @name {}
+attribute {hierPin QuadX0Y4 QPLL0 } -attr @name {}
+attribute {pin QuadX0Y4 QPLL1 } -attr @name {}
+attribute {hierPin QuadX0Y4 QPLL1 } -attr @name {}
+attribute {pin QuadX0Y4 a0 } -attr @name {}
+attribute {hierPin QuadX0Y4 a0 } -attr @name {}
+attribute {pin QuadX0Y4 a1 } -attr @name {}
+attribute {hierPin QuadX0Y4 a1 } -attr @name {}
+attribute {pin QuadX0Y4 a2 } -attr @name {}
+attribute {hierPin QuadX0Y4 a2 } -attr @name {}
+attribute {pin QuadX0Y4 a3 } -attr @name {}
+attribute {hierPin QuadX0Y4 a3 } -attr @name {}
+attribute {pin QuadX0Y4 RECCLK_clk0 } -attr @name {}
+attribute {hierPin QuadX0Y4 RECCLK_clk0 } -attr @name {}
+attribute {pin QuadX0Y4 RECCLK_clk1 } -attr @name {}
+attribute {hierPin QuadX0Y4 RECCLK_clk1 } -attr @name {}
+load inst cpll.X0Y19 CPLL_X0 syn -hier QuadX0Y4 -pg 1 -y 2 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y19 A} -attr @name {}
+attribute {pin cpll.X0Y19 B} -attr @name {}
+attribute {inst cpll.X0Y19} -attr @fillcolor #00868b
+load symbol X0Y19 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y19 X0Y19 syn -hier QuadX0Y4 -pg 1 -y 2 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y19} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y18 CPLL_X0 syn -hier QuadX0Y4 -pg 1 -y 87 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y18 A} -attr @name {}
+attribute {pin cpll.X0Y18 B} -attr @name {}
+attribute {inst cpll.X0Y18} -attr @fillcolor #00868b
+load symbol X0Y18 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y18 X0Y18 syn -hier QuadX0Y4 -pg 1 -y 87 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y18} -attr @fillcolor #7a7a7a
+load inst QPLL0.QuadX0Y4 QPLL0_X0 syn -hier QuadX0Y4 -pg 1 -y 172 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL0.QuadX0Y4 A} -attr @name {}
+attribute {pin QPLL0.QuadX0Y4 B} -attr @name {}
+attribute {inst QPLL0.QuadX0Y4} -attr @fillcolor #00868b
+load inst QPLL1.QuadX0Y4 QPLL1_X0 syn -hier QuadX0Y4 -pg 1 -y 257 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL1.QuadX0Y4 A} -attr @name {}
+attribute {pin QPLL1.QuadX0Y4 B} -attr @name {}
+attribute {inst QPLL1.QuadX0Y4} -attr @fillcolor #00868b
+load inst cpll.X0Y17 CPLL_X0 syn -hier QuadX0Y4 -pg 1 -y 342 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y17 A} -attr @name {}
+attribute {pin cpll.X0Y17 B} -attr @name {}
+attribute {inst cpll.X0Y17} -attr @fillcolor #00868b
+load symbol X0Y17 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y17 X0Y17 syn -hier QuadX0Y4 -pg 1 -y 342 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y17} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y16 CPLL_X0 syn -hier QuadX0Y4 -pg 1 -y 427 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y16 A} -attr @name {}
+attribute {pin cpll.X0Y16 B} -attr @name {}
+attribute {inst cpll.X0Y16} -attr @fillcolor #00868b
+load symbol X0Y16 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y16 X0Y16 syn -hier QuadX0Y4 -pg 1 -y 427 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y16} -attr @fillcolor #7a7a7a
+load port QuadX0Y4_clk0 in -pg 1 -y 141 -x 1 -attr @fillcolor #3a5fcd
+load port QuadX0Y4_clk1 in -pg 1 -y 311 -x 1 -attr @fillcolor #3a5fcd
+load inst QuadX0Y3 QUAD_X0 v -pg 1 -y 563 -x 2000 -autohide -attr @cell QuadX0Y3 -attr @name {} -attr @fillcolor #d9d9d9
+attribute {pin QuadX0Y3 QPLL0 } -attr @name {}
+attribute {hierPin QuadX0Y3 QPLL0 } -attr @name {}
+attribute {pin QuadX0Y3 QPLL1 } -attr @name {}
+attribute {hierPin QuadX0Y3 QPLL1 } -attr @name {}
+attribute {pin QuadX0Y3 a0 } -attr @name {}
+attribute {hierPin QuadX0Y3 a0 } -attr @name {}
+attribute {pin QuadX0Y3 a1 } -attr @name {}
+attribute {hierPin QuadX0Y3 a1 } -attr @name {}
+attribute {pin QuadX0Y3 a2 } -attr @name {}
+attribute {hierPin QuadX0Y3 a2 } -attr @name {}
+attribute {pin QuadX0Y3 a3 } -attr @name {}
+attribute {hierPin QuadX0Y3 a3 } -attr @name {}
+attribute {pin QuadX0Y3 RECCLK_clk0 } -attr @name {}
+attribute {hierPin QuadX0Y3 RECCLK_clk0 } -attr @name {}
+attribute {pin QuadX0Y3 RECCLK_clk1 } -attr @name {}
+attribute {hierPin QuadX0Y3 RECCLK_clk1 } -attr @name {}
+load inst cpll.X0Y15 CPLL_X0 syn -hier QuadX0Y3 -pg 1 -y 564 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y15 A} -attr @name {}
+attribute {pin cpll.X0Y15 B} -attr @name {}
+attribute {inst cpll.X0Y15} -attr @fillcolor #00868b
+load symbol X0Y15 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y15 X0Y15 syn -hier QuadX0Y3 -pg 1 -y 564 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y15} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y14 CPLL_X0 syn -hier QuadX0Y3 -pg 1 -y 649 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y14 A} -attr @name {}
+attribute {pin cpll.X0Y14 B} -attr @name {}
+attribute {inst cpll.X0Y14} -attr @fillcolor #00868b
+load symbol X0Y14 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y14 X0Y14 syn -hier QuadX0Y3 -pg 1 -y 649 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y14} -attr @fillcolor #7a7a7a
+load inst QPLL0.QuadX0Y3 QPLL0_X0 syn -hier QuadX0Y3 -pg 1 -y 734 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL0.QuadX0Y3 A} -attr @name {}
+attribute {pin QPLL0.QuadX0Y3 B} -attr @name {}
+attribute {inst QPLL0.QuadX0Y3} -attr @fillcolor #00868b
+load inst QPLL1.QuadX0Y3 QPLL1_X0 syn -hier QuadX0Y3 -pg 1 -y 819 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL1.QuadX0Y3 A} -attr @name {}
+attribute {pin QPLL1.QuadX0Y3 B} -attr @name {}
+attribute {inst QPLL1.QuadX0Y3} -attr @fillcolor #00868b
+load inst cpll.X0Y13 CPLL_X0 syn -hier QuadX0Y3 -pg 1 -y 904 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y13 A} -attr @name {}
+attribute {pin cpll.X0Y13 B} -attr @name {}
+attribute {inst cpll.X0Y13} -attr @fillcolor #00868b
+load symbol X0Y13 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y13 X0Y13 syn -hier QuadX0Y3 -pg 1 -y 904 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y13} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y12 CPLL_X0 syn -hier QuadX0Y3 -pg 1 -y 989 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y12 A} -attr @name {}
+attribute {pin cpll.X0Y12 B} -attr @name {}
+attribute {inst cpll.X0Y12} -attr @fillcolor #00868b
+load symbol X0Y12 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y12 X0Y12 syn -hier QuadX0Y3 -pg 1 -y 989 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y12} -attr @fillcolor #7a7a7a
+load port QuadX0Y3_clk0 in -pg 1 -y 703 -x 1 -attr @fillcolor #3a5fcd
+load port QuadX0Y3_clk1 in -pg 1 -y 873 -x 1 -attr @fillcolor #3a5fcd
+load inst QuadX0Y2 QUAD_X0 v -pg 1 -y 1125 -x 2000 -autohide -attr @cell QuadX0Y2 -attr @name {} -attr @fillcolor #d9d9d9
+attribute {pin QuadX0Y2 QPLL0 } -attr @name {}
+attribute {hierPin QuadX0Y2 QPLL0 } -attr @name {}
+attribute {pin QuadX0Y2 QPLL1 } -attr @name {}
+attribute {hierPin QuadX0Y2 QPLL1 } -attr @name {}
+attribute {pin QuadX0Y2 a0 } -attr @name {}
+attribute {hierPin QuadX0Y2 a0 } -attr @name {}
+attribute {pin QuadX0Y2 a1 } -attr @name {}
+attribute {hierPin QuadX0Y2 a1 } -attr @name {}
+attribute {pin QuadX0Y2 a2 } -attr @name {}
+attribute {hierPin QuadX0Y2 a2 } -attr @name {}
+attribute {pin QuadX0Y2 a3 } -attr @name {}
+attribute {hierPin QuadX0Y2 a3 } -attr @name {}
+attribute {pin QuadX0Y2 RECCLK_clk0 } -attr @name {}
+attribute {hierPin QuadX0Y2 RECCLK_clk0 } -attr @name {}
+attribute {pin QuadX0Y2 RECCLK_clk1 } -attr @name {}
+attribute {hierPin QuadX0Y2 RECCLK_clk1 } -attr @name {}
+load inst cpll.X0Y11 CPLL_X0 syn -hier QuadX0Y2 -pg 1 -y 1126 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y11 A} -attr @name {}
+attribute {pin cpll.X0Y11 B} -attr @name {}
+attribute {inst cpll.X0Y11} -attr @fillcolor #00868b
+load symbol X0Y11 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y11 X0Y11 syn -hier QuadX0Y2 -pg 1 -y 1126 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y11} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y10 CPLL_X0 syn -hier QuadX0Y2 -pg 1 -y 1211 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y10 A} -attr @name {}
+attribute {pin cpll.X0Y10 B} -attr @name {}
+attribute {inst cpll.X0Y10} -attr @fillcolor #00868b
+load symbol X0Y10 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y10 X0Y10 syn -hier QuadX0Y2 -pg 1 -y 1211 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y10} -attr @fillcolor #7a7a7a
+load inst QPLL0.QuadX0Y2 QPLL0_X0 syn -hier QuadX0Y2 -pg 1 -y 1296 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL0.QuadX0Y2 A} -attr @name {}
+attribute {pin QPLL0.QuadX0Y2 B} -attr @name {}
+attribute {inst QPLL0.QuadX0Y2} -attr @fillcolor #00868b
+load inst QPLL1.QuadX0Y2 QPLL1_X0 syn -hier QuadX0Y2 -pg 1 -y 1381 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL1.QuadX0Y2 A} -attr @name {}
+attribute {pin QPLL1.QuadX0Y2 B} -attr @name {}
+attribute {inst QPLL1.QuadX0Y2} -attr @fillcolor #00868b
+load inst cpll.X0Y9 CPLL_X0 syn -hier QuadX0Y2 -pg 1 -y 1466 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y9 A} -attr @name {}
+attribute {pin cpll.X0Y9 B} -attr @name {}
+attribute {inst cpll.X0Y9} -attr @fillcolor #00868b
+load symbol X0Y9 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y9 X0Y9 syn -hier QuadX0Y2 -pg 1 -y 1466 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y9} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y8 CPLL_X0 syn -hier QuadX0Y2 -pg 1 -y 1551 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y8 A} -attr @name {}
+attribute {pin cpll.X0Y8 B} -attr @name {}
+attribute {inst cpll.X0Y8} -attr @fillcolor #00868b
+load symbol X0Y8 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y8 X0Y8 syn -hier QuadX0Y2 -pg 1 -y 1551 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y8} -attr @fillcolor #7a7a7a
+load port QuadX0Y2_clk0 in -pg 1 -y 1265 -x 1 -attr @fillcolor #3a5fcd
+load port QuadX0Y2_clk1 in -pg 1 -y 1435 -x 1 -attr @fillcolor #3a5fcd
+load inst QuadX0Y1 QUAD_X0 v -pg 1 -y 1687 -x 2000 -autohide -attr @cell QuadX0Y1 -attr @name {} -attr @fillcolor #d9d9d9
+attribute {pin QuadX0Y1 QPLL0 } -attr @name {}
+attribute {hierPin QuadX0Y1 QPLL0 } -attr @name {}
+attribute {pin QuadX0Y1 QPLL1 } -attr @name {}
+attribute {hierPin QuadX0Y1 QPLL1 } -attr @name {}
+attribute {pin QuadX0Y1 a0 } -attr @name {}
+attribute {hierPin QuadX0Y1 a0 } -attr @name {}
+attribute {pin QuadX0Y1 a1 } -attr @name {}
+attribute {hierPin QuadX0Y1 a1 } -attr @name {}
+attribute {pin QuadX0Y1 a2 } -attr @name {}
+attribute {hierPin QuadX0Y1 a2 } -attr @name {}
+attribute {pin QuadX0Y1 a3 } -attr @name {}
+attribute {hierPin QuadX0Y1 a3 } -attr @name {}
+attribute {pin QuadX0Y1 RECCLK_clk0 } -attr @name {}
+attribute {hierPin QuadX0Y1 RECCLK_clk0 } -attr @name {}
+attribute {pin QuadX0Y1 RECCLK_clk1 } -attr @name {}
+attribute {hierPin QuadX0Y1 RECCLK_clk1 } -attr @name {}
+load inst cpll.X0Y7 CPLL_X0 syn -hier QuadX0Y1 -pg 1 -y 1688 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y7 A} -attr @name {}
+attribute {pin cpll.X0Y7 B} -attr @name {}
+attribute {inst cpll.X0Y7} -attr @fillcolor #00868b
+load symbol X0Y7 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y7 X0Y7 syn -hier QuadX0Y1 -pg 1 -y 1688 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y7} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y6 CPLL_X0 syn -hier QuadX0Y1 -pg 1 -y 1773 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y6 A} -attr @name {}
+attribute {pin cpll.X0Y6 B} -attr @name {}
+attribute {inst cpll.X0Y6} -attr @fillcolor #00868b
+load symbol X0Y6 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y6 X0Y6 syn -hier QuadX0Y1 -pg 1 -y 1773 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y6} -attr @fillcolor #7a7a7a
+load inst QPLL0.QuadX0Y1 QPLL0_X0 syn -hier QuadX0Y1 -pg 1 -y 1858 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL0.QuadX0Y1 A} -attr @name {}
+attribute {pin QPLL0.QuadX0Y1 B} -attr @name {}
+attribute {inst QPLL0.QuadX0Y1} -attr @fillcolor #00868b
+load inst QPLL1.QuadX0Y1 QPLL1_X0 syn -hier QuadX0Y1 -pg 1 -y 1943 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL1.QuadX0Y1 A} -attr @name {}
+attribute {pin QPLL1.QuadX0Y1 B} -attr @name {}
+attribute {inst QPLL1.QuadX0Y1} -attr @fillcolor #00868b
+load inst cpll.X0Y5 CPLL_X0 syn -hier QuadX0Y1 -pg 1 -y 2028 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y5 A} -attr @name {}
+attribute {pin cpll.X0Y5 B} -attr @name {}
+attribute {inst cpll.X0Y5} -attr @fillcolor #00868b
+load symbol X0Y5 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y5 X0Y5 syn -hier QuadX0Y1 -pg 1 -y 2028 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y5} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y4 CPLL_X0 syn -hier QuadX0Y1 -pg 1 -y 2113 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y4 A} -attr @name {}
+attribute {pin cpll.X0Y4 B} -attr @name {}
+attribute {inst cpll.X0Y4} -attr @fillcolor #00868b
+load symbol X0Y4 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y4 X0Y4 syn -hier QuadX0Y1 -pg 1 -y 2113 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y4} -attr @fillcolor #7a7a7a
+load port QuadX0Y1_clk0 in -pg 1 -y 1827 -x 1 -attr @fillcolor #3a5fcd
+load port QuadX0Y1_clk1 in -pg 1 -y 1997 -x 1 -attr @fillcolor #3a5fcd
+load inst QuadX0Y0 QUAD_X0 v -pg 1 -y 2249 -x 2000 -autohide -attr @cell QuadX0Y0 -attr @name {} -attr @fillcolor #d9d9d9
+attribute {pin QuadX0Y0 QPLL0 } -attr @name {}
+attribute {hierPin QuadX0Y0 QPLL0 } -attr @name {}
+attribute {pin QuadX0Y0 QPLL1 } -attr @name {}
+attribute {hierPin QuadX0Y0 QPLL1 } -attr @name {}
+attribute {pin QuadX0Y0 a0 } -attr @name {}
+attribute {hierPin QuadX0Y0 a0 } -attr @name {}
+attribute {pin QuadX0Y0 a1 } -attr @name {}
+attribute {hierPin QuadX0Y0 a1 } -attr @name {}
+attribute {pin QuadX0Y0 a2 } -attr @name {}
+attribute {hierPin QuadX0Y0 a2 } -attr @name {}
+attribute {pin QuadX0Y0 a3 } -attr @name {}
+attribute {hierPin QuadX0Y0 a3 } -attr @name {}
+attribute {pin QuadX0Y0 RECCLK_clk0 } -attr @name {}
+attribute {hierPin QuadX0Y0 RECCLK_clk0 } -attr @name {}
+attribute {pin QuadX0Y0 RECCLK_clk1 } -attr @name {}
+attribute {hierPin QuadX0Y0 RECCLK_clk1 } -attr @name {}
+load inst cpll.X0Y3 CPLL_X0 syn -hier QuadX0Y0 -pg 1 -y 2250 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y3 A} -attr @name {}
+attribute {pin cpll.X0Y3 B} -attr @name {}
+attribute {inst cpll.X0Y3} -attr @fillcolor #00868b
+load symbol X0Y3 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y3 X0Y3 syn -hier QuadX0Y0 -pg 1 -y 2250 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y3} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y2 CPLL_X0 syn -hier QuadX0Y0 -pg 1 -y 2335 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y2 A} -attr @name {}
+attribute {pin cpll.X0Y2 B} -attr @name {}
+attribute {inst cpll.X0Y2} -attr @fillcolor #00868b
+load symbol X0Y2 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y2 X0Y2 syn -hier QuadX0Y0 -pg 1 -y 2335 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y2} -attr @fillcolor #7a7a7a
+load inst QPLL0.QuadX0Y0 QPLL0_X0 syn -hier QuadX0Y0 -pg 1 -y 2420 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL0.QuadX0Y0 A} -attr @name {}
+attribute {pin QPLL0.QuadX0Y0 B} -attr @name {}
+attribute {inst QPLL0.QuadX0Y0} -attr @fillcolor #00868b
+load inst QPLL1.QuadX0Y0 QPLL1_X0 syn -hier QuadX0Y0 -pg 1 -y 2505 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin QPLL1.QuadX0Y0 A} -attr @name {}
+attribute {pin QPLL1.QuadX0Y0 B} -attr @name {}
+attribute {inst QPLL1.QuadX0Y0} -attr @fillcolor #00868b
+load inst cpll.X0Y1 CPLL_X0 syn -hier QuadX0Y0 -pg 1 -y 2590 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y1 A} -attr @name {}
+attribute {pin cpll.X0Y1 B} -attr @name {}
+attribute {inst cpll.X0Y1} -attr @fillcolor #00868b
+load symbol X0Y1 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y1 X0Y1 syn -hier QuadX0Y0 -pg 1 -y 2590 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y1} -attr @fillcolor #7a7a7a
+load inst cpll.X0Y0 CPLL_X0 syn -hier QuadX0Y0 -pg 1 -y 2675 -x 1 -autohide -attr @name {} -attr @cell {}
+attribute {pin cpll.X0Y0 A} -attr @name {}
+attribute {pin cpll.X0Y0 B} -attr @name {}
+attribute {inst cpll.X0Y0} -attr @fillcolor #00868b
+load symbol X0Y0 syn HIERGEN port TX in port RX in port RXRECCLK out
+load inst GT.X0Y0 X0Y0 syn -hier QuadX0Y0 -pg 1 -y 2675 -x 2000 -autohide -attr @name {}
+attribute {inst GT.X0Y0} -attr @fillcolor #7a7a7a
+load port QuadX0Y0_clk0 in -pg 1 -y 2389 -x 1 -attr @fillcolor #3a5fcd
+load port QuadX0Y0_clk1 in -pg 1 -y 2559 -x 1 -attr @fillcolor #3a5fcd
+attribute {inst GT.X0Y19} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y19} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y4} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y4} -attr @fillcolor #00868b
+attribute {inst GT.X0Y18} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y18} -attr @fillcolor #00868b
+attribute {inst GT.X0Y17} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y17} -attr @fillcolor #00868b
+attribute {inst GT.X0Y16} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y16} -attr @fillcolor #00868b
+attribute {inst GT.X0Y15} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y15} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y3} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y3} -attr @fillcolor #00868b
+attribute {inst GT.X0Y14} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y14} -attr @fillcolor #00868b
+attribute {inst GT.X0Y13} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y13} -attr @fillcolor #00868b
+attribute {inst GT.X0Y12} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y12} -attr @fillcolor #00868b
+attribute {inst GT.X0Y11} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y11} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y2} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y2} -attr @fillcolor #00868b
+attribute {inst GT.X0Y10} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y10} -attr @fillcolor #00868b
+attribute {inst GT.X0Y9} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y9} -attr @fillcolor #00868b
+attribute {inst GT.X0Y8} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y8} -attr @fillcolor #00868b
+attribute {inst GT.X0Y7} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y7} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y1} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y1} -attr @fillcolor #00868b
+attribute {inst GT.X0Y6} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y6} -attr @fillcolor #00868b
+attribute {inst GT.X0Y5} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y5} -attr @fillcolor #00868b
+attribute {inst GT.X0Y4} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y4} -attr @fillcolor #00868b
+attribute {inst GT.X0Y3} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y3} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y0} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y0} -attr @fillcolor #00868b
+attribute {inst GT.X0Y2} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y2} -attr @fillcolor #00868b
+attribute {inst GT.X0Y1} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y1} -attr @fillcolor #00868b
+attribute {inst GT.X0Y0} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y0} -attr @fillcolor #00868b
+increment -const
+load net net.clk.QuadX0Y0_clk0 -port QuadX0Y0_clk0 -pin QuadX0Y0 QPLL0
+load net net.quad.QPLL0.QuadX0Y0 -hierPin QuadX0Y0 QPLL0 -pin QPLL0.QuadX0Y0 A
+load net net.chan.QPLL0.QuadX0Y0 -pin QPLL0.QuadX0Y0 B -pin GT.X0Y0 TX
+attribute {inst QPLL0.QuadX0Y0} -attr @fillcolor #cccc00
+attribute {inst GT.X0Y0} -attr @fillcolor #cccc00
+load net net.chan.QPLL0.QuadX0Y0 -pin QPLL0.QuadX0Y0 B -pin GT.X0Y0 RX
+attribute {inst QPLL0.QuadX0Y0} -attr @fillcolor #cccc00
+attribute {inst GT.X0Y0} -attr @fillcolor #cccc00
+show
+# Starting Split Pages                                                  508.01
+# Split Pages 65 Comps, 3 Nets 0 NetBundles                             508.01
+# KwayPart started for 65 comps, 3 nets                                 508.01
+# Init done: 1 nodes (1 locked nodes), 0 edges                          508.01
+# Startpart done: 1 parts                                               508.01
+# KwayPart done                                                         508.01
+# End of Split Pages: 1 pages                                           508.01
+# End of Split Pages                                                    508.01
+# Generating Regions for Page 1:   65 Comps,    3 Nets                  508.01
+# Analyze                                                               508.01
+# Levelize                                                              508.01
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            508.01
+# Nets                                                                  508.01
+# Place                                                                 508.01
+# PlaceNets                                                             508.01
+# SpaceY                                                                508.01
+# Track                                                                 508.01
+# SpaceX                                                                508.01
+# Wire                                                                  508.01
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 508.01
+# End of doGenerate                                                     508.01
+# Analyze                                                               508.01
+# Levelize                                                              508.01
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            508.01
+# Nets                                                                  508.01
+# Place                                                                 508.01
+# PlaceNets                                                             508.01
+# SpaceY                                                                508.01
+# Track                                                                 508.01
+# SpaceX                                                                508.01
+# Wire                                                                  508.01
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 508.01
+# End of doGenerate                                                     508.01
+# Analyze                                                               508.01
+# Levelize                                                              508.01
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            508.01
+# Nets                                                                  508.01
+# Place                                                                 508.01
+# PlaceNets                                                             508.01
+# SpaceY                                                                508.01
+# Track                                                                 508.01
+# SpaceX                                                                508.01
+# Wire                                                                  508.01
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 508.01
+# End of doGenerate                                                     508.01
+# Analyze                                                               508.01
+# Levelize                                                              508.01
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            508.01
+# Nets                                                                  508.01
+# Place                                                                 508.01
+# PlaceNets                                                             508.01
+# SpaceY                                                                508.01
+# Track                                                                 508.01
+# SpaceX                                                                508.01
+# Wire                                                                  508.01
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 508.01
+# End of doGenerate                                                     508.01
+# Analyze                                                               508.01
+# Levelize                                                              508.01
+# End of LevelAssign mode=I, 3 Levels, 11 Comps, limit=30000            508.01
+# Nets                                                                  508.01
+# Place                                                                 508.01
+# PlaceNets                                                             508.01
+# SpaceY                                                                508.01
+# Track                                                                 508.01
+# SpaceX                                                                508.01
+# Wire                                                                  508.01
+# End of Wire: 2 nets, 2 ch, wire: 10-->10 (0 with wbits)               508.01
+# End of doGenerate                                                     508.01
+# Analyze                                                               508.01
+# Levelize                                                              508.01
+# End of LevelAssign mode=I, 2 Levels, 15 Comps, limit=30000            508.01
+# Nets                                                                  508.01
+# Place                                                                 508.01
+# PlaceNets                                                             508.01
+# SpaceY                                                                508.01
+# Track                                                                 508.02
+# SpaceX                                                                508.02
+# Wire                                                                  508.02
+# End of Wire: 1 nets, 1 ch, wire: 4-->4 (0 with wbits)                 508.02
+# End of doGenerate                                                     508.02
+# End of Generating Regions for Page 1                                  508.02
+scrollpos -147 809
+zoom -x 0 -y 0 0.6
+scrollpos -110 607
+#R 0.6
+#CMD scrollpos 0 0
+scrollpos 0 0
+selection -itemized {inst GT.X0Y0}
+center_objects -itemized {inst GT.X0Y0}
+scrollpos -63 1294
+pick inst 133 323
+#R inst cpll.X0Y0 CPLL_X0 syn
+fullfit
+scrollpos -181 -9
+scrollpos -181 -8
+scrollpos -181 -7
+scrollpos -181 -5
+scrollpos -181 -2
+scrollpos -181 2
+scrollpos -181 6
+scrollpos -181 11
+scrollpos -181 16
+scrollpos -181 22
+scrollpos -181 28
+scrollpos -181 35
+scrollpos -181 48
+scrollpos -181 63
+scrollpos -181 81
+scrollpos -181 110
+scrollpos -181 143
+scrollpos -181 180
+scrollpos -181 219
+scrollpos -181 262
+scrollpos -181 303
+pick inst 265 316
+zoomrect -db -230 2188 379 2792
+scrollpos -147 1283
+#R 0.640394
+pick inst 165 279
+zoomrect -db -211 2319 28 2439
+scrollpos -344 3571
+#R 1.6318
+pick inst 200 396
+fullfit
+scrollpos -181 -9
+pick inst 249 174
+zoomrect -db -104 469 307 744
+scrollpos -99 264
+#R 0.948905
+scrollpos -99 264
+scrollpos -99 280
+scrollpos -99 289
+scrollpos -99 298
+scrollpos -99 303
+scrollpos -99 307
+scrollpos -99 311
+scrollpos -99 316
+scrollpos -99 320
+scrollpos -99 325
+scrollpos -99 329
+scrollpos -99 334
+scrollpos -99 338
+scrollpos -99 343
+scrollpos -99 347
+scrollpos -99 356
+scrollpos -99 361
+scrollpos -99 383
+scrollpos -99 392
+scrollpos -99 397
+scrollpos -99 401
+scrollpos -99 410
+scrollpos -99 415
+scrollpos -99 419
+scrollpos -99 423
+scrollpos -99 428
+scrollpos -99 437
+scrollpos -99 446
+scrollpos -99 450
+scrollpos -99 459
+scrollpos -99 464
+scrollpos -99 468
+scrollpos -99 468
+scrollpos -99 468
+scrollpos -104 468
+scrollpos -112 468
+scrollpos -131 468
+scrollpos -138 468
+scrollpos -139 468
+scrollpos -139 468
+scrollpos -139 468
+scrollpos -139 486
+scrollpos -139 495
+scrollpos -139 509
+scrollpos -139 527
+scrollpos -139 535
+scrollpos -139 558
+scrollpos -139 567
+scrollpos -139 571
+scrollpos -139 580
+scrollpos -139 585
+scrollpos -139 589
+scrollpos -139 594
+scrollpos -139 598
+scrollpos -139 603
+scrollpos -139 607
+scrollpos -139 612
+scrollpos -139 616
+scrollpos -139 621
+scrollpos -139 634
+scrollpos -139 639
+scrollpos -139 643
+scrollpos -139 652
+scrollpos -139 656
+scrollpos -139 661
+scrollpos -139 665
+scrollpos -139 670
+scrollpos -139 674
+scrollpos -139 679
+scrollpos -139 683
+scrollpos -139 688
+scrollpos -139 692
+scrollpos -139 697
+scrollpos -139 701
+scrollpos -139 706
+scrollpos -139 710
+scrollpos -139 719
+scrollpos -139 724
+scrollpos -139 728
+scrollpos -139 733
+scrollpos -139 737
+scrollpos -139 742
+scrollpos -139 746
+scrollpos -139 751
+scrollpos -139 755
+scrollpos -139 759
+scrollpos -139 764
+scrollpos -139 768
+scrollpos -139 773
+scrollpos -139 777
+scrollpos -139 782
+scrollpos -139 786
+scrollpos -139 791
+scrollpos -139 795
+scrollpos -139 800
+scrollpos -139 809
+scrollpos -139 818
+scrollpos -139 827
+scrollpos -139 836
+scrollpos -139 840
+scrollpos -139 854
+scrollpos -139 858
+scrollpos -139 863
+scrollpos -139 867
+scrollpos -139 871
+scrollpos -139 876
+scrollpos -139 880
+scrollpos -139 885
+scrollpos -139 889
+scrollpos -139 894
+scrollpos -139 898
+scrollpos -139 907
+scrollpos -139 912
+scrollpos -139 916
+scrollpos -139 921
+scrollpos -139 925
+scrollpos -139 930
+scrollpos -139 934
+scrollpos -139 930
+scrollpos -139 925
+scrollpos -139 921
+scrollpos -139 921
+scrollpos -139 921
+scrollpos -139 939
+scrollpos -139 943
+scrollpos -139 948
+scrollpos -139 957
+scrollpos -139 966
+scrollpos -139 975
+scrollpos -139 979
+scrollpos -139 997
+scrollpos -139 1001
+scrollpos -139 1006
+scrollpos -139 1010
+scrollpos -139 1015
+scrollpos -139 1019
+scrollpos -139 1024
+scrollpos -139 1028
+scrollpos -139 1033
+scrollpos -139 1037
+scrollpos -139 1037
+scrollpos -139 1037
+scrollpos -139 1055
+scrollpos -139 1064
+scrollpos -139 1069
+scrollpos -139 1073
+scrollpos -139 1078
+scrollpos -139 1082
+scrollpos -139 1087
+scrollpos -139 1091
+scrollpos -139 1096
+scrollpos -139 1100
+scrollpos -139 1104
+scrollpos -139 1109
+scrollpos -139 1113
+scrollpos -139 1122
+scrollpos -139 1131
+scrollpos -139 1136
+scrollpos -139 1158
+scrollpos -139 1167
+scrollpos -139 1176
+scrollpos -139 1194
+scrollpos -139 1199
+scrollpos -139 1203
+scrollpos -139 1208
+scrollpos -139 1212
+scrollpos -139 1216
+scrollpos -139 1221
+scrollpos -139 1225
+scrollpos -139 1239
+scrollpos -139 1252
+scrollpos -139 1261
+scrollpos -139 1266
+scrollpos -139 1288
+scrollpos -139 1293
+scrollpos -139 1302
+scrollpos -139 1306
+scrollpos -139 1315
+scrollpos -139 1320
+scrollpos -139 1324
+scrollpos -139 1328
+scrollpos -139 1333
+scrollpos -139 1337
+scrollpos -139 1342
+scrollpos -139 1337
+scrollpos -139 1333
+scrollpos -139 1328
+scrollpos -139 1324
+scrollpos -139 1320
+scrollpos -139 1315
+scrollpos -139 1311
+scrollpos -139 1297
+scrollpos -139 1266
+scrollpos -139 1248
+scrollpos -139 1234
+scrollpos -139 1176
+scrollpos -139 1158
+scrollpos -139 1136
+scrollpos -139 1118
+scrollpos -139 1096
+scrollpos -139 1087
+scrollpos -139 1069
+scrollpos -139 1055
+scrollpos -139 1046
+scrollpos -139 1037
+scrollpos -139 1028
+scrollpos -139 1024
+scrollpos -139 1015
+scrollpos -139 1010
+scrollpos -139 1006
+scrollpos -139 1001
+scrollpos -139 997
+scrollpos -139 992
+scrollpos -139 997
+scrollpos -139 1001
+scrollpos -139 997
+scrollpos -139 992
+scrollpos -139 970
+scrollpos -139 948
+scrollpos -139 921
+scrollpos -139 889
+scrollpos -139 845
+scrollpos -139 800
+scrollpos -139 777
+scrollpos -139 733
+scrollpos -139 697
+scrollpos -139 585
+scrollpos -139 576
+scrollpos -139 549
+scrollpos -139 513
+scrollpos -139 504
+scrollpos -139 491
+scrollpos -139 482
+scrollpos -139 468
+scrollpos -139 459
+scrollpos -139 455
+scrollpos -139 446
+scrollpos -139 441
+scrollpos -139 437
+scrollpos -139 432
+scrollpos -139 428
+scrollpos -139 423
+scrollpos -139 419
+scrollpos -139 415
+scrollpos -139 410
+scrollpos -139 406
+scrollpos -139 401
+scrollpos -139 397
+scrollpos -139 392
+scrollpos -139 388
+scrollpos -139 379
+scrollpos -139 361
+scrollpos -139 343
+scrollpos -139 276
+scrollpos -139 235
+scrollpos -139 164
+scrollpos -139 119
+scrollpos -139 78
+scrollpos -139 52
+scrollpos -139 20
+scrollpos -139 -34
+scrollpos -139 -38
+scrollpos -139 -25
+scrollpos -139 -11
+scrollpos -139 7
+scrollpos -139 25
+scrollpos -139 52
+scrollpos -139 101
+scrollpos -139 128
+scrollpos -139 155
+scrollpos -139 182
+scrollpos -139 294
+scrollpos -139 320
+scrollpos -139 379
+scrollpos -139 477
+scrollpos -139 513
+scrollpos -139 580
+scrollpos -139 643
+scrollpos -139 674
+scrollpos -139 706
+scrollpos -139 733
+scrollpos -139 759
+scrollpos -139 791
+scrollpos -139 809
+scrollpos -139 822
+scrollpos -139 831
+scrollpos -139 840
+scrollpos -139 845
+scrollpos -139 849
+scrollpos -139 854
+scrollpos -139 858
+scrollpos -139 863
+scrollpos -139 867
+scrollpos -139 871
+scrollpos -139 876
+scrollpos -139 880
+scrollpos -139 885
+scrollpos -139 894
+scrollpos -139 907
+scrollpos -139 916
+scrollpos -139 939
+scrollpos -139 961
+scrollpos -139 984
+scrollpos -139 1037
+scrollpos -139 1069
+scrollpos -139 1096
+scrollpos -139 1127
+scrollpos -139 1181
+scrollpos -139 1194
+scrollpos -139 1212
+scrollpos -139 1221
+scrollpos -139 1239
+scrollpos -139 1243
+scrollpos -139 1248
+scrollpos -139 1252
+scrollpos -139 1257
+scrollpos -139 1261
+scrollpos -139 1266
+scrollpos -139 1270
+scrollpos -139 1279
+scrollpos -139 1288
+scrollpos -139 1315
+scrollpos -139 1333
+scrollpos -139 1369
+scrollpos -139 1400
+scrollpos -139 1440
+scrollpos -139 1539
+scrollpos -139 1575
+scrollpos -139 1606
+scrollpos -139 1687
+scrollpos -139 1709
+scrollpos -139 1727
+scrollpos -139 1736
+scrollpos -139 1759
+scrollpos -139 1763
+scrollpos -139 1772
+scrollpos -139 1777
+scrollpos -139 1781
+scrollpos -139 1785
+scrollpos -139 1790
+scrollpos -139 1794
+scrollpos -139 1799
+scrollpos -139 1803
+scrollpos -139 1812
+scrollpos -139 1830
+scrollpos -139 1839
+scrollpos -139 1848
+scrollpos -139 1857
+scrollpos -139 1884
+scrollpos -139 1889
+scrollpos -139 1893
+scrollpos -139 1897
+scrollpos -139 1902
+scrollpos -139 1911
+scrollpos -139 1920
+scrollpos -139 1924
+scrollpos -139 1929
+scrollpos -139 1933
+scrollpos -139 1938
+scrollpos -139 1942
+scrollpos -139 1947
+scrollpos -139 1951
+scrollpos -139 1956
+scrollpos -139 1960
+scrollpos -139 1965
+scrollpos -139 1969
+scrollpos -139 1974
+scrollpos -139 1978
+scrollpos -139 1983
+scrollpos -139 1987
+scrollpos -139 1992
+scrollpos -139 1996
+scrollpos -139 2005
+scrollpos -139 2005
+scrollpos -139 2005
+scrollpos -134 2005
+scrollpos -134 2005
+pick inst 135 486
+fullfit
+scrollpos -181 -9
+pick inst 151 504
+fullfit
+scrollpos -181 -8
+scrollpos -181 -6
+scrollpos -181 -4
+scrollpos -181 -1
+scrollpos -181 2
+scrollpos -181 6
+scrollpos -181 10
+scrollpos -181 15
+scrollpos -181 20
+scrollpos -181 27
+scrollpos -181 35
+scrollpos -181 45
+scrollpos -181 57
+scrollpos -181 70
+scrollpos -181 85
+scrollpos -181 104
+scrollpos -181 125
+scrollpos -181 147
+scrollpos -181 171
+scrollpos -181 196
+scrollpos -181 223
+scrollpos -181 252
+scrollpos -181 283
+pick inst 313 340
+zoomrect -db -126 2174 595 2810
+scrollpos -68 1037
+#R 0.540915
+scrollpos -68 1037
+scrollpos -72 1037
+scrollpos -77 1037
+scrollpos -79 1037
+scrollpos -79 1037
+pick inst 249 467
+zoomrect -db -137 2213 314 2780
+scrollpos -118 1848
+#R 0.864745
+scrollpos -118 1786
+scrollpos -118 1724
+scrollpos -118 1662
+scrollpos -118 1600
+scrollpos -118 1538
+scrollpos -118 1476
+scrollpos -118 1538
+scrollpos -118 1600
+scrollpos -118 1662
+scrollpos -118 1724
+scrollpos -118 1772
+selection -itemized {inst GT.X0Y1}
+center_objects -itemized {inst GT.X0Y1}
+scrollpos -1 1928
+attribute {inst GT.X0Y19} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y19} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y4} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y4} -attr @fillcolor #00868b
+attribute {inst GT.X0Y18} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y18} -attr @fillcolor #00868b
+attribute {inst GT.X0Y17} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y17} -attr @fillcolor #00868b
+attribute {inst GT.X0Y16} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y16} -attr @fillcolor #00868b
+attribute {inst GT.X0Y15} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y15} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y3} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y3} -attr @fillcolor #00868b
+attribute {inst GT.X0Y14} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y14} -attr @fillcolor #00868b
+attribute {inst GT.X0Y13} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y13} -attr @fillcolor #00868b
+attribute {inst GT.X0Y12} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y12} -attr @fillcolor #00868b
+attribute {inst GT.X0Y11} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y11} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y2} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y2} -attr @fillcolor #00868b
+attribute {inst GT.X0Y10} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y10} -attr @fillcolor #00868b
+attribute {inst GT.X0Y9} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y9} -attr @fillcolor #00868b
+attribute {inst GT.X0Y8} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y8} -attr @fillcolor #00868b
+attribute {inst GT.X0Y7} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y7} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y1} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y1} -attr @fillcolor #00868b
+attribute {inst GT.X0Y6} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y6} -attr @fillcolor #00868b
+attribute {inst GT.X0Y5} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y5} -attr @fillcolor #00868b
+attribute {inst GT.X0Y4} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y4} -attr @fillcolor #00868b
+attribute {inst GT.X0Y3} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y3} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y0} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y0} -attr @fillcolor #00868b
+attribute {inst GT.X0Y2} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y2} -attr @fillcolor #00868b
+attribute {inst GT.X0Y1} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y1} -attr @fillcolor #00868b
+attribute {inst GT.X0Y0} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y0} -attr @fillcolor #00868b
+increment -const
+unload net net.chan.QPLL0.QuadX0Y0
+unload net net.clk.QuadX0Y0_clk0
+unload net net.quad.QPLL0.QuadX0Y0
+load net net.clk.QuadX0Y0_clk0 -port QuadX0Y0_clk0 -pin QuadX0Y0 QPLL0
+load net net.quad.QPLL0.QuadX0Y0 -hierPin QuadX0Y0 QPLL0 -pin QPLL0.QuadX0Y0 A
+load net net.chan.QPLL0.QuadX0Y0 -pin QPLL0.QuadX0Y0 B -pin GT.X0Y1 TX
+attribute {inst QPLL0.QuadX0Y0} -attr @fillcolor #cccc00
+attribute {inst GT.X0Y1} -attr @fillcolor #cccc00
+load net net.chan.QPLL0.QuadX0Y0 -pin QPLL0.QuadX0Y0 B -pin GT.X0Y0 TX
+attribute {inst QPLL0.QuadX0Y0} -attr @fillcolor #cccc00
+attribute {inst GT.X0Y0} -attr @fillcolor #cccc00
+load net net.chan.QPLL0.QuadX0Y0 -pin QPLL0.QuadX0Y0 B -pin GT.X0Y1 RX
+attribute {inst QPLL0.QuadX0Y0} -attr @fillcolor #cccc00
+attribute {inst GT.X0Y1} -attr @fillcolor #cccc00
+load net net.chan.QPLL0.QuadX0Y0 -pin QPLL0.QuadX0Y0 B -pin GT.X0Y0 RX
+attribute {inst QPLL0.QuadX0Y0} -attr @fillcolor #cccc00
+attribute {inst GT.X0Y0} -attr @fillcolor #cccc00
+show
+# Starting Split Pages                                                  533.32
+# Split Pages 65 Comps, 3 Nets 0 NetBundles                             533.32
+# KwayPart started for 65 comps, 3 nets                                 533.32
+# Init done: 1 nodes (1 locked nodes), 0 edges                          533.32
+# Startpart done: 1 parts                                               533.32
+# KwayPart done                                                         533.32
+# End of Split Pages: 1 pages                                           533.32
+# End of Split Pages                                                    533.32
+# Generating Regions for Page 1:   65 Comps,    3 Nets                  533.32
+# Analyze                                                               533.32
+# Levelize                                                              533.32
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            533.32
+# Nets                                                                  533.32
+# Place                                                                 533.32
+# PlaceNets                                                             533.32
+# SpaceY                                                                533.32
+# Track                                                                 533.32
+# SpaceX                                                                533.32
+# Wire                                                                  533.32
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 533.32
+# End of doGenerate                                                     533.32
+# Analyze                                                               533.32
+# Levelize                                                              533.32
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            533.32
+# Nets                                                                  533.32
+# Place                                                                 533.32
+# PlaceNets                                                             533.32
+# SpaceY                                                                533.32
+# Track                                                                 533.32
+# SpaceX                                                                533.32
+# Wire                                                                  533.32
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 533.32
+# End of doGenerate                                                     533.32
+# Analyze                                                               533.32
+# Levelize                                                              533.32
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            533.32
+# Nets                                                                  533.32
+# Place                                                                 533.32
+# PlaceNets                                                             533.32
+# SpaceY                                                                533.32
+# Track                                                                 533.32
+# SpaceX                                                                533.32
+# Wire                                                                  533.32
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 533.32
+# End of doGenerate                                                     533.32
+# Analyze                                                               533.32
+# Levelize                                                              533.32
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            533.32
+# Nets                                                                  533.32
+# Place                                                                 533.32
+# PlaceNets                                                             533.32
+# SpaceY                                                                533.32
+# Track                                                                 533.32
+# SpaceX                                                                533.32
+# Wire                                                                  533.32
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 533.32
+# End of doGenerate                                                     533.32
+# Analyze                                                               533.32
+# Levelize                                                              533.32
+# End of LevelAssign mode=I, 3 Levels, 11 Comps, limit=30000            533.32
+# Nets                                                                  533.32
+# Place                                                                 533.32
+# PlaceNets                                                             533.32
+# SpaceY                                                                533.32
+# Track                                                                 533.32
+# SpaceX                                                                533.32
+# Wire                                                                  533.32
+# End of Wire: 2 nets, 2 ch, wire: 18-->18 (0 with wbits)               533.32
+# End of doGenerate                                                     533.32
+# Analyze                                                               533.32
+# Levelize                                                              533.32
+# End of LevelAssign mode=I, 2 Levels, 15 Comps, limit=30000            533.32
+# Nets                                                                  533.32
+# Place                                                                 533.32
+# PlaceNets                                                             533.32
+# SpaceY                                                                533.32
+# Track                                                                 533.32
+# SpaceX                                                                533.32
+# Wire                                                                  533.32
+# End of Wire: 1 nets, 1 ch, wire: 4-->4 (0 with wbits)                 533.32
+# End of doGenerate                                                     533.32
+# End of Generating Regions for Page 1                                  533.32
+scrollpos -1 1929
+scrollpos -1 1930
+selection -itemized {inst GT.X0Y1}
+center_objects -itemized {inst GT.X0Y1}
+scrollpos 4 1937
+attribute {inst GT.X0Y19} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y19} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y4} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y4} -attr @fillcolor #00868b
+attribute {inst GT.X0Y18} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y18} -attr @fillcolor #00868b
+attribute {inst GT.X0Y17} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y17} -attr @fillcolor #00868b
+attribute {inst GT.X0Y16} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y16} -attr @fillcolor #00868b
+attribute {inst GT.X0Y15} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y15} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y3} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y3} -attr @fillcolor #00868b
+attribute {inst GT.X0Y14} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y14} -attr @fillcolor #00868b
+attribute {inst GT.X0Y13} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y13} -attr @fillcolor #00868b
+attribute {inst GT.X0Y12} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y12} -attr @fillcolor #00868b
+attribute {inst GT.X0Y11} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y11} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y2} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y2} -attr @fillcolor #00868b
+attribute {inst GT.X0Y10} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y10} -attr @fillcolor #00868b
+attribute {inst GT.X0Y9} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y9} -attr @fillcolor #00868b
+attribute {inst GT.X0Y8} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y8} -attr @fillcolor #00868b
+attribute {inst GT.X0Y7} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y7} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y1} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y1} -attr @fillcolor #00868b
+attribute {inst GT.X0Y6} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y6} -attr @fillcolor #00868b
+attribute {inst GT.X0Y5} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y5} -attr @fillcolor #00868b
+attribute {inst GT.X0Y4} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y4} -attr @fillcolor #00868b
+attribute {inst GT.X0Y3} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y3} -attr @fillcolor #00868b
+attribute {inst QPLL0.QuadX0Y0} -attr @fillcolor #00868b
+attribute {inst QPLL1.QuadX0Y0} -attr @fillcolor #00868b
+attribute {inst GT.X0Y2} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y2} -attr @fillcolor #00868b
+attribute {inst GT.X0Y1} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y1} -attr @fillcolor #00868b
+attribute {inst GT.X0Y0} -attr @fillcolor #7a7a7a
+attribute {inst cpll.X0Y0} -attr @fillcolor #00868b
+increment -const
+unload net net.chan.QPLL0.QuadX0Y0
+unload net net.clk.QuadX0Y0_clk0
+unload net net.quad.QPLL0.QuadX0Y0
+load net net.clk.QuadX0Y0_clk0 -port QuadX0Y0_clk0 -pin QuadX0Y0 QPLL0
+load net net.quad.QPLL0.QuadX0Y0 -hierPin QuadX0Y0 QPLL0 -pin QPLL0.QuadX0Y0 A
+load net net.chan.QPLL0.QuadX0Y0 -pin QPLL0.QuadX0Y0 B -pin GT.X0Y0 TX
+attribute {inst QPLL0.QuadX0Y0} -attr @fillcolor #cccc00
+attribute {inst GT.X0Y0} -attr @fillcolor #cccc00
+load net net.chan.QPLL0.QuadX0Y0 -pin QPLL0.QuadX0Y0 B -pin GT.X0Y0 RX
+attribute {inst QPLL0.QuadX0Y0} -attr @fillcolor #cccc00
+attribute {inst GT.X0Y0} -attr @fillcolor #cccc00
+show
+# Starting Split Pages                                                  533.63
+# Split Pages 65 Comps, 3 Nets 0 NetBundles                             533.63
+# KwayPart started for 65 comps, 3 nets                                 533.63
+# Init done: 1 nodes (1 locked nodes), 0 edges                          533.63
+# Startpart done: 1 parts                                               533.63
+# KwayPart done                                                         533.63
+# End of Split Pages: 1 pages                                           533.63
+# End of Split Pages                                                    533.63
+# Generating Regions for Page 1:   65 Comps,    3 Nets                  533.63
+# Analyze                                                               533.63
+# Levelize                                                              533.63
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            533.63
+# Nets                                                                  533.63
+# Place                                                                 533.63
+# PlaceNets                                                             533.63
+# SpaceY                                                                533.63
+# Track                                                                 533.63
+# SpaceX                                                                533.63
+# Wire                                                                  533.63
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 533.63
+# End of doGenerate                                                     533.63
+# Analyze                                                               533.63
+# Levelize                                                              533.63
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            533.63
+# Nets                                                                  533.63
+# Place                                                                 533.63
+# PlaceNets                                                             533.63
+# SpaceY                                                                533.63
+# Track                                                                 533.63
+# SpaceX                                                                533.63
+# Wire                                                                  533.63
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 533.63
+# End of doGenerate                                                     533.63
+# Analyze                                                               533.63
+# Levelize                                                              533.63
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            533.63
+# Nets                                                                  533.63
+# Place                                                                 533.63
+# PlaceNets                                                             533.63
+# SpaceY                                                                533.63
+# Track                                                                 533.63
+# SpaceX                                                                533.63
+# Wire                                                                  533.63
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 533.63
+# End of doGenerate                                                     533.63
+# Analyze                                                               533.63
+# Levelize                                                              533.63
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            533.63
+# Nets                                                                  533.63
+# Place                                                                 533.63
+# PlaceNets                                                             533.63
+# SpaceY                                                                533.63
+# Track                                                                 533.63
+# SpaceX                                                                533.63
+# Wire                                                                  533.63
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 533.63
+# End of doGenerate                                                     533.63
+# Analyze                                                               533.63
+# Levelize                                                              533.63
+# End of LevelAssign mode=I, 3 Levels, 11 Comps, limit=30000            533.63
+# Nets                                                                  533.63
+# Place                                                                 533.63
+# PlaceNets                                                             533.63
+# SpaceY                                                                533.63
+# Track                                                                 533.63
+# SpaceX                                                                533.63
+# Wire                                                                  533.63
+# End of Wire: 2 nets, 2 ch, wire: 10-->10 (0 with wbits)               533.63
+# End of doGenerate                                                     533.63
+# Analyze                                                               533.63
+# Levelize                                                              533.63
+# End of LevelAssign mode=I, 2 Levels, 15 Comps, limit=30000            533.63
+# Nets                                                                  533.63
+# Place                                                                 533.63
+# PlaceNets                                                             533.63
+# SpaceY                                                                533.63
+# Track                                                                 533.63
+# SpaceX                                                                533.63
+# Wire                                                                  533.63
+# End of Wire: 1 nets, 1 ch, wire: 4-->4 (0 with wbits)                 533.63
+# End of doGenerate                                                     533.63
+# End of Generating Regions for Page 1                                  533.63

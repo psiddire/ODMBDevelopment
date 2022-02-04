@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Nov  2 15:57:40 2021
+# Process ID: 29659
+# Current directory: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/gtwizard_ultrascale_0_ex
+# Command line: vivado -notrace -source /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/kcu_gtwiz_8links.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0_ex.tcl
+# Log file: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/gtwizard_ultrascale_0_ex/vivado.log
+# Journal file: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/gtwizard_ultrascale_0_ex/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/kcu_gtwiz_8links.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0_ex.tcl -notrace
+update_compile_order -fileset sources_1
+close_project
+open_project /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad228/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.xpr
+update_compile_order -fileset sources_1

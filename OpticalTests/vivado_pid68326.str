@@ -1,0 +1,1322 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:39:14 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 68326
+License: Customer
+
+Current time: 	Wed Jan 19 02:15:08 PST 2022
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Scientific Linux release 7.9 (Nitrogen)
+OS Version: 3.10.0-1127.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 20
+
+Display: gaugino:7
+Screen size: 1920x1080
+Screen resolution (DPI): 98
+Available screens: 1
+Available disk space: 123 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/opt/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4
+Java executable location: 	/opt/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	psiddire
+User home directory: /net/top/homes/psiddire
+User working directory: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2019.2
+RDI_DATADIR: /opt/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: /homes/psiddire/.Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: /homes/psiddire/.Xilinx/Vivado/2019.2/
+Vivado layouts directory: /net/top/homes/psiddire/.Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	/opt/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	
+Vivado journal file location: 	
+Engine tmp dir: 	./.Xil/Vivado-68326-higgs.physics.ucsb.edu
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /opt/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@license.ece.ucsb.edu
+XILINX_DSP: /opt/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: /opt/Xilinx/Vivado/2019.2
+XILINX_VITIS: 
+XILINX_VIVADO: /opt/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	200 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 5,136 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,141 MB. GUI used memory: 48 MB. Current time: 1/19/22, 2:15:11 AM PST
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // y (x, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// Elapsed time: 12 seconds
+setFileChooser("/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.xpr");
+// [GUI Memory]: 96 MB (+98668kb) [00:02:51]
+// [Engine Memory]: 5,146 MB (+5244008kb) [00:02:51]
+// Opening Vivado Project: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.xpr. Version: Vivado v2019.2 
+// bB (cr):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,228 MB. GUI used memory: 50 MB. Current time: 1/19/22, 2:17:56 AM PST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 109 MB (+8312kb) [00:02:58]
+// WARNING: HEventQueue.dispatchEvent() is taking  2417 ms.
+// Tcl Message: open_project /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_polarity' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'. 
+// Project name: gtwizard_ultrascale_0_ex; location: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity; part: xcku040-ffva1156-2-e
+// 'i' command handler elapsed time: 21 seconds
+// [GUI Memory]: 126 MB (+11769kb) [00:03:00]
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 6857.922 ; gain = 240.578 ; free physical = 107201 ; free virtual = 150798 
+dismissDialog("Open Project"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1024 ms. Increasing delay to 3072 ms.
+// [Engine Memory]: 5,422 MB (+19991kb) [00:03:04]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v), example_stimulus_inst0 : gtwizard_ultrascale_0_example_stimulus_8b10b (gtwizard_ultrascale_0_example_stimulus_8b10b.v)]", 4, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+// [GUI Memory]: 134 MB (+2102kb) [00:03:36]
+// Elapsed time: 60 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 323, 198); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 323, 198, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'c'); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 177, 722); // ch (w, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_top.v", 177, 722, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_top.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,445 MB. GUI used memory: 72 MB. Current time: 1/19/22, 2:19:26 AM PST
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // af (cr)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_FILE, "Open File..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_FILE
+// Elapsed time: 15 seconds
+setFileChooser("/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_recclk_polarity/imports/gtwizard_ultrascale_0_example_top.v");
+// 'f' command handler elapsed time: 15 seconds
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gtwizard_ultrascale_0_example_top.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gtwizard_ultrascale_0_example_top.v (2)", 2); // i (h, cr)
+// Elapsed time: 64 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bB (cr)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 20 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0.xci' is already up-to-date 
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jan 19 02:21:27 2022] Launched synth_1... Run output will be captured here: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.runs/synth_1/runme.log [Wed Jan 19 02:21:27 2022] Launched impl_1... Run output will be captured here: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 1042 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bB (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw_manager 
+dismissDialog("Open Hardware Manager"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,478 MB. GUI used memory: 79 MB. Current time: 1/19/22, 2:38:56 AM PST
+// Elapsed time: 18 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M (aI, cr)
+// Elapsed time: 18 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (ds, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bB (cr):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.2   **** Build date : Nov  6 2019 at 22:13:42     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output: [?1034h  ****** Xilinx cs_server v2019.2.0   **** Build date : Nov 06 2019-21:41:48     ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  1736 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308AB0E6E 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.bit} [get_hw_devices xcku040_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.ltx} [get_hw_devices xcku040_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.ltx} [get_hw_devices xcku040_0] 
+// Tcl Message: current_hw_device [get_hw_devices xcku040_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 6,515 MB (+861664kb) [00:24:34]
+// WARNING: HEventQueue.dispatchEvent() is taking  1616 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xcku040_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 IBERT core(s). INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 ILA core(s). INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s). 
+// HMemoryUtils.trashcanNow. Engine heap size: 6,557 MB. GUI used memory: 91 MB. Current time: 1/19/22, 2:39:37 AM PST
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,624 MB. GUI used memory: 92 MB. Current time: 1/19/22, 2:39:39 AM PST
+dismissDialog("Auto Connect"); // bB (cr)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false, false, false, false, true, false); // u (O, cr) - Popup Trigger
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xcku040_0"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.ltx} [get_hw_devices xcku040_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.ltx} [get_hw_devices xcku040_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.bit} [get_hw_devices xcku040_0] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// [GUI Memory]: 145 MB (+4618kb) [00:24:53]
+// Tcl Message: program_hw_devices [get_hw_devices xcku040_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 8250.277 ; gain = 0.000 ; free physical = 106005 ; free virtual = 149668 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xcku040_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 IBERT core(s). INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 ILA core(s). INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s). 
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// 'I' command handler elapsed time: 14 seconds
+// Elapsed time: 12 seconds
+dismissDialog("Program Device"); // bB (cr)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Elapsed time: 18 seconds
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jan-19 02:40:25 
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "hb_gtwiz_reset_all_vio_int ; [B] 0 ;  ; Output ; hw_vio_1", 6, "[B] 0", 1, false); // g (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// bB (cr):  Set VIO Outputs Value : addNotify
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes hb_gtwiz_reset_all_vio_int -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {hb_gtwiz_reset_all_vio_int} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+dismissDialog("Set VIO Outputs Value"); // bB (cr)
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "hb_gtwiz_reset_all_vio_int ; [B] 1 ;  ; Output ; hw_vio_1", 6, "[B] 1", 1, false); // g (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// bB (cr):  Set VIO Outputs Value : addNotify
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes hb_gtwiz_reset_all_vio_int -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {hb_gtwiz_reset_all_vio_int} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+dismissDialog("Set VIO Outputs Value"); // bB (cr)
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Jan-19 02:40:42 
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,621 MB. GUI used memory: 93 MB. Current time: 1/19/22, 2:40:54 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 6,621 MB. GUI used memory: 93 MB. Current time: 1/19/22, 2:40:55 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,621 MB. GUI used memory: 93 MB. Current time: 1/19/22, 2:40:56 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,621 MB. GUI used memory: 93 MB. Current time: 1/19/22, 2:40:57 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,613 MB. GUI used memory: 93 MB. Current time: 1/19/22, 2:41:01 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 25 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 6,613 MB. GUI used memory: 93 MB. Current time: 1/19/22, 2:41:19 AM PST
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 6,613 MB. GUI used memory: 93 MB. Current time: 1/19/22, 2:41:20 AM PST
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,613 MB. GUI used memory: 93 MB. Current time: 1/19/22, 2:41:25 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,613 MB. GUI used memory: 93 MB. Current time: 1/19/22, 2:41:26 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,613 MB. GUI used memory: 93 MB. Current time: 1/19/22, 2:41:27 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,613 MB. GUI used memory: 93 MB. Current time: 1/19/22, 2:41:28 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,613 MB. GUI used memory: 93 MB. Current time: 1/19/22, 2:41:29 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,613 MB. GUI used memory: 93 MB. Current time: 1/19/22, 2:41:30 AM PST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 967, 470); // n (o, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,613 MB. GUI used memory: 93 MB. Current time: 1/19/22, 2:41:33 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 18 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 922, 458); // n (o, cr)Waveform: addNotify
+maximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // aa (ar, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,613 MB. GUI used memory: 94 MB. Current time: 1/19/22, 2:41:49 AM PST
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,613 MB. GUI used memory: 103 MB. Current time: 1/19/22, 2:42:04 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,613 MB. GUI used memory: 94 MB. Current time: 1/19/22, 2:42:06 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,613 MB. GUI used memory: 101 MB. Current time: 1/19/22, 2:42:06 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,613 MB. GUI used memory: 103 MB. Current time: 1/19/22, 2:42:08 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,613 MB. GUI used memory: 103 MB. Current time: 1/19/22, 2:42:27 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,613 MB. GUI used memory: 103 MB. Current time: 1/19/22, 2:42:31 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 48 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 6,613 MB. GUI used memory: 107 MB. Current time: 1/19/22, 2:42:46 AM PST
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,613 MB. GUI used memory: 107 MB. Current time: 1/19/22, 2:42:52 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,613 MB. GUI used memory: 94 MB. Current time: 1/19/22, 2:42:54 AM PST
+// Elapsed time: 10 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 922, 458); // n (o, cr)Waveform: addNotify
+unMaximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // aa (ar, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "rxchanbondseq_int[3:0] ; ==   ; [H]   ; F ; probe0[781:778] ; 1 of 1", 0, "F", 3); // A (O, cr)
+setText(PAResourceOtoP.ProbeValueTablePanel_TEXT_FIELD, "X"); // bW (Q, ResizableWindow)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "F", 0, "Value", 3); // A (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq4'hX [get_hw_probes rxchanbondseq_int -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jan-19 02:43:09 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 94 MB. Current time: 1/19/22, 2:43:11 AM PST
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Jan-19 02:43:09 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 922, 458); // n (o, cr)Waveform: addNotify
+maximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // aa (ar, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,623 MB. GUI used memory: 95 MB. Current time: 1/19/22, 2:43:19 AM PST
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 100 MB. Current time: 1/19/22, 2:43:27 AM PST
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 95 MB. Current time: 1/19/22, 2:43:28 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// Elapsed time: 14 seconds
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jan-19 02:43:44 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Jan-19 02:43:44 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,623 MB. GUI used memory: 95 MB. Current time: 1/19/22, 2:43:46 AM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jan-19 02:43:53 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Jan-19 02:43:53 
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// Elapsed time: 19 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 967, 464); // n (o, cr)Waveform: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 95 MB. Current time: 1/19/22, 2:44:12 AM PST
+unMaximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // aa (ar, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "rxchanbondseq_int[3:0] ; ==   ; [H]   ; X ; probe0[781:778] ; ", 0, "X", 3); // A (O, cr)
+setText(PAResourceOtoP.ProbeValueTablePanel_TEXT_FIELD, "C"); // bW (Q, ResizableWindow)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "X", 0, "Value", 3); // A (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq4'hC [get_hw_probes rxchanbondseq_int -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jan-19 02:44:29 
+// [GUI Memory]: 154 MB (+1003kb) [00:29:32]
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "hb_gtwiz_reset_all_vio_int ; [B] 0 ;  ; Output ; hw_vio_1", 6, "[B] 0", 1, false); // g (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// bB (cr):  Set VIO Outputs Value : addNotify
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes hb_gtwiz_reset_all_vio_int -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {hb_gtwiz_reset_all_vio_int} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+dismissDialog("Set VIO Outputs Value"); // bB (cr)
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "hb_gtwiz_reset_all_vio_int ; [B] 1 ;  ; Output ; hw_vio_1", 6, "[B] 1", 1, false); // g (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// bB (cr):  Set VIO Outputs Value : addNotify
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes hb_gtwiz_reset_all_vio_int -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {hb_gtwiz_reset_all_vio_int} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+dismissDialog("Set VIO Outputs Value"); // bB (cr)
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "rxchanbondseq_int[3:0] ; ==   ; [H]   ; C ; probe0[781:778] ; 1 of 1", 0, "C", 3); // A (O, cr)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "C", 0, "Value", 3); // A (O, cr)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "rxchanbondseq_int[3:0] ; ==   ; [H]   ; C ; probe0[781:778] ; 1 of 1", 0, "C", 3); // A (O, cr)
+setText(PAResourceOtoP.ProbeValueTablePanel_TEXT_FIELD, "0"); // bW (Q, ResizableWindow)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "C", 0, "Value", 3); // A (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq4'h0 [get_hw_probes rxchanbondseq_int -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "hb_gtwiz_reset_all_vio_int ; [B] 0 ;  ; Output ; hw_vio_1", 6, "[B] 0", 1, false); // g (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// bB (cr):  Set VIO Outputs Value : addNotify
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes hb_gtwiz_reset_all_vio_int -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {hb_gtwiz_reset_all_vio_int} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+dismissDialog("Set VIO Outputs Value"); // bB (cr)
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "hb_gtwiz_reset_all_vio_int ; [B] 1 ;  ; Output ; hw_vio_1", 6, "[B] 1", 1, false); // g (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes hb_gtwiz_reset_all_vio_int -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// bB (cr):  Set VIO Outputs Value : addNotify
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {hb_gtwiz_reset_all_vio_int} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+dismissDialog("Set VIO Outputs Value"); // bB (cr)
+selectButton(PAResourceTtoZ.TriggerStatusPanel_STOP_TRIGGER_FOR_THIS_ILA_CORE, "ILA_stop_trigger"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_STOP_TRIGGER
+// Tcl Message: wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// Tcl Message: INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2022-Jan-19 02:45:08 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectButton(PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, "ILA_run_trigger"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jan-19 02:45:12 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Jan-19 02:45:12 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,623 MB. GUI used memory: 94 MB. Current time: 1/19/22, 2:45:21 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,623 MB. GUI used memory: 94 MB. Current time: 1/19/22, 2:45:22 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 17 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 967, 470); // n (o, cr)Waveform: addNotify
+maximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // aa (ar, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,623 MB. GUI used memory: 138 MB. Current time: 1/19/22, 2:45:29 AM PST
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jan-19 02:45:38 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Jan-19 02:45:38 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// Elapsed time: 37 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 967, 464); // n (o, cr)Waveform: addNotify
+unMaximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "hw_vio_1"); // aa (ar, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 23 seconds
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "rxchanbondseq_int[3:0] ; ==   ; [H]   ; 0 ; probe0[781:778] ; 1 of 1", 0, "0", 3); // A (O, cr)
+setText(PAResourceOtoP.ProbeValueTablePanel_TEXT_FIELD, "1"); // bW (Q, ResizableWindow)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "0", 0, "Value", 3); // A (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq4'h1 [get_hw_probes rxchanbondseq_int -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "hb_gtwiz_reset_all_vio_int ; [B] 0 ;  ; Output ; hw_vio_1", 6, "[B] 0", 1, false); // g (O, cr)
+selectButton(PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, "ILA_run_trigger"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jan-19 02:46:52 
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "hb_gtwiz_reset_all_vio_int ; [B] 0 ;  ; Output ; hw_vio_1", 6, "[B] 0", 1, false); // g (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// bB (cr):  Set VIO Outputs Value : addNotify
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes hb_gtwiz_reset_all_vio_int -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {hb_gtwiz_reset_all_vio_int} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+dismissDialog("Set VIO Outputs Value"); // bB (cr)
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "hb_gtwiz_reset_all_vio_int ; [B] 1 ;  ; Output ; hw_vio_1", 6, "[B] 1", 1, false); // g (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes hb_gtwiz_reset_all_vio_int -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// bB (cr):  Set VIO Outputs Value : addNotify
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {hb_gtwiz_reset_all_vio_int} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+dismissDialog("Set VIO Outputs Value"); // bB (cr)
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "rxchanbondseq_int[3:0] ; ==   ; [H]   ; 1 ; probe0[781:778] ; 1 of 1", 0, "1", 3); // A (O, cr)
+setText(PAResourceOtoP.ProbeValueTablePanel_TEXT_FIELD, "F"); // bW (Q, ResizableWindow)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "1", 0, "Value", 3); // A (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq4'hF [get_hw_probes rxchanbondseq_int -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+selectButton(PAResourceTtoZ.TriggerStatusPanel_STOP_TRIGGER_FOR_THIS_ILA_CORE, "ILA_stop_trigger"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_STOP_TRIGGER
+// Tcl Message: wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// Tcl Message: INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2022-Jan-19 02:47:15 
+selectButton(PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, "ILA_run_trigger"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jan-19 02:47:17 
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "hb_gtwiz_reset_all_vio_int ; [B] 0 ;  ; Output ; hw_vio_1", 6, "[B] 0", 1, false); // g (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// bB (cr):  Set VIO Outputs Value : addNotify
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes hb_gtwiz_reset_all_vio_int -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {hb_gtwiz_reset_all_vio_int} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+dismissDialog("Set VIO Outputs Value"); // bB (cr)
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "hb_gtwiz_reset_all_vio_int ; [B] 1 ;  ; Output ; hw_vio_1", 6, "[B] 1", 1, false); // g (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// bB (cr):  Set VIO Outputs Value : addNotify
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes hb_gtwiz_reset_all_vio_int -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {hb_gtwiz_reset_all_vio_int} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+dismissDialog("Set VIO Outputs Value"); // bB (cr)
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Jan-19 02:47:26 
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,623 MB. GUI used memory: 95 MB. Current time: 1/19/22, 2:47:31 AM PST
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jan-19 02:47:36 
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 967, 470); // n (o, cr)Waveform: addNotify
+maximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // aa (ar, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E (f, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,623 MB. GUI used memory: 104 MB. Current time: 1/19/22, 2:47:45 AM PST
+// Elapsed time: 20 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 103 MB. Current time: 1/19/22, 2:48:06 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 95 MB. Current time: 1/19/22, 2:48:07 AM PST
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// Elapsed time: 32 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 967, 464); // n (o, cr)Waveform: addNotify
+unMaximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // aa (ar, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBE, "IlaProbeTablePanel_new"); // E (f, cr)
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBE, "IlaProbeTablePanel_new"); // E (f, cr)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, rxchbondi_int[19:0]]", 52, false); // N (O, ResizableWindow)
+selectButton(PAResourceAtoD.AddIlaProbesPopup_OK, "OK"); // a (E, ResizableWindow)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "rxchbondi_int[19:0] ; ==   ; [H]   ; X_XXXX ; probe0[801:782] ; ", 1, "X_XXXX", 3); // A (O, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 95 MB. Current time: 1/19/22, 2:49:09 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 16 seconds
+setText(PAResourceOtoP.ProbeValueTablePanel_TEXT_FIELD, "8_8000"); // bW (Q, ResizableWindow)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "X_XXXX", 1, "Value", 3); // A (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq20'h8_8000 [get_hw_probes rxchbondi_int -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+selectButton(PAResourceTtoZ.TriggerStatusPanel_STOP_TRIGGER_FOR_THIS_ILA_CORE, "ILA_stop_trigger"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_STOP_TRIGGER
+// Tcl Message: wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// Tcl Message: INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2022-Jan-19 02:49:26 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "rxchanbondseq_int[3:0] ; ==   ; [H]   ; F ; probe0[781:778] ; 1 of 1", 0, "F", 3); // A (O, cr)
+setText(PAResourceOtoP.ProbeValueTablePanel_TEXT_FIELD, "0"); // bW (Q, ResizableWindow)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "F", 0, "Value", 3); // A (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq4'h0 [get_hw_probes rxchanbondseq_int -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "rxchanbondseq_int[3:0] ; ==   ; [H]   ; 0 ; probe0[781:778] ; 1 of 1", 0, "0", 3); // A (O, cr)
+setText(PAResourceOtoP.ProbeValueTablePanel_TEXT_FIELD, "X"); // bW (Q, ResizableWindow)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "0", 0, "Value", 3); // A (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq4'hX [get_hw_probes rxchanbondseq_int -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+selectButton(PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, "ILA_run_trigger"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jan-19 02:49:51 
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "hb_gtwiz_reset_all_vio_int ; [B] 0 ;  ; Output ; hw_vio_1", 6, "[B] 0", 1, false); // g (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes hb_gtwiz_reset_all_vio_int -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// bB (cr):  Set VIO Outputs Value : addNotify
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {hb_gtwiz_reset_all_vio_int} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+dismissDialog("Set VIO Outputs Value"); // bB (cr)
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "hb_gtwiz_reset_all_vio_int ; [B] 1 ;  ; Output ; hw_vio_1", 6, "[B] 1", 1, false); // g (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// bB (cr):  Set VIO Outputs Value : addNotify
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes hb_gtwiz_reset_all_vio_int -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {hb_gtwiz_reset_all_vio_int} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+dismissDialog("Set VIO Outputs Value"); // bB (cr)
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Jan-19 02:50:07 
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,623 MB. GUI used memory: 95 MB. Current time: 1/19/22, 2:50:17 AM PST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 909, 451); // n (o, cr)Waveform: addNotify
+maximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // aa (ar, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 114 MB. Current time: 1/19/22, 2:50:29 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 93 seconds
+selectButton(RDIResource.WaveformView_ADD, "Waveform Viewer_new"); // E (f, cr)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hb0_rxdata_nml_ctr[39:0]]", 38, false); // N (O, ResizableWindow)
+selectButton(PAResourceAtoD.AddIlaProbesPopup_OK, "OK"); // a (E, ResizableWindow)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// Tcl Message: add_wave -into {hw_ila_data_1.wcfg} -radix hex { {hb0_rxdata_nml_ctr} } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Elapsed time: 10 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 104 MB. Current time: 1/19/22, 2:52:20 AM PST
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 101 MB. Current time: 1/19/22, 2:52:30 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 117 MB. Current time: 1/19/22, 2:52:34 AM PST
+// Elapsed time: 23 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 101 MB. Current time: 1/19/22, 2:52:55 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 16 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 118 MB. Current time: 1/19/22, 2:53:07 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 117 MB. Current time: 1/19/22, 2:53:37 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 96 MB. Current time: 1/19/22, 2:53:42 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 101 MB. Current time: 1/19/22, 2:53:46 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 358 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 967, 464); // n (o, cr)Waveform: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 96 MB. Current time: 1/19/22, 2:59:06 AM PST
+unMaximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // aa (ar, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "rxchbondi_int[19:0] ; ==   ; [H]   ; 8_8000 ; probe0[801:782] ; 1 of 1", 1, "rxchbondi_int[19:0]", 0); // A (O, cr)
+// Elapsed time: 43 seconds
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "rxchbondi_int[19:0] ; ==   ; [H]   ; 8_8000 ; probe0[801:782] ; 1 of 1", 1, "8_8000", 3); // A (O, cr)
+setText(PAResourceOtoP.ProbeValueTablePanel_TEXT_FIELD, "X_XXXX"); // bW (Q, ResizableWindow)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "8_8000", 1, "Value", 3); // A (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq20'hX_XXXX [get_hw_probes rxchbondi_int -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+selectButton(PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, "ILA_run_trigger"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jan-19 03:00:04 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Jan-19 03:00:04 
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,631 MB. GUI used memory: 95 MB. Current time: 1/19/22, 3:00:06 AM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 967, 470); // n (o, cr)Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M (aI, cr)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 949, 476); // n (o, cr)Waveform: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 6,623 MB. GUI used memory: 94 MB. Current time: 1/19/22, 3:00:15 AM PST
+maximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // aa (ar, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M (aI, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,623 MB. GUI used memory: 96 MB. Current time: 1/19/22, 3:00:18 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 97 MB. Current time: 1/19/22, 3:00:24 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 97 MB. Current time: 1/19/22, 3:00:24 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 99 MB. Current time: 1/19/22, 3:00:25 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 97 MB. Current time: 1/19/22, 3:00:25 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 97 MB. Current time: 1/19/22, 3:00:25 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 18 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, receiver_0[31:0]]", 4, true); // a (r, cr) - Node
+selectButton(RDIResource.WaveformView_FIND, "Waveform Viewer_find"); // x (f, cr): TRUE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 96 MB. Current time: 1/19/22, 3:00:38 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 46 seconds
+selectComboBox(RDIResource.WaveformFindBar_RADIX, "Hexadecimal", 1); // e (a, cr)
+selectComboBox(RDIResource.WaveformFindBar_MATCH, "Beginning", 1); // e (a, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 97 MB. Current time: 1/19/22, 3:01:56 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 102 MB. Current time: 1/19/22, 3:02:02 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 96 MB. Current time: 1/19/22, 3:02:04 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 96 MB. Current time: 1/19/22, 3:02:10 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 96 MB. Current time: 1/19/22, 3:02:29 AM PST
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 96 MB. Current time: 1/19/22, 3:02:45 AM PST
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1207 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4871 ms. Increasing delay to 14613 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 23 ms. Decreasing delay to 2023 ms.
+// Elapsed time: 1327 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 967, 464); // n (o, cr)Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M (aI, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,615 MB. GUI used memory: 89 MB. Current time: 1/19/22, 3:23:36 AM PST
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xcku040_0 (4) ; Programmed", 2, "xcku040_0 (4)", 0, true, false, false, false, true, false); // t (O, cr) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.ltx} [get_hw_devices xcku040_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.ltx} [get_hw_devices xcku040_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.runs/impl_1/gtwizard_ultrascale_0_example_top.bit} [get_hw_devices xcku040_0] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 919, 456); // n (o, cr)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 919, 456); // n (o, cr)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 919, 456); // n (o, cr)Waveform: addNotify
+// Tcl Message: program_hw_devices [get_hw_devices xcku040_0] 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 8257.277 ; gain = 0.000 ; free physical = 105942 ; free virtual = 149608 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 6,624 MB. GUI used memory: 90 MB. Current time: 1/19/22, 3:23:55 AM PST
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xcku040_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 IBERT core(s). INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 ILA core(s). INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s). 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// 'I' command handler elapsed time: 15 seconds
+// Elapsed time: 11 seconds
+dismissDialog("Program Device"); // bB (cr)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 962, 497); // n (o, cr)Waveform: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 6,632 MB. GUI used memory: 91 MB. Current time: 1/19/22, 3:24:00 AM PST
+maximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // aa (ar, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M (aI, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,632 MB. GUI used memory: 93 MB. Current time: 1/19/22, 3:24:03 AM PST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 907, 450); // n (o, cr)Waveform: addNotify
+unMaximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // aa (ar, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "rxchbondi_int[19:0] ; ==   ; [H]   ; X_XXXX ; probe0[801:782] ; ", 1, "X_XXXX", 3); // A (O, cr)
+setText(PAResourceOtoP.ProbeValueTablePanel_TEXT_FIELD, "8_8000"); // bW (Q, ResizableWindow)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "X_XXXX", 1, "Value", 3); // A (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq20'h8_8000 [get_hw_probes rxchbondi_int -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+selectButton(PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, "ILA_run_trigger"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jan-19 03:24:20 
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "hb_gtwiz_reset_all_vio_int ; [B] 0 ;  ; Output ; hw_vio_1", 6, "[B] 0", 1, false); // g (O, cr)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5527 ms. Increasing delay to 16581 ms.
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 1 [get_hw_probes hb_gtwiz_reset_all_vio_int -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// bB (cr):  Set VIO Outputs Value : addNotify
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {hb_gtwiz_reset_all_vio_int} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+dismissDialog("Set VIO Outputs Value"); // bB (cr)
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "hb_gtwiz_reset_all_vio_int ; [B] 1 ;  ; Output ; hw_vio_1", 6, "[B] 1", 1, false); // g (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: set_property OUTPUT_VALUE 0 [get_hw_probes hb_gtwiz_reset_all_vio_int -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// bB (cr):  Set VIO Outputs Value : addNotify
+// TclEventType: HW_VIO_CHANGE
+// Tcl Message: commit_hw_vio [get_hw_probes {hb_gtwiz_reset_all_vio_int} -of_objects [get_hw_vios -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"gtwizard_ultrascale_0_vio_0_inst"}]] 
+dismissDialog("Set VIO Outputs Value"); // bB (cr)
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Jan-19 03:24:35 
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gtwizard_ultrascale_0_example_top.v", 0); // i (h, cr)
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dashboard_1", 1); // i (h, cr)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,640 MB. GUI used memory: 90 MB. Current time: 1/19/22, 3:24:41 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 6,640 MB. GUI used memory: 90 MB. Current time: 1/19/22, 3:24:42 AM PST
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// Tcl Message: display_hw_ila_data: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 8380.898 ; gain = 8.004 ; free physical = 105939 ; free virtual = 149604 
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 28 ms. Decreasing delay to 2028 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1840 ms. Increasing delay to 5520 ms.
+// Elapsed time: 94 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 909, 451); // n (o, cr)Waveform: addNotify
+maximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // aa (ar, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 27 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 6,624 MB. GUI used memory: 91 MB. Current time: 1/19/22, 3:26:43 AM PST
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,624 MB. GUI used memory: 99 MB. Current time: 1/19/22, 3:26:48 AM PST
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 6,624 MB. GUI used memory: 91 MB. Current time: 1/19/22, 3:26:55 AM PST
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,624 MB. GUI used memory: 100 MB. Current time: 1/19/22, 3:27:02 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,624 MB. GUI used memory: 95 MB. Current time: 1/19/22, 3:27:04 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,624 MB. GUI used memory: 91 MB. Current time: 1/19/22, 3:27:07 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,624 MB. GUI used memory: 96 MB. Current time: 1/19/22, 3:27:11 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,624 MB. GUI used memory: 94 MB. Current time: 1/19/22, 3:27:13 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,624 MB. GUI used memory: 100 MB. Current time: 1/19/22, 3:27:17 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,624 MB. GUI used memory: 108 MB. Current time: 1/19/22, 3:27:27 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,624 MB. GUI used memory: 91 MB. Current time: 1/19/22, 3:27:30 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,624 MB. GUI used memory: 96 MB. Current time: 1/19/22, 3:27:35 AM PST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 6,624 MB. GUI used memory: 98 MB. Current time: 1/19/22, 3:27:43 AM PST
+// Elapsed time: 76 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 967, 464); // n (o, cr)Waveform: addNotify
+unMaximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // aa (ar, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "rxchbondi_int[19:0] ; ==   ; [H]   ; 8_8000 ; probe0[801:782] ; 1 of 1", 1, "8_8000", 3); // A (O, cr)
+setText(PAResourceOtoP.ProbeValueTablePanel_TEXT_FIELD, "X_XXXX"); // bW (Q, ResizableWindow)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "8_8000", 1, "Value", 3); // A (O, cr)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq20'hX_XXXX [get_hw_probes rxchbondi_int -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 967, 470); // n (o, cr)Waveform: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 6,624 MB. GUI used memory: 91 MB. Current time: 1/19/22, 3:28:29 AM PST
+maximizeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // aa (ar, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jan-19 03:28:32 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_i"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Jan-19 03:28:32 
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,632 MB. GUI used memory: 90 MB. Current time: 1/19/22, 3:28:38 AM PST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_recclk_polarity/gtwizard_ultrascale_0_ex.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// Tcl Message: display_hw_ila_data: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 8380.898 ; gain = 0.000 ; free physical = 105933 ; free virtual = 149599 
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5245 ms. Increasing delay to 15735 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1431 ms. Decreasing delay to 3431 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2481 ms. Increasing delay to 7443 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2599 ms. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 6,624 MB. GUI used memory: 89 MB. Current time: 1/19/22, 3:58:42 AM PST

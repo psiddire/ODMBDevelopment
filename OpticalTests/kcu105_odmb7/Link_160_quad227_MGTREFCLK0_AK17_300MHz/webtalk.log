@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Oct 29 15:25:52 2021
+# Process ID: 10415
+# Current directory: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu105_odmb7/NoLink_160_quad227_MGTREFCLK0_AK17_300MHz
+# Command line: wbtcv -mode batch -source /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu105_odmb7/NoLink_160_quad227_MGTREFCLK0_AK17_300MHz/ibert_ultrascale_gth_0_ex.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu105_odmb7/NoLink_160_quad227_MGTREFCLK0_AK17_300MHz/webtalk.log
+# Journal file: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu105_odmb7/NoLink_160_quad227_MGTREFCLK0_AK17_300MHz/webtalk.jou
+#-----------------------------------------------------------
+source /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu105_odmb7/NoLink_160_quad227_MGTREFCLK0_AK17_300MHz/ibert_ultrascale_gth_0_ex.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct 29 15:25:52 2021...

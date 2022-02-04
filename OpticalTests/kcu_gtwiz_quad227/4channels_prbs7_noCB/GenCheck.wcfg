@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="gtwizard_ultrascale_0_example_top_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="gtwizard_ultrascale_0_example_top_sim" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="364388043011fs"></ZoomEndTime>
+      <Cursor1Time time="201000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="193"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject type="logic" fp_name="/gtwizard_ultrascale_0_example_top_sim/example_top_inst/example_stimulus_inst0/gtwiz_reset_all_in">
+      <obj_property name="ElementShortName">gtwiz_reset_all_in</obj_property>
+      <obj_property name="ObjectShortName">gtwiz_reset_all_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/gtwizard_ultrascale_0_example_top_sim/example_top_inst/example_stimulus_inst0/gtwiz_userclk_tx_usrclk2_in">
+      <obj_property name="ElementShortName">gtwiz_userclk_tx_usrclk2_in</obj_property>
+      <obj_property name="ObjectShortName">gtwiz_userclk_tx_usrclk2_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/gtwizard_ultrascale_0_example_top_sim/example_top_inst/example_stimulus_inst0/gtwiz_userclk_tx_active_in">
+      <obj_property name="ElementShortName">gtwiz_userclk_tx_active_in</obj_property>
+      <obj_property name="ObjectShortName">gtwiz_userclk_tx_active_in</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gtwizard_ultrascale_0_example_top_sim/example_top_inst/example_stimulus_inst0/txctrl0_out">
+      <obj_property name="ElementShortName">txctrl0_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">txctrl0_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gtwizard_ultrascale_0_example_top_sim/example_top_inst/example_stimulus_inst0/txctrl1_out">
+      <obj_property name="ElementShortName">txctrl1_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">txctrl1_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gtwizard_ultrascale_0_example_top_sim/example_top_inst/example_stimulus_inst0/txctrl2_out">
+      <obj_property name="ElementShortName">txctrl2_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">txctrl2_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gtwizard_ultrascale_0_example_top_sim/example_top_inst/example_stimulus_inst0/txdata_out">
+      <obj_property name="ElementShortName">txdata_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">txdata_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/gtwizard_ultrascale_0_example_top_sim/example_top_inst/example_stimulus_inst0/example_stimulus_reset_int">
+      <obj_property name="ElementShortName">example_stimulus_reset_int</obj_property>
+      <obj_property name="ObjectShortName">example_stimulus_reset_int</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/gtwizard_ultrascale_0_example_top_sim/example_top_inst/example_stimulus_inst0/example_stimulus_reset_sync">
+      <obj_property name="ElementShortName">example_stimulus_reset_sync</obj_property>
+      <obj_property name="ObjectShortName">example_stimulus_reset_sync</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/gtwizard_ultrascale_0_example_top_sim/example_top_inst/example_stimulus_inst0/prbs_any_gen_en_int">
+      <obj_property name="ElementShortName">prbs_any_gen_en_int</obj_property>
+      <obj_property name="ObjectShortName">prbs_any_gen_en_int</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gtwizard_ultrascale_0_example_top_sim/example_top_inst/example_stimulus_inst0/txdata_prbs">
+      <obj_property name="ElementShortName">txdata_prbs[31:0]</obj_property>
+      <obj_property name="ObjectShortName">txdata_prbs[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gtwizard_ultrascale_0_example_top_sim/example_top_inst/example_stimulus_inst0/txdata_char">
+      <obj_property name="ElementShortName">txdata_char[31:0]</obj_property>
+      <obj_property name="ObjectShortName">txdata_char[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gtwizard_ultrascale_0_example_top_sim/example_top_inst/example_stimulus_inst0/txdata_reg">
+      <obj_property name="ElementShortName">txdata_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">txdata_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gtwizard_ultrascale_0_example_top_sim/example_top_inst/example_stimulus_inst0/txctrl2_reg">
+      <obj_property name="ElementShortName">txctrl2_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">txctrl2_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gtwizard_ultrascale_0_example_top_sim/example_top_inst/example_stimulus_inst0/prbs_slt_ctr">
+      <obj_property name="ElementShortName">prbs_slt_ctr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">prbs_slt_ctr[9:0]</obj_property>
+   </wvobject>
+</wave_config>

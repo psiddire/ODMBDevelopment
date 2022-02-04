@@ -1,0 +1,154 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:39:14 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 16431
+License: Customer
+
+Current time: 	Thu Jan 13 21:36:31 PST 2022
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Scientific Linux release 7.9 (Nitrogen)
+OS Version: 3.10.0-1127.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 20
+
+Display: gaugino:7
+Screen size: 1920x1080
+Screen resolution (DPI): 98
+Available screens: 1
+Available disk space: 123 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/opt/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4
+Java executable location: 	/opt/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	psiddire
+User home directory: /net/top/homes/psiddire
+User working directory: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2019.2
+RDI_DATADIR: /opt/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: /homes/psiddire/.Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: /homes/psiddire/.Xilinx/Vivado/2019.2/
+Vivado layouts directory: /net/top/homes/psiddire/.Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	/opt/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	
+Vivado journal file location: 	
+Engine tmp dir: 	./.Xil/Vivado-16431-higgs.physics.ucsb.edu
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /opt/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@license.ece.ucsb.edu
+XILINX_DSP: /opt/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: /opt/Xilinx/Vivado/2019.2
+XILINX_VITIS: 
+XILINX_VIVADO: /opt/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	197 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 5,132 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // y (x, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,144 MB. GUI used memory: 53 MB. Current time: 1/13/22, 9:36:33 PM PST
+// Elapsed time: 20 seconds
+setFileChooser("/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_polarity/gtwizard_ultrascale_0_ex.xpr");
+// [GUI Memory]: 65 MB (+65605kb) [00:00:29]
+// [Engine Memory]: 5,146 MB (+5244594kb) [00:00:29]
+// Opening Vivado Project: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_polarity/gtwizard_ultrascale_0_ex.xpr. Version: Vivado v2019.2 
+// bB (cr):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_polarity/gtwizard_ultrascale_0_ex.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 70 MB (+1885kb) [00:00:34]
+// [GUI Memory]: 122 MB (+50436kb) [00:00:35]
+// WARNING: HEventQueue.dispatchEvent() is taking  2364 ms.
+// Tcl Message: open_project /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_polarity/gtwizard_ultrascale_0_ex.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CBtest2_polarity' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,411 MB. GUI used memory: 66 MB. Current time: 1/13/22, 9:37:00 PM PST
+// [Engine Memory]: 5,411 MB (+8169kb) [00:00:36]
+// Project name: gtwizard_ultrascale_0_ex; location: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/kcu_gtwiz_quad227/4channels_prbs7_CB_init_polarity; part: xcku040-ffva1156-2-e
+// 'i' command handler elapsed time: 28 seconds
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 6877.242 ; gain = 259.340 ; free physical = 107685 ; free virtual = 151014 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v)]", 2); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v), example_stimulus_inst0 : gtwizard_ultrascale_0_example_stimulus_8b10b (gtwizard_ultrascale_0_example_stimulus_8b10b.v)]", 4, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v), example_stimulus_inst0 : gtwizard_ultrascale_0_example_stimulus_8b10b (gtwizard_ultrascale_0_example_stimulus_8b10b.v)]", 4, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 19 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+// Elapsed time: 179 seconds
+selectCodeEditor("gtwizard_ultrascale_0_example_stimulus_8b10b.v", 358, 291); // ch (w, cr)
+// Elapsed time: 154 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gtwizard_ultrascale_0_example_stimulus_8b10b.v", 1); // i (h, cr)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gtwizard_ultrascale_0_example_stimulus_8b10b.v", 1, false, true); // i (h, cr) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_ultrascale_0_example_top (gtwizard_ultrascale_0_example_top.v)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 5,462 MB. GUI used memory: 72 MB. Current time: 1/13/22, 9:43:18 PM PST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gtwizard_ultrascale_0_example_top.v", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gtwizard_ultrascale_0_example_top.v", 1); // i (h, cr)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gtwizard_ultrascale_0_example_top.v", 1, false, true); // i (h, cr) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+// [GUI Memory]: 128 MB (+218kb) [00:16:02]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,462 MB. GUI used memory: 72 MB. Current time: 1/13/22, 10:13:18 PM PST
+// Elapsed time: 2091 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gtwizard_ultrascale_0_example_stimulus_8b10b.v", 2); // i (h, cr)
+selectCodeEditor("gtwizard_ultrascale_0_example_stimulus_8b10b.v", 334, 258); // ch (w, cr)
+typeControlKey((HResource) null, "gtwizard_ultrascale_0_example_stimulus_8b10b.v", 'c'); // ch (w, cr)

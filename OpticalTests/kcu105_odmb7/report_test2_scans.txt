@@ -1,0 +1,8 @@
+2021-10-24 22:46:39 link_0: open area: 320, open precent: 1, horizon precent: 6.45%, vertical percent: 11.11%
+2021-10-24 22:46:55 link_1: open area: 448, open precent: 2, horizon precent: 19.35%, vertical percent: 11.11%
+2021-10-24 22:47:10 link_2: open area: 3520, open precent: 19, horizon precent: 61.29%, vertical percent: 44.44%
+2021-10-24 22:47:26 link_3: open area: 2880, open precent: 16, horizon precent: 61.29%, vertical percent: 44.44%
+2021-10-24 22:56:05 link_0: open area: 64, open precent: 0, horizon precent: 0.00%, vertical percent: 11.11%
+2021-10-24 22:56:21 link_1: open area: 384, open precent: 2, horizon precent: 12.90%, vertical percent: 22.22%
+2021-10-24 22:56:36 link_2: open area: 3712, open precent: 20, horizon precent: 61.29%, vertical percent: 44.44%
+2021-10-24 22:56:52 link_3: open area: 3072, open precent: 17, horizon precent: 61.29%, vertical percent: 55.56%

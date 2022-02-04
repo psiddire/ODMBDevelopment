@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Oct 25 15:29:27 2021
+# Process ID: 48237
+# Current directory: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_kcu105/ibert_ultrascale_gth_0_ex
+# Command line: vivado -notrace -source /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_kcu105/odmb7_kcu105.srcs/sources_1/ip/ibert_ultrascale_gth_0/ibert_ultrascale_gth_0_ex.tcl
+# Log file: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_kcu105/ibert_ultrascale_gth_0_ex/vivado.log
+# Journal file: /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_kcu105/ibert_ultrascale_gth_0_ex/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source /net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_kcu105/odmb7_kcu105.srcs/sources_1/ip/ibert_ultrascale_gth_0/ibert_ultrascale_gth_0_ex.tcl -notrace
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_kcu105/ibert_ultrascale_gth_0_ex/ibert_ultrascale_gth_0_ex.runs/impl_1/example_ibert_ultrascale_gth_0.bit} [get_hw_devices xcku035_0]
+set_property PROBES.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_kcu105/ibert_ultrascale_gth_0_ex/ibert_ultrascale_gth_0_ex.runs/impl_1/example_ibert_ultrascale_gth_0.ltx} [get_hw_devices xcku035_0]
+set_property FULL_PROBES.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_kcu105/ibert_ultrascale_gth_0_ex/ibert_ultrascale_gth_0_ex.runs/impl_1/example_ibert_ultrascale_gth_0.ltx} [get_hw_devices xcku035_0]
+current_hw_device [get_hw_devices xcku035_0]
+refresh_hw_device [lindex [get_hw_devices xcku035_0] 0]
+set_property PROBES.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_kcu105/ibert_ultrascale_gth_0_ex/ibert_ultrascale_gth_0_ex.runs/impl_1/example_ibert_ultrascale_gth_0.ltx} [get_hw_devices xcku035_0]
+set_property FULL_PROBES.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_kcu105/ibert_ultrascale_gth_0_ex/ibert_ultrascale_gth_0_ex.runs/impl_1/example_ibert_ultrascale_gth_0.ltx} [get_hw_devices xcku035_0]
+set_property PROGRAM.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopment/OpticalTests/odmb7_kcu105/ibert_ultrascale_gth_0_ex/ibert_ultrascale_gth_0_ex.runs/impl_1/example_ibert_ultrascale_gth_0.bit} [get_hw_devices xcku035_0]
+program_hw_devices [get_hw_devices xcku035_0]
+close_project
+open_project /net/top/homes/psiddire/ODMB/ODMBDevelopmentNew/OpticalTests/odmb7_ibert_gth/project_quad227/odmb7_ibert_q227.xpr
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.C_RXOUTCLK_FREQUENCY {312.0} CONFIG.C_RXOUTCLK_GT_LOCATION {QUAD227_0} CONFIG.C_REFCLK_SOURCE_QUAD_3 {MGTREFCLK0_227} CONFIG.C_REFCLK_SOURCE_QUAD_0 {None} CONFIG.C_PROTOCOL_QUAD3 {Custom_1_/_12.48_Gbps} CONFIG.C_PROTOCOL_QUAD0 {None} CONFIG.C_GT_CORRECT {true} CONFIG.C_PROTOCOL_MAXLINERATE_1 {12.48} CONFIG.INS_LOSS_NYQ_1 {6.24}] [get_ips ibert_odmb7_q227]
+generate_target all [get_files  /net/top/homes/psiddire/ODMB/ODMBDevelopmentNew/OpticalTests/odmb7_ibert_gth/ip/xcku035-ffva1156-1-c/ibert_odmb7_q227/ibert_odmb7_q227.xci]
+export_ip_user_files -of_objects [get_files /net/top/homes/psiddire/ODMB/ODMBDevelopmentNew/OpticalTests/odmb7_ibert_gth/ip/xcku035-ffva1156-1-c/ibert_odmb7_q227/ibert_odmb7_q227.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /net/top/homes/psiddire/ODMB/ODMBDevelopmentNew/OpticalTests/odmb7_ibert_gth/ip/xcku035-ffva1156-1-c/ibert_odmb7_q227/ibert_odmb7_q227.xci] -directory /net/top/homes/psiddire/ODMB/ODMBDevelopmentNew/OpticalTests/odmb7_ibert_gth/project_quad227/odmb7_ibert_q227.ip_user_files/sim_scripts -ip_user_files_dir /net/top/homes/psiddire/ODMB/ODMBDevelopmentNew/OpticalTests/odmb7_ibert_gth/project_quad227/odmb7_ibert_q227.ip_user_files -ipstatic_source_dir /net/top/homes/psiddire/ODMB/ODMBDevelopmentNew/OpticalTests/odmb7_ibert_gth/project_quad227/odmb7_ibert_q227.ip_user_files/ipstatic -lib_map_path [list {modelsim=/net/top/homes/psiddire/ODMB/ODMBDevelopmentNew/OpticalTests/odmb7_ibert_gth/project_quad227/odmb7_ibert_q227.cache/compile_simlib/modelsim} {questa=/net/top/homes/psiddire/ODMB/ODMBDevelopmentNew/OpticalTests/odmb7_ibert_gth/project_quad227/odmb7_ibert_q227.cache/compile_simlib/questa} {ies=/net/top/homes/psiddire/ODMB/ODMBDevelopmentNew/OpticalTests/odmb7_ibert_gth/project_quad227/odmb7_ibert_q227.cache/compile_simlib/ies} {xcelium=/net/top/homes/psiddire/ODMB/ODMBDevelopmentNew/OpticalTests/odmb7_ibert_gth/project_quad227/odmb7_ibert_q227.cache/compile_simlib/xcelium} {vcs=/net/top/homes/psiddire/ODMB/ODMBDevelopmentNew/OpticalTests/odmb7_ibert_gth/project_quad227/odmb7_ibert_q227.cache/compile_simlib/vcs} {riviera=/net/top/homes/psiddire/ODMB/ODMBDevelopmentNew/OpticalTests/odmb7_ibert_gth/project_quad227/odmb7_ibert_q227.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+refresh_hw_device [lindex [get_hw_devices xcku035_0] 0]
+set_property PROBES.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopmentNew/OpticalTests/odmb7_ibert_gth/project_quad227/odmb7_ibert_q227.runs/impl_1/odmb7_ibert_q227.ltx} [get_hw_devices xcku035_0]
+set_property FULL_PROBES.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopmentNew/OpticalTests/odmb7_ibert_gth/project_quad227/odmb7_ibert_q227.runs/impl_1/odmb7_ibert_q227.ltx} [get_hw_devices xcku035_0]
+set_property PROGRAM.FILE {/net/top/homes/psiddire/ODMB/ODMBDevelopmentNew/OpticalTests/odmb7_ibert_gth/project_quad227/odmb7_ibert_q227.runs/impl_1/odmb7_ibert_q227.bit} [get_hw_devices xcku035_0]
+program_hw_devices [get_hw_devices xcku035_0]
+refresh_hw_device [lindex [get_hw_devices xcku035_0] 0]

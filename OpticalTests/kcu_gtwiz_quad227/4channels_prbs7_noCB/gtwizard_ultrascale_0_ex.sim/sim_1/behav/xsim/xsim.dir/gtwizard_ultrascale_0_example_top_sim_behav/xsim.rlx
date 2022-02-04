@@ -1,0 +1,12 @@
+
+{ 
+    crc :  8605233644677825176  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 88da97a11f694c159c1b8e234a8f9af9 --incr --debug typical --relax --mt 8 -L gtwizard_ultrascale_v1_7_7 -L xil_defaultlib -L in_system_ibert_v1_0_10 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot gtwizard_ultrascale_0_example_top_sim_behav xil_defaultlib.gtwizard_ultrascale_0_example_top_sim xil_defaultlib.glbl" , 
+    buildDate : "Nov  6 2019" , 
+    buildTime : "21:42:20" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/gtwizard_ultrascale_0_example_top_sim_behav/xsimk\"   \"xsim.dir/gtwizard_ultrascale_0_example_top_sim_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/gtwizard_ultrascale_0_example_top_sim_behav/obj/xsim_1.lnx64.o\" \"xsim.dir/gtwizard_ultrascale_0_example_top_sim_behav/obj/xsim_2.lnx64.o\" \"xsim.dir/gtwizard_ultrascale_0_example_top_sim_behav/obj/xsim_3.lnx64.o\" \"xsim.dir/gtwizard_ultrascale_0_example_top_sim_behav/obj/xsim_4.lnx64.o\" \"xsim.dir/gtwizard_ultrascale_0_example_top_sim_behav/obj/xsim_5.lnx64.o\" \"xsim.dir/gtwizard_ultrascale_0_example_top_sim_behav/obj/xsim_6.lnx64.o\" \"xsim.dir/gtwizard_ultrascale_0_example_top_sim_behav/obj/xsim_7.lnx64.o\" \"xsim.dir/gtwizard_ultrascale_0_example_top_sim_behav/obj/xsim_8.lnx64.o\" \"xsim.dir/gtwizard_ultrascale_0_example_top_sim_behav/obj/xsim_9.lnx64.o\" \"xsim.dir/gtwizard_ultrascale_0_example_top_sim_behav/obj/xsim_10.lnx64.o\" \"xsim.dir/gtwizard_ultrascale_0_example_top_sim_behav/obj/xsim_11.lnx64.o\" \"xsim.dir/gtwizard_ultrascale_0_example_top_sim_behav/obj/xsim_12.lnx64.o\" \"xsim.dir/gtwizard_ultrascale_0_example_top_sim_behav/obj/xsim_13.lnx64.o\" \"xsim.dir/gtwizard_ultrascale_0_example_top_sim_behav/obj/xsim_14.lnx64.o\" -L\"/opt/Xilinx/Vivado/2019.2/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

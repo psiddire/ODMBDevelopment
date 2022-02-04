@@ -1,0 +1,43 @@
+# delete_hw_probe [get_hw_probe receiver_0]
+# delete_hw_probe [get_hw_probe receiver_1]
+# delete_hw_probe [get_hw_probe receiver_2]
+# delete_hw_probe [get_hw_probe receiver_3]
+# delete_hw_probe [get_hw_probe transmitter_0]
+# delete_hw_probe [get_hw_probe transmitter_1]
+# delete_hw_probe [get_hw_probe transmitter_2]
+# delete_hw_probe [get_hw_probe transmitter_3]
+
+# delete_hw_probe [get_hw_probe prbs_match_int]
+
+delete_hw_probe [get_hw_probe gtwiz_reset_all_int]
+delete_hw_probe [get_hw_probe gtwiz_reset_rx_done_int]
+
+# delete_hw_probe [get_hw_probe gtwiz_userclk_tx_reset_int]
+# delete_hw_probe [get_hw_probe gtwiz_userclk_tx_usrclk_int]
+delete_hw_probe [get_hw_probe gtwiz_userclk_tx_usrclk2_int]
+delete_hw_probe [get_hw_probe gtwiz_userclk_tx_active_int]
+# delete_hw_probe [get_hw_probe gtwiz_userclk_rx_reset_int]
+# delete_hw_probe [get_hw_probe gtwiz_userclk_rx_usrclk_int]
+delete_hw_probe [get_hw_probe gtwiz_userclk_rx_usrclk2_int]
+delete_hw_probe [get_hw_probe gtwiz_userclk_rx_active_int]
+
+# delete_hw_probe [get_hw_probe rx8b10ben_int]
+# delete_hw_probe [get_hw_probe rxcommadeten_int]
+# delete_hw_probe [get_hw_probe rxlpmen_int]
+# delete_hw_probe [get_hw_probe rxmcommaalignen_int]
+# delete_hw_probe [get_hw_probe rxpcommaalignen_int]
+
+# delete_hw_probe [get_hw_probe tx8b10ben_int]
+# delete_hw_probe [get_hw_probe txdiffctrl_int]
+# delete_hw_probe [get_hw_probe txpostcursor_int]
+# delete_hw_probe [get_hw_probe txprecursor_int]
+# delete_hw_probe [get_hw_probe drpdo_int]
+# delete_hw_probe [get_hw_probe drprdy_int]
+
+# delete_hw_probe [get_hw_probe gtpowergood_int]
+# delete_hw_probe [get_hw_probe rxbyteisaligned_int]
+# delete_hw_probe [get_hw_probe rxbyterealign_int]
+# delete_hw_probe [get_hw_probe rxcommadet_int]
+# delete_hw_probe [get_hw_probe rxpmaresetdone_int]
+# delete_hw_probe [get_hw_probe txpmaresetdone_int]
+

@@ -44,11 +44,12 @@ add_files -fileset sim_1 "../diagnose"
 
 # Add IP core configurations
 add_files -norecurse "../ip/$FPGA_TYPE/gtwiz_kcu_sfp/gtwiz_kcu_sfp.xci"
-add_files -norecurse "../ip/$FPGA_TYPE/gtwiz_kcu_fmc/gtwiz_kcu_fmc.xci"
+# add_files -norecurse "../ip/$FPGA_TYPE/gtwiz_kcu_fmc/gtwiz_kcu_fmc.xci"
 add_files -norecurse "../ip/$FPGA_TYPE/gtwiz_kcu_sfp_vio_0/gtwiz_kcu_sfp_vio_0.xci"
 add_files -norecurse "../ip/$FPGA_TYPE/gtwiz_kcu_sfp_in_system_ibert/gtwiz_kcu_sfp_in_system_ibert.xci"
-add_files -norecurse "../ip/$FPGA_TYPE/clkwiz/clkwiz.xci"
+add_files -norecurse "../ip/$FPGA_TYPE/clk_mgr/clk_mgr.xci"
 add_files -norecurse "../ip/$FPGA_TYPE/ila/ila.xci"
+add_files -norecurse "../ip/$FPGA_TYPE/mgt_kcu_b4/mgt_kcu_b4.xci"
 
 # Add constraint files
 add_files -fileset constrs_1 -norecurse "../constraints/gtwiz_kcu_sfp_example_top.xdc"
@@ -61,8 +62,9 @@ set_property file_type {Verilog Header} [get_files  ../source/gtwizard/gtwiz_exa
 
 # # Set ip as global
 set_property generate_synth_checkpoint false [get_files  ../ip/$FPGA_TYPE/gtwiz_kcu_sfp/gtwiz_kcu_sfp.xci]
-set_property generate_synth_checkpoint false [get_files  ../ip/$FPGA_TYPE/gtwiz_kcu_fmc/gtwiz_kcu_fmc.xci]
-set_property generate_synth_checkpoint false [get_files  ../ip/$FPGA_TYPE/clkwiz/clkwiz.xci]
+# set_property generate_synth_checkpoint false [get_files  ../ip/$FPGA_TYPE/gtwiz_kcu_fmc/gtwiz_kcu_fmc.xci]
+set_property generate_synth_checkpoint false [get_files  ../ip/$FPGA_TYPE/clk_mgr/clk_mgr.xci]
+set_property generate_synth_checkpoint false [get_files  ../ip/$FPGA_TYPE/mgt_kcu_b4/mgt_kcu_b4.xci]
 # set_property generate_synth_checkpoint false [get_files  ip/$FPGA_TYPE/ila_0/ila_0.xci]
 # set_property generate_synth_checkpoint false [get_files  ip/$FPGA_TYPE/vio_0/vio_0.xci]
 

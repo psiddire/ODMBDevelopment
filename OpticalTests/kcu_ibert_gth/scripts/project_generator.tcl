@@ -74,7 +74,7 @@ set_property generic $TOP_GENERIC [current_fileset]
 # Add common IP core configurations
 add_files -norecurse "../ip/$FPGA_TYPE/$IBERT_CONFIG/$IBERT_MODULE.xci"
 add_files -norecurse "../ip/$FPGA_TYPE/clockManager/clockManager.xci"
-add_files -norecurse "../ip/$FPGA_TYPE/vio_0/vio_0.xci"
+# add_files -norecurse "../ip/$FPGA_TYPE/vio_0/vio_0.xci"
 
 # Add common constraint files
 add_files -fileset constrs_1 -norecurse "../constraints/kcu105_pinout.xdc"
@@ -93,7 +93,7 @@ set_property -name "top_auto_set" -value "0" -objects $obj
 # Set ip as global
 set_property generate_synth_checkpoint false [get_files  ../ip/$FPGA_TYPE/$IBERT_CONFIG/$IBERT_MODULE.xci]
 set_property generate_synth_checkpoint false [get_files  ../ip/$FPGA_TYPE/clockManager/clockManager.xci]
-set_property generate_synth_checkpoint false [get_files  ../ip/$FPGA_TYPE/vio_0/vio_0.xci]
+# set_property generate_synth_checkpoint false [get_files  ../ip/$FPGA_TYPE/vio_0/vio_0.xci]
 # set_property generate_synth_checkpoint false [get_files ../ip/$FPGA_TYPE/ila/ila.xci]
 
 puts "\[Success\] Created project"

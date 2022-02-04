@@ -1,0 +1,29 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../imports" --include "../../../../gtwizard_ultrascale_0_ex.srcs/sources_1/ip/clockManager" \
+"../../../../gtwizard_ultrascale_0_ex.srcs/sources_1/ip/gtwizard_ultrascale_0/sim/gtwizard_ultrascale_v1_7_gthe3_channel.v" \
+"../../../../gtwizard_ultrascale_0_ex.srcs/sources_1/ip/gtwizard_ultrascale_0/sim/gtwizard_ultrascale_0_gthe3_channel_wrapper.v" \
+"../../../../gtwizard_ultrascale_0_ex.srcs/sources_1/ip/gtwizard_ultrascale_0/sim/gtwizard_ultrascale_v1_7_gthe3_common.v" \
+"../../../../gtwizard_ultrascale_0_ex.srcs/sources_1/ip/gtwizard_ultrascale_0/sim/gtwizard_ultrascale_0_gthe3_common_wrapper.v" \
+"../../../../gtwizard_ultrascale_0_ex.srcs/sources_1/ip/gtwizard_ultrascale_0/sim/gtwizard_ultrascale_0_gtwizard_gthe3.v" \
+"../../../../gtwizard_ultrascale_0_ex.srcs/sources_1/ip/gtwizard_ultrascale_0/sim/gtwizard_ultrascale_0_gtwizard_top.v" \
+"../../../../gtwizard_ultrascale_0_ex.srcs/sources_1/ip/gtwizard_ultrascale_0/sim/gtwizard_ultrascale_0.v" \
+"../../../../gtwizard_ultrascale_0_ex.srcs/sources_1/ip/gtwizard_ultrascale_0_in_system_ibert_0/sim/gtwizard_ultrascale_0_in_system_ibert_0.v" \
+"../../../../gtwizard_ultrascale_0_ex.srcs/sources_1/ip/clockManager/clockManager_clk_wiz.v" \
+"../../../../gtwizard_ultrascale_0_ex.srcs/sources_1/ip/clockManager/clockManager.v" \
+"../../../../imports/gtwizard_ultrascale_0_example_bit_sync.v" \
+"../../../../imports/gtwizard_ultrascale_0_example_checking_8b10b.v" \
+"../../../../imports/gtwizard_ultrascale_0_example_gtwiz_userclk_rx.v" \
+"../../../../imports/gtwizard_ultrascale_0_example_gtwiz_userclk_tx.v" \
+"../../../../imports/gtwizard_ultrascale_0_example_init.v" \
+"../../../../imports/gtwizard_ultrascale_0_example_reset_sync.v" \
+"../../../../imports/gtwizard_ultrascale_0_example_stimulus_8b10b.v" \
+"../../../../imports/gtwizard_ultrascale_0_example_top.v" \
+"../../../../imports/gtwizard_ultrascale_0_example_wrapper.v" \
+"../../../../imports/gtwizard_ultrascale_0_prbs_any.v" \
+"../../../../imports/gtwizard_ultrascale_0_example_top_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
